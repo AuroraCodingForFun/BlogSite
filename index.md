@@ -2,4 +2,9 @@
 title: Benvenuti nel mio blog!
 ---
 
-<h1> Ciaooo<h1>
+<head>
+<h1> Ciaooo</h1>
+</head>
+<body>
+  <txt>"comoo estasss????"</txt>
+</body>
