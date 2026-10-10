@@ -1,6 +1,7 @@
 ---
 title: Benvenuti!
 layout: default
+image: /images/copertina.jpg
 ---
 Benvenuti nel mio blog
 
