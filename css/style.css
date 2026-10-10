@@ -1,3 +1,134 @@
-h1 {
-  background-color: powderblue;
+:root {
+  --sky: #b0e0e6;        /* powderblue, il tuo colore! */
+  --sky-deep: #5fb4c4;
+  --ink: #1f2a44;
+  --paper: #f5fafc;
+  --sun: #f6c445;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Nunito", system-ui, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: "Fredoka", system-ui, sans-serif;
+  line-height: 1.2;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--sky);
+  border-bottom: 6px solid var(--sun);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.brand {
+  font-family: "Fredoka", system-ui, sans-serif;
+  font-size: 1.25rem;
+}
+
+.hero {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 3.6rem);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  max-height: 18rem;
+  object-fit: cover;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* ---------- Contenuto ---------- */
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+a { color: var(--sky-deep); }
+a:hover { color: var(--ink); }
+
+/* Lista dei post in home */
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  border-left: 5px solid var(--sky);
+  border-radius: 0.5rem;
+}
+
+main li a {
+  font-family: "Fredoka", system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+main li a:hover { text-decoration: underline; }
+
+main li small {
+  display: block;
+  opacity: 0.7;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--ink);
+  color: var(--sky);
+  font-size: 0.95rem;
+}
+
+:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 3px;
 }
