@@ -3,3 +3,4 @@ theme: minima
 title: AuroraCodingForFun's personal blog
 description: This is where I share cool stuff about my life, or not, we'll see
 author: AuroraCodingForFun
+baseurl: "/BlogSite"
