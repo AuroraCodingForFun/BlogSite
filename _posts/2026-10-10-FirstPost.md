@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: minima
 title: "First Post"
 date: 2026-10-10
 ---
