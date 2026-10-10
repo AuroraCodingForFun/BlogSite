@@ -2,8 +2,15 @@
 title: Benvenuti!
 layout: default
 ---
-<head>
-</head>
-<body>
-  <txt>Benvenuti nel mio blog</txt>
-</body>
+Benvenuti nel mio blog
+
+## Ultimi post
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+    </li>
+  {% endfor %}
+</ul>
