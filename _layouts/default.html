@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Page</title>
+    <title style="background-color:powderblue;">{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
+      <a href="https://auroracodingforfun.github.io/BlogSite">Home</a>
     </nav>
-    <h1>My First Page</h1>
+    <h1>{{ page.title }}</h1>
     <section>
-      This is the content of my page
+      {{ content }}
     </section>
     <footer>
       &copy; to me
