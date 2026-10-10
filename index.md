@@ -1,5 +1,6 @@
 ---
 title: Benvenuti!
+layout: default
 ---
 <head>
 </head>
