@@ -1,5 +1,5 @@
 ---
 layout: post
-title: "First Post"
+title: "First Poskt"
 date: 2026-10-10
 ---
