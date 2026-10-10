@@ -1,5 +1,5 @@
 :root {
-  --sky: #b0e0e6;        /* powderblue, il tuo colore! */
+  --sky: #b0e0e6;
   --sky-deep: #5fb4c4;
   --ink: #1f2a44;
   --paper: #f5fafc;
@@ -68,7 +68,7 @@ nav a:focus-visible {
 .hero img {
   display: block;
   width: 100%;
-  max-height: 18rem;
+  max-height: 100%;
   object-fit: cover;
   margin-top: 1.5rem;
   border-radius: 1rem;
