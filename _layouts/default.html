@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   </head>
-  <body {% if page.color %}style="--sky: {{ page.color }};"{% endif %}>
+  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}">
     <header class="site-header">
       <nav>
         <a class="brand" href="{{ '/' | relative_url }}">Aurora Coding for Fun</a>
