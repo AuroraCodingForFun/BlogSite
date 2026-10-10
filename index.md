@@ -1,5 +1,5 @@
 ---
-title: Benvenuti nel mio blog!
+title: Benvenuti!
 ---
 
 <head>
