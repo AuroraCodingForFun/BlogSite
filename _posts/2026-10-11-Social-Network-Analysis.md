@@ -16,7 +16,7 @@ image: /images/SocialNetwork.jpg
 </div>
 
 <div>
- <div>
+ <div class="indice">
   <h2>Indice</h2>
   <ul>
     <li>Introduzione</li>
