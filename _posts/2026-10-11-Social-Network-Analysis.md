@@ -44,7 +44,6 @@ image: /images/SocialNetwork.jpg
       <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
         <li>Bias di selezione del dataset</li>
         <li>Resolution limit dell’algoritmo di Louvain</li>
-        </li>
       </ul>
     </li> 
    <li>Conclusione
