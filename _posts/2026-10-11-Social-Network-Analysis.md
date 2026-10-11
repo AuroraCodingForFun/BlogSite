@@ -2,10 +2,10 @@
 layout: default
 title: "My Social Network Analysis Project"
 date: 2026-10-11
-color1: "#6bf8fc"
-color2: "#5146af"
-color3: "#e1474d"
-image: /images/SocialNetwork.png
+color1: "#b7130b"
+color2: "#ff6232"
+color3: "#560000"
+image: /images/SocialNetwork.jpg
 ---
 <div style="font-size:16px;">
 <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
