@@ -7,7 +7,7 @@ color2: "#ff6232"
 color3: "#560000"
 image: /images/SocialNetwork.jpg
 ---
-<div style="background-color: color1;>
+<div style="background-color: {{ page.color1 }};">
    <div style="font-size:16px;">
    <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
    </div>
