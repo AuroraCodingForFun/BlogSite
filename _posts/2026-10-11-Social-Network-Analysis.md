@@ -18,12 +18,12 @@ image: /images/SocialNetwork.jpg
 <div>
  <div class="indice">
   <h2>Indice</h2>
-  <ul style="list-style-type: '👻 '; padding-left: 1.5rem;">
+  <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
     <li>Introduzione</li>
     <li>Rete degli archetipi Horror
       <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
         <li>Interpretazione del grafo di adiacenza
-          <ul style="list-style-type: '🩸 '; padding-left: 1.5rem;">
+          <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
             <li>Cricche isolate</li>
             <li>Cluster centrale e Betweenness</li>
           </ul>
@@ -33,7 +33,7 @@ image: /images/SocialNetwork.jpg
     <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
       <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
         <li>Interpretazione dei risultati della matrice modulare
-          <ul style="list-style-type: '🩸 '; padding-left: 1.5rem;">
+          <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
             <li>Cricche perfette</li>
             <li>Cluster estesi e permeabili</li>
           </ul>
