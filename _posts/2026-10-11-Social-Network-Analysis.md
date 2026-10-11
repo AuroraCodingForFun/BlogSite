@@ -16,26 +16,32 @@ image: /images/SocialNetwork.jpg
 </div>
 
 <div>
-  <h1>Indice</h1>
+ <div>
+  <h2>Indice</h2>
   <ul>
-      <li>Introduzione</li>
-      <li>Rete degli archetipi Horror</li>
-        <ul>
-          <li>Interpretazione del grafo di adiacenza</li>
-              <ul>
-                <li>Cricche isolate</li>
-                <li>Cluster centrale e Betweenness</li>
-              </ul>
-        </ul>
-      <li>Matrice di Modularità e Densità dei Cluster (Heatmap)</li>
-        <ul>
-          <li>Interpretazione dei risultati della matrice modulare</li>
-              <ul>
-                <li>Cricche perfette</li>
-                <li>Cluster estesi e permeabili</li>
-              </ul>
-        </ul>
+    <li>Introduzione</li>
+    <li>Rete degli archetipi Horror
+      <ul>
+        <li>Interpretazione del grafo di adiacenza
+          <ul>
+            <li>Cricche isolate</li>
+            <li>Cluster centrale e Betweenness</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
+      <ul>
+        <li>Interpretazione dei risultati della matrice modulare
+          <ul>
+            <li>Cricche perfette</li>
+            <li>Cluster estesi e permeabili</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
+
 
 Cluster estesi e permeabili	4
 Riconoscere limiti e bias del lavoro	5
