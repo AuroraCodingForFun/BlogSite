@@ -90,12 +90,12 @@ a { color: var(--sky-deep); }
 a:hover { color: var(--ink); }
 
 /* Lista dei post in home */
-main ul {
+.post-list {
   list-style: none;
   padding: 0;
 }
 
-main li {
+.post-list li {
   padding: 0.9rem 1rem;
   margin-bottom: 0.75rem;
   background: #fff;
@@ -103,7 +103,7 @@ main li {
   border-radius: 0.5rem;
 }
 
-main li a {
+.post-list li a {
   font-family: "Fredoka", system-ui, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -111,9 +111,9 @@ main li a {
   text-decoration: none;
 }
 
-main li a:hover { text-decoration: underline; }
+.post-list li a:hover { text-decoration: underline; }
 
-main li small {
+.post-list li small {
   display: block;
   opacity: 0.7;
 }
