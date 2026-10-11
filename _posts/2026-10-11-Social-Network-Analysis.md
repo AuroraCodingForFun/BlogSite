@@ -21,7 +21,7 @@ image: /images/SocialNetwork.jpg
    </div>
 
    <div class="indice" style="background-color: white; padding: 16px 25px 25px 50px; border-radius: 25px;">
-    <h2 style="text-align:center;">Indice</h2>
+    <h2>Indice</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Introduzione</li>
       <li>Rete degli archetipi Horror
