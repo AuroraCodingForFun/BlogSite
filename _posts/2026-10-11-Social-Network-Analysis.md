@@ -60,5 +60,4 @@ image: /images/SocialNetwork.jpg
    In questo elaborato rispondo a queste domande applicando tecniche viste a lezione ad un dataset di trope narrativi estratti dai principali film horror, costruendo una rete di co-occorrenza tra elementi tematici e applicando algoritmi di community detection e misure di centralità (in particolare la betweenness centrality) per identificare sia i cluster tematici sia gli archetipi "ponte" tra sottogeneri.
    </h6>
    </div>
-
 </div>
