@@ -15,8 +15,7 @@ image: /images/SocialNetwork.jpg
 <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
 </div>
 
-<div>
- <div class="indice">
+ <div class="indice" style="background-color: lightblue;">
   <h2>Indice</h2>
   <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
     <li>Introduzione</li>
