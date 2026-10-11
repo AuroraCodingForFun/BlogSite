@@ -40,14 +40,15 @@ image: /images/SocialNetwork.jpg
         </li>
       </ul>
     </li>
+      <li>Riconoscere limiti e bias del lavoro
+      <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+        <li>Bias di selezione del dataset</li>
+        <li>Resolution limit dell’algoritmo di Louvain</li>
+        </li>
+      </ul>
+    </li> 
+   <li>Conclusione
   </ul>
-
-
-Cluster estesi e permeabili	4
-Riconoscere limiti e bias del lavoro	5
-Bias di selezione del dataset	5
-Resolution limit dell’algoritmo di Louvain	5
-Conclusione	5
 </div>
 
 <br>
