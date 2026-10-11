@@ -8,7 +8,7 @@ color3: "#560000"
 image: /images/SocialNetwork.jpg
 ---
 <style>
-  :root { --paper: #1a0505; }
+  :root { --paper: #630000; }
 </style>
 
 <div>
