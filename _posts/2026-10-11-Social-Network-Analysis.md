@@ -2,9 +2,9 @@
 layout: default
 title: "My Social Network Analysis Project"
 date: 2026-10-11
-color1: "#e1474d"
+color1: "#6bf8fc"
 color2: "#5146af"
-color3: "#6bf8fc"
+color3: "#e1474d"
 image: /images/SocialNetwork.png
 ---
 <h1>Ciao? Quindi è così che si fa un post!</h1>
