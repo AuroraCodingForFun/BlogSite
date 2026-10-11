@@ -8,7 +8,7 @@ color3: "#e1474d"
 image: /images/SocialNetwork.png
 ---
 
-<h1>Ciao? Quindi è così che si fa un post!</h1>
+Ciao? Quindi è così che si fa un post!
 <div class="center">
 <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
 </div>
