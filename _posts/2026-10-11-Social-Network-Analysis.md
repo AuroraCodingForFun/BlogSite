@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "My Social Network Analysis Project"
+title: "My Social Network  Project"
 date: 2026-10-11
 color1: "#b7130b"
 color2: "#ff6232"
