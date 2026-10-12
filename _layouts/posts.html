@@ -22,18 +22,6 @@
         border-radius: 25px;
         margin-bottom: 1.5rem;
       }
-
-      /* Elenco puntato con emoji diversa per ogni livello */
-      .card ul {
-        list-style-type: "{{ page.emoji1 | default: '💀' }} ";
-        padding-left: 1.5rem;
-      }
-      .card ul ul {
-        list-style-type: "{{ page.emoji2 | default: '🔪' }} ";
-      }
-      .card ul ul ul {
-        list-style-type: "{{ page.emoji3 | default: '😱' }} ";
-      }
     </style>
   </head>
   <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}">
@@ -46,7 +34,7 @@
       <div class="hero">
         <h1>{{ page.title }}</h1>
         {% if page.image %}
-          <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+          <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"; align="middle">
         {% endif %}
       </div>
     </header>
