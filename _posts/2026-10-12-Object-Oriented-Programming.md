@@ -1,0 +1,67 @@
+---
+layout: posts
+title: "Studying Java (Object Oriented Exham)"
+date: 2026-10-11
+color1: "#b7130b"
+color2: "#ff6232"
+color3: "#560000"
+image: /images/SocialNetwork.jpg
+favicon: /images/favicons/halloween.png
+---
+
+<div>
+   <div style="font-size:16px;">
+   <h1>Objected Oriented Programming Exham</h1>
+   </div>
+
+   <div class="center">
+   <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
+   </div>
+
+   <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <h2>Indice</h2>
+    <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
+      <li>Introduzione</li>
+      <li>Rete degli archetipi Horror
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Interpretazione del grafo di adiacenza
+            <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+              <li>Cricche isolate</li>
+              <li>Cluster centrale e Betweenness</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Interpretazione dei risultati della matrice modulare
+            <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+              <li>Cricche perfette</li>
+              <li>Cluster estesi e permeabili</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+        <li>Riconoscere limiti e bias del lavoro
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Bias di selezione del dataset</li>
+          <li>Resolution limit dell’algoritmo di Louvain</li>
+        </ul>
+      </li> 
+     <li>Conclusione </li>
+    </ul>
+  </div>
+
+<br>
+
+  <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <h2>Introduzione</h2>
+   <p>
+  In questo elaborato rispondo alle domande: "Quali cluster tematici esistono all'interno del cinema horror? E, soprattutto, esistono elementi narrativi ad esempio  trope come "possessione demoniaca" o "casa infestata" che fungono da ponte tra sotto-generi apparentemente distinti, collegando mondi narrativi diversi tra loro? " applicando tecniche viste a lezione ad un dataset di trope narrativi estratti dai principali film horror, costruendo una rete di co-occorrenza tra elementi tematici e applicando algoritmi di community detection e misure di centralità (in particolare la betweenness centrality) per identificare sia i cluster tematici sia gli archetipi "ponte" tra sottogeneri.
+   </p>
+    <h4 style="text-align: center;">...</h4>
+       <div class="center">
+       <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
+       </div>
+   </div>
+</div>
