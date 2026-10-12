@@ -6,7 +6,7 @@ color1: "#ffb3c0"
 color2: "#f94563"
 color3: "#f945bd"
 image: /images/Barbie.jpg
-paper: "#f945bd"
+paper: "#ffcbb2"
 ---
 
 <h1>Ciao? Quindi è così che si fa un post!</h1>
