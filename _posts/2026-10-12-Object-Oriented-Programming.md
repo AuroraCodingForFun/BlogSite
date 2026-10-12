@@ -2,9 +2,9 @@
 layout: posts
 title: "Studying Java (Object Oriented Exham)"
 date: 2026-10-11
-color1: "#b7130b"
-color2: "#ff6232"
-color3: "#560000"
+color1: "#dd985f"
+color2: "#100b08"
+color3: "#855d3a"
 image: /images/Java.jpg
 favicon: /images/favicons/halloween.png
 ---
