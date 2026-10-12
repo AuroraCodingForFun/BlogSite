@@ -5,7 +5,7 @@ date: 2026-10-11
 color1: "#b7130b"
 color2: "#ff6232"
 color3: "#560000"
-image: /images/SocialNetwork.jpg
+image: /images/Java.jpg
 favicon: /images/favicons/halloween.png
 ---
 
