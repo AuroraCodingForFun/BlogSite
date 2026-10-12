@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
+
+    <style>
+      /* Sfondo del sito per i post (cambia con "paper:" nel front matter) */
+      :root { --paper: {{ page.paper | default: '#630000' }}; }
+
+      /* Riquadro bianco con angoli arrotondati */
+      .card {
+        background-color: white;
+        color: #2b0a0a;
+        padding: 16px 25px 30px 50px;
+        border-radius: 25px;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Elenco puntato con emoji diversa per ogni livello */
+      .card ul {
+        list-style-type: "{{ page.emoji1 | default: '💀' }} ";
+        padding-left: 1.5rem;
+      }
+      .card ul ul {
+        list-style-type: "{{ page.emoji2 | default: '🔪' }} ";
+      }
+      .card ul ul ul {
+        list-style-type: "{{ page.emoji3 | default: '😱' }} ";
+      }
+    </style>
+  </head>
+  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}">
+    <header class="site-header">
+      <nav>
+        <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
+        <a href="{{ '/' | relative_url }}"> 🏠︎ Home</a>
+      </nav>
+
+      <div class="hero">
+        <h1>{{ page.title }}</h1>
+        {% if page.image %}
+          <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+        {% endif %}
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
+    </footer>
+  </body>
+</html>
