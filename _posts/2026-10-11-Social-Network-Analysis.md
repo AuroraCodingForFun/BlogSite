@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 title: "My Social Network Analysis Project"
 date: 2026-10-11
 color1: "#b7130b"
