@@ -37,7 +37,6 @@ favicon: /images/favicons/halloween.png
                 <li>Cricche isolate</li>
                 <li>Cluster centrale e Betweenness</li>
               </ul>
-            </ul>
            <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
              <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
             <li>Interpretazione dei risultati della matrice modulare
@@ -55,7 +54,6 @@ favicon: /images/favicons/halloween.png
                 </ul>
               </li>
               <li>Conclusione</li>
-              </ul>
             </li>
           </ul>
         </li>
