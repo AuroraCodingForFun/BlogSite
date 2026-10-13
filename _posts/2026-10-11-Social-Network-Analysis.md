@@ -42,7 +42,6 @@ favicon: /images/favicons/halloween.png
         </li>
       </ul>
     </div>
-
     <!-- Pagina destra -->
     <div style="background-color: white; color: #2b0a0a; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Seconda parte</h2>
