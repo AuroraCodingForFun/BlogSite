@@ -90,7 +90,7 @@ favicon: /images/favicons/halloween.png
      <li>Conclusione </li>
     </ul>
   </div>
-
+</div>
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Introduzione</h2>
    <p>
