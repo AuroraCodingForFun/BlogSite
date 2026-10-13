@@ -14,11 +14,11 @@ favicon: /images/favicons/halloween.png
 </style>
 
 <div style="width: 100%; overflow: hidden;">
-   <div style="font-size:16px;width: 600px; float: left;">
+   <div style="font-size:16px;">
    <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
    </div>
 
-   <div class="center">
+   <div class="center" style="width: 600px; float: left;">
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
