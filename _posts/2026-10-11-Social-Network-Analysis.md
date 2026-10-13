@@ -12,6 +12,10 @@ favicon: /images/favicons/halloween.png
 <style>
   :root { --paper: #630000; }
 </style>
+ <div style="width: 100%; overflow: hidden;">
+     <div style="width: 600px; float: left;"> Left </div>
+     <div style="margin-left: 620px;"> Right </div>
+</div>
 
 <div>
    <div style="font-size:16px;">
@@ -23,7 +27,7 @@ favicon: /images/favicons/halloween.png
    </div>
 
    <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
-    <h2>Indice</h2>
+    <h2>Indice dei contenuti dell'elaborato</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Introduzione</li>
       <li>Rete degli archetipi Horror
