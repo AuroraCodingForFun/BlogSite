@@ -18,11 +18,11 @@ favicon: /images/favicons/halloween.png
    <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
    </div>
 
-   <div class="center" style="width: 600px; float: left;">
+   <div class="center">
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
-   <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+   <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px; width: 600px; float: left;">
     <h2>Indice dei contenuti dell'elaborato</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Introduzione</li>
