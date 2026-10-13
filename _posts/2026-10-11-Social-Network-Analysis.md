@@ -5,9 +5,9 @@ date: 2026-10-11
 color1: "#b7130b"
 color2: "#ff6232"
 color3: "#560000"
+button: "#b7130b"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
-button: black
 ---
 <style>
   :root { --paper: #630000; }
