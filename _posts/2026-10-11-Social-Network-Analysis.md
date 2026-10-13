@@ -12,13 +12,9 @@ favicon: /images/favicons/halloween.png
 <style>
   :root { --paper: #630000; }
 </style>
- <div style="width: 100%; overflow: hidden;">
-     <div style="width: 600px; float: left;"> Left </div>
-     <div style="margin-left: 620px;"> Right </div>
-</div>
 
-<div>
-   <div style="font-size:16px;">
+<div style="width: 100%; overflow: hidden;">
+   <div style="font-size:16px;width: 600px; float: left;">
    <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
    </div>
 
@@ -61,6 +57,7 @@ favicon: /images/favicons/halloween.png
   </div>
 
 <br>
+     <div style="margin-left: 620px;"> Right </div>
 
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Introduzione</h2>
