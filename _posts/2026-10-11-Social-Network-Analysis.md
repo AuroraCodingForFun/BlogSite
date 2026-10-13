@@ -21,10 +21,10 @@ favicon: /images/favicons/halloween.png
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 5;">
 
   <!-- Pagina sinistra -->
-  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 25px 0 0 25px;">
+  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 25px 25px 25px 25px;">
     <h2>Indice dei contenuti</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Introduzione</li>
@@ -42,7 +42,7 @@ favicon: /images/favicons/halloween.png
   </div>
 
   <!-- Pagina destra -->
-  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 0 25px 25px 0;">
+  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 25px 25px 25px 25px;">
     <h2>Seconda parte</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
