@@ -145,7 +145,7 @@ footer {
 }
 
 .button:hover {
-  background: var(--ink);
+  background: var(--button);
   color: var(--sky);
 }
 
