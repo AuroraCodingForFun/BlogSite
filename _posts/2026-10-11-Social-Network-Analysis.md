@@ -27,7 +27,7 @@ favicon: /images/favicons/halloween.png
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center;">
     <!-- Pagina sinistra -->
     <div style="background-color: white; color: #2b0a0a; padding: 16px 25px 30px 50px; border-radius: 25px;">
-      <h2>Indice dei contenuti</h2>
+      <h2>Indice dei contenuti dell' elaborato</h2>
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Introduzione</li>
         <li>Rete degli archetipi Horror
@@ -63,25 +63,28 @@ favicon: /images/favicons/halloween.png
     </div>
     <!-- Pagina destra -->
     <div style="background-color: white; color: #2b0a0a; padding: 16px 25px 30px 50px; border-radius: 25px;">
-      <h2>Seconda parte</h2>
+      <h2>Indice dei contenuti della repository</h2>
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
-        <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
-          <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
-            <li>Interpretazione dei risultati della matrice modulare
-              <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
-                <li>Cricche perfette</li>
-                <li>Cluster estesi e permeabili</li>
-              </ul>
-            </li>
+        <li>Rplot.png</li>
+          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
+            <li> ->Grafo 1</li>
           </ul>
-        </li>
-        <li>Riconoscere limiti e bias del lavoro
-          <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
-            <li>Bias di selezione del dataset</li>
-            <li>Resolution limit dell'algoritmo di Louvain</li>
+        <li>Rplot01.png</li>
+          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
+            <li> ->Grafo 2</li>
           </ul>
-        </li>
-        <li>Conclusione</li>
+        <li>SNAProject.R</li>
+          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
+            <li>->Complete R code with link to the Dataset </li>
+          </ul>
+         <li>Social Network Analysis Project.pdf</li>
+          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
+            <li> ->Presentation and discussion</li>
+          </ul>
+         <li>SocialNetworkAnalysisProject.Rproj</li>
+          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
+            <li> ->Rproj</li>
+          </ul>
       </ul>
     </div>
 
