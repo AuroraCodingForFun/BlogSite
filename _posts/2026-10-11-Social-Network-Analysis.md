@@ -7,6 +7,7 @@ color2: "#ff6232"
 color3: "#560000"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
+button: black
 ---
 <style>
   :root { --paper: #630000; }
