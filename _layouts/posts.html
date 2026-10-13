@@ -24,8 +24,7 @@
       }
     </style>
   </head>
-  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}">
-    <header class="site-header">
+ <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">    <header class="site-header">
       <nav>
         <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
         <a href="{{ '/' | relative_url }}"> 🏠︎ Home</a>
