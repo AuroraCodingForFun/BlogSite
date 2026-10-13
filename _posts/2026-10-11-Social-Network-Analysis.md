@@ -13,8 +13,6 @@ favicon: /images/favicons/halloween.png
   :root { --paper: #630000; }
 </style>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0;">
-
 <div style="font-size:16px;">
    <h1>👻Co-occorrenza dei trope nei film Horror👻</h1>
    </div>
@@ -22,6 +20,8 @@ favicon: /images/favicons/halloween.png
    <div class="center">
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0;">
 
   <!-- Pagina sinistra -->
   <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 25px 0 0 25px;">
