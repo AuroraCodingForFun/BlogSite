@@ -26,7 +26,7 @@ favicon: /images/favicons/halloween.png
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center;">
     <!-- Pagina sinistra -->
-    <div style="background-color: white; color: #2b0a0a; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Introduzione</li>
@@ -60,7 +60,7 @@ favicon: /images/favicons/halloween.png
       </ul>
     </div>
     <!-- Pagina destra -->
-    <div style="background-color: white; color: #2b0a0a; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti della repository</h2>
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Rplot.png</li>
