@@ -4,6 +4,7 @@
   --ink: #1f2a44;
   --paper: #f5fafc;
   --sun: #f6c445;
+  --button: #f6c445;
 }
 
 * { box-sizing: border-box; }
@@ -136,7 +137,7 @@ footer {
 .button {
   display: inline-block;
   padding: 0.8rem 1.8rem;
-  background: var(--sun);
+  background: var(--button);
   color: var(--ink);
   font-weight: 600;
   text-decoration: none;
