@@ -65,23 +65,23 @@ favicon: /images/favicons/halloween.png
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Rplot.png</li>
           <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li> ->Grafo 1</li>
+            <li>Grafo 1: Rete di co-occorrenza tra tropes</li>
           </ul>
         <li>Rplot01.png</li>
           <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li> ->Grafo 2</li>
+            <li>Grafo 2: Matrice di densità delle connessioni (Cluster)</li>
           </ul>
         <li>SNAProject.R</li>
           <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>->Complete R code with link to the Dataset </li>
+            <li>Complete R code with link to the Dataset </li>
           </ul>
          <li>Social Network Analysis Project.pdf</li>
           <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li> ->Presentation and discussion</li>
+            <li>Presentazione pdf</li>
           </ul>
          <li>SocialNetworkAnalysisProject.Rproj</li>
           <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li> ->Rproj</li>
+            <li>Rproj</li>
           </ul>
       </ul>
     </div>
