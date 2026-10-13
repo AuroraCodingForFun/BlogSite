@@ -57,7 +57,39 @@ favicon: /images/favicons/halloween.png
   </div>
 
 <br>
-     <div style="margin-left: 620px;"> Right </div>
+<div style="margin-left: 620px;">
+           <h2>Indice dei contenuti dell'elaborato</h2>
+    <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
+      <li>Introduzione</li>
+      <li>Rete degli archetipi Horror
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Interpretazione del grafo di adiacenza
+            <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+              <li>Cricche isolate</li>
+              <li>Cluster centrale e Betweenness</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Interpretazione dei risultati della matrice modulare
+            <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+              <li>Cricche perfette</li>
+              <li>Cluster estesi e permeabili</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+        <li>Riconoscere limiti e bias del lavoro
+        <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+          <li>Bias di selezione del dataset</li>
+          <li>Resolution limit dell’algoritmo di Louvain</li>
+        </ul>
+      </li> 
+     <li>Conclusione </li>
+    </ul>
+  </div>
 
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Introduzione</h2>
