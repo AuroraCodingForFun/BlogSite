@@ -21,7 +21,7 @@ favicon: /images/favicons/halloween.png
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
-<!-- Contenitore largo: esce dalla colonna e si centra sulla pagina -->
+
 <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center;">
@@ -36,6 +36,24 @@ favicon: /images/favicons/halloween.png
               <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
                 <li>Cricche isolate</li>
                 <li>Cluster centrale e Betweenness</li>
+                <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
+        <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
+          <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+            <li>Interpretazione dei risultati della matrice modulare
+              <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+                <li>Cricche perfette</li>
+                <li>Cluster estesi e permeabili</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+              <li>Riconoscere limiti e bias del lavoro
+                <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+                  <li>Bias di selezione del dataset</li>
+                  <li>Resolution limit dell'algoritmo di Louvain</li>
+                </ul>
+              </li>
+              <li>Conclusione</li>
               </ul>
             </li>
           </ul>
