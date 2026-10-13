@@ -42,7 +42,7 @@ favicon: /images/favicons/halloween.png
   </div>
 
   <!-- Pagina destra -->
-  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 0 25px 25px 0; box-shadow: inset 12px 0 12px -12px rgba(0,0,0,0.35);">
+  <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 0 25px 25px 0;">
     <h2>Seconda parte</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
@@ -64,8 +64,9 @@ favicon: /images/favicons/halloween.png
       <li>Conclusione</li>
     </ul>
   </div>
+  
+<br>
 
-</div>
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Introduzione</h2>
    <p>
