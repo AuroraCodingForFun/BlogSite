@@ -21,7 +21,7 @@ favicon: /images/favicons/halloween.png
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 5;">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 5px;">
 
   <!-- Pagina sinistra -->
   <div style="background-color: white; color: #2b0a0a; padding: 1.5rem; border-radius: 25px 25px 25px 25px;">
@@ -64,7 +64,7 @@ favicon: /images/favicons/halloween.png
       <li>Conclusione</li>
     </ul>
   </div>
-  
+</div>
 <br>
 
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
