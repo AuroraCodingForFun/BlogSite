@@ -57,7 +57,7 @@ favicon: /images/favicons/halloween.png
   </div>
 
 <br>
-<div style="margin-left: 0px;">
+<div style="margin-left: 250px;">
            <h2>Indice dei contenuti dell'elaborato</h2>
     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
       <li>Introduzione</li>
