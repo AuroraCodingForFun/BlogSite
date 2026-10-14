@@ -2,9 +2,9 @@
 title: Benvenuti!
 layout: default
 image: /images/copertina.jpg
-color1: "#FFA500"
-color2: "#FF4500"
-color3: "#560000"
+color1: "#001044"
+color2: "#C8C367"
+color3: "#615F31"
 ---
 Benvenuti nel mio blog
 
