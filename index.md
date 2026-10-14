@@ -2,7 +2,7 @@
 title: Benvenuti!
 layout: default
 image: /images/copertina.jpg
-color1: "#b7130b"
+color1: "#ffd700"
 color2: "#ff6232"
 color3: "#560000"
 ---
