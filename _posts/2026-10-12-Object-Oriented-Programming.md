@@ -6,7 +6,7 @@ color1: "#100b08"
 color2: "#dd985f"
 color3: "#855d3a"
 image: /images/Java.jpg
-favicon: /images/favicons/halloween.png
+favicon: /images/favicons/java-logo.png
 ---
 
 <div>
