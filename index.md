@@ -7,7 +7,7 @@ color2: "#C8C367"
 color3: "#615F31"
 ---
 <style>
-  :root { --paper: #630000; }
+  :root { --paper: #14281d; }
 </style>
 
 Benvenuti nel mio blog
