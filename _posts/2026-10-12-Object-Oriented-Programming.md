@@ -24,7 +24,7 @@ favicon: /images/favicons/halloween.png
 
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
-  const url = "https://raw.githubusercontent.com/AuroraCodingForFun/OOP-Exercises/refs/heads/main/README.md token=GHSAT0AAAAAAEKTIG4GN5HXS47KRYCKD2VI2WQ5TWQ";
+  const url = "https://raw.githubusercontent.com/AuroraCodingForFun/OOP-Exercises/refs/heads/main/README.md";
 
   fetch(url)
     .then(r => r.text())
