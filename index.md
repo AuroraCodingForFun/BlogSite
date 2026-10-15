@@ -17,11 +17,12 @@ Benvenuti nel mio blog
 <ul class="post-list">
   
   {% for post in site.posts %}
-  <div style=" background-color: lightblue">
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+      <div style=" background-color: lightblue">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+      </div>
     </li>
-  </div>
+  
   {% endfor %}
 </ul>
