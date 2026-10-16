@@ -42,9 +42,7 @@ aside {
               document.getElementById("contenuto").textContent = "Errore: " + err;
             });
         </script>
-  </div>
-<br>
-  <aside style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <aside style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Side content</h2>
    <p>
   This should be on the side of the page, why are you not? How many goats do I have to sacrifice?
@@ -54,4 +52,6 @@ aside {
        <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
        </div>
    </aside>
+  </div>
+<br>
 </div>
