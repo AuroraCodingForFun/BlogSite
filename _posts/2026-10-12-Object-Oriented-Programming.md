@@ -10,8 +10,6 @@ favicon: /images/favicons/java-logo.png
 ---
 <style>
 :root { --paper: #100b08; }
-box-shadow: 0 10px 25px
-  rgba(0,0,0,0.2);
 
 .layout {
   display: block;
@@ -63,12 +61,7 @@ aside.laterale {
       <div id="contenuto">Caricamento...</div>
     </div>
     <aside class="laterale">
-      <h2>Side content</h2>
-      <p>Ciaooo</p>
-      <h4 style="text-align: center;">...</h4>
-      <div class="center">
-        <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to continue</a>
-      </div>
+      <p>O</p>
     </aside>
 
   </div>
