@@ -23,7 +23,7 @@ color3: "#615F31"
 
 aside.laterale {
   position: fixed;
-  top: 250px;
+  top: 10px;
   right: 16px;
   box-sizing: border-box;
   width: 260px;
