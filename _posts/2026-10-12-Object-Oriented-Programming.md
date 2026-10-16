@@ -10,6 +10,8 @@ favicon: /images/favicons/java-logo.png
 ---
 <style>
 :root { --paper: #100b08; }
+box-shadow: 0 10px 25px
+  rgba(0,0,0,0.2);
 
 .layout {
   display: block;
