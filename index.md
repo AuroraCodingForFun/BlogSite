@@ -48,7 +48,7 @@ aside.laterale {
 
 <div>
     <aside class="laterale">
-      <img src="/images/copertina.jpg" alt="tmp" width=fit height=fit>
+      <img src="/images/copertina.jpg" alt="tmp">
     </aside>
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
