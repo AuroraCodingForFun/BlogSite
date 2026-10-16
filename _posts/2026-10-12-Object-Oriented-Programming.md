@@ -13,6 +13,7 @@ favicon: /images/favicons/java-logo.png
 
 .layout {
   display: block;
+  position: relative;
 }
   
 .indice {
@@ -24,8 +25,8 @@ favicon: /images/favicons/java-logo.png
 }
 
 aside.laterale {
-  position: fixed;
-  top: 100px;
+  position: absolute;
+  top: 0;
   right: 16px;
   box-sizing: border-box;
   width: 260px;
