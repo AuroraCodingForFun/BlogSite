@@ -8,37 +8,37 @@ color3: "#855d3a"
 image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
 ---
-
 <style>
 :root { --paper: #100b08; }
 
-.indice {
-  background-color: white;
-  padding: 16px 25px 30px 25px;
-  border-radius: 25px;
+.layout {
   display: flex;
   gap: 24px;
   align-items: flex-start;
 }
 
-#contenuto {
+.indice {
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* evita che tabelle o codice larghi spingano fuori l'aside */
+  background-color: white;
+  padding: 16px 25px 30px 25px;
+  border-radius: 25px;
 }
 
-aside {
+aside.laterale {
   box-sizing: border-box;
   width: 30%;
   flex-shrink: 0;
   padding: 16px 25px 30px 25px;
-  background-color: lightgray;
+  background-color: white;
   border-radius: 25px;
   font-style: italic;
 }
 
+/* su schermi stretti l'aside va sotto */
 @media (max-width: 700px) {
-  .indice { flex-direction: column; }
-  aside { width: 100%; }
+  .layout { flex-direction: column; }
+  aside.laterale { width: 100%; }
 }
 </style>
 
@@ -50,16 +50,23 @@ aside {
     <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to check it out!</a>
   </div>
 
-  <div class="indice">
-    <div id="contenuto">Caricamento...</div>
-    <aside>
+  <div class="layout">
+
+    <!-- Rettangolo bianco con il README -->
+    <div class="indice">
+      <div id="contenuto">Caricamento...</div>
+    </div>
+
+    <!-- Aside fuori dal rettangolo, di fianco -->
+    <aside class="laterale">
       <h2>Side content</h2>
-      <p>This should be on the side of the page, and now it is!</p>
+      <p>Ora sono fuori dal rettangolo, di fianco!</p>
       <h4 style="text-align: center;">...</h4>
       <div class="center">
         <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to continue</a>
       </div>
     </aside>
+
   </div>
   <br>
 </div>
@@ -78,4 +85,3 @@ aside {
       .catch(err => { el.textContent = "Errore: " + err; });
   })();
 </script>
-</div>
