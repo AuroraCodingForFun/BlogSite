@@ -54,10 +54,10 @@ aside.laterale {
 <h2> Ultimi post </h2>
 <ul class="post-list">
   {% for post in site.posts %}
-    <li style="background-color: {% if forloop.first %}lightcoral{% else %}lightblue{% endif %}">
+    <li style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}">
       <div>
         <a href="{{ post.url | relative_url }}"> <b style="color: #3a6b35">{{ post.title }}</b></a>
-        <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+        <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
       </div>
     </li>
   {% endfor %}
