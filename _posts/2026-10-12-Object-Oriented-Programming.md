@@ -9,7 +9,17 @@ image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
 ---
 
-<style> :root { --paper: #100b08; } </style>
+<style> 
+:root { --paper: #100b08; } 
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>
 
 <div>
    <div style="font-size:16px;">
