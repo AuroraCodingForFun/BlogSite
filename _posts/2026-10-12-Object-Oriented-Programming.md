@@ -19,7 +19,7 @@ favicon: /images/favicons/java-logo.png
 
 .indice {
   flex: 1;
-  min-width: 0; /* evita che tabelle o codice larghi spingano fuori l'aside */
+  min-width: 0;
   background-color: white;
   padding: 16px 25px 30px 25px;
   border-radius: 25px;
@@ -35,7 +35,6 @@ aside.laterale {
   font-style: italic;
 }
 
-/* su schermi stretti l'aside va sotto */
 @media (max-width: 700px) {
   .layout { flex-direction: column; }
   aside.laterale { width: 100%; }
@@ -51,13 +50,9 @@ aside.laterale {
   </div>
 
   <div class="layout">
-
-    <!-- Rettangolo bianco con il README -->
     <div class="indice">
       <div id="contenuto">Caricamento...</div>
     </div>
-
-    <!-- Aside fuori dal rettangolo, di fianco -->
     <aside class="laterale">
       <h2>Side content</h2>
       <p>Ora sono fuori dal rettangolo, di fianco!</p>
