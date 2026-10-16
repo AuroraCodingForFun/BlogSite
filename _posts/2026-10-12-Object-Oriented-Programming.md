@@ -9,6 +9,8 @@ image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
 ---
 
+<style> :root { --paper: #100b08; } </style>
+
 <div>
    <div style="font-size:16px;">
    <h1>Objected Oriented Programming Exham</h1>
