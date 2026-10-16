@@ -47,16 +47,12 @@ aside.laterale {
 </style>
 
 <div>
-      <aside class="laterale">
+    <aside class="laterale">
       <p>O</p>
     </aside>
-
-Benvenuti nel mio blog
-
-## Ultimi post
-
+<h1>Benvenuti nel mio blog </h1>
+<h2> Ultimi post </h2>
 <ul class="post-list">
-  
   {% for post in site.posts %}
     <li style=" background-color: lightblue">
       <div>
@@ -64,6 +60,6 @@ Benvenuti nel mio blog
         <small>({{ post.date | date: "%d/%m/%Y" }})</small>
       </div>
     </li>
-  </div>
   {% endfor %}
 </ul>
+</div>
