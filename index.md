@@ -29,7 +29,7 @@ aside.laterale {
   width: 260px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
-  padding: 16px 25px 30px 25px;
+  padding: 10px 10px 10px 10px;
   background-color: white;
   border-radius: 25px;
   font-style: italic;
