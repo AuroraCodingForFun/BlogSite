@@ -54,9 +54,9 @@ aside.laterale {
 <h2> Ultimi post </h2>
 <ul class="post-list">
   {% for post in site.posts %}
-    <li style=" background-color: #001044">
+    <li>
       <div>
-        <a href="{{ post.url | relative_url }}"> <b style="text-shadow: 2px 2px 5px red;">{{ post.title }} </b></a>
+        <a href="{{ post.url | relative_url }}"> <b style="text-shadow: 2px 2px 5px black;">{{ post.title }} </b></a>
         <small>({{ post.date | date: "%d/%m/%Y" }})</small>
       </div>
     </li>
