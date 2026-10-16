@@ -24,15 +24,18 @@ favicon: /images/favicons/java-logo.png
 }
 
 aside.laterale {
-  position: absolute;
-  right: 16px;   
+  position: fixed;
+  top: 100px;
+  right: 16px;
   box-sizing: border-box;
-  width: 30%;
-  flex-shrink: 0;
+  width: 260px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
   padding: 16px 25px 30px 25px;
   background-color: white;
   border-radius: 25px;
   font-style: italic;
+  z-index: 10;
 }
 
   @media (max-width: 1100px) {
