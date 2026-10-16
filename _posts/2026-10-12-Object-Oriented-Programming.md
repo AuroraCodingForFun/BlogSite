@@ -61,7 +61,7 @@ aside.laterale {
     </div>
     <aside class="laterale">
       <h2>Side content</h2>
-      <p>Ora sono fuori dal rettangolo, di fianco!</p>
+      <p>Ciaooo</p>
       <h4 style="text-align: center;">...</h4>
       <div class="center">
         <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to continue</a>
