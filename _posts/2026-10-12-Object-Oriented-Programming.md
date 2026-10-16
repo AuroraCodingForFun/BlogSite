@@ -25,8 +25,8 @@ favicon: /images/favicons/java-logo.png
 
 aside.laterale {
   position: fixed;
-  top: 0; 
-  right: -280px;
+  top: 100px;
+  right: 16px;
   box-sizing: border-box;
   width: 260px;
   max-height: calc(100vh - 120px);
@@ -40,8 +40,9 @@ aside.laterale {
 
   @media (max-width: 1100px) {
   aside.laterale {
-    position: relative;
+    position: static;
     width: auto;
+    max-height: none;
     margin-top: 24px;
   }
 }
