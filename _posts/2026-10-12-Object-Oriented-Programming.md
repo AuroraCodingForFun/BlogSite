@@ -11,12 +11,6 @@ favicon: /images/favicons/java-logo.png
 <style>
 :root { --paper: #100b08; }
 
-.layout {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-}
-
 .indice {
   flex: 1;
   min-width: 0;
@@ -26,6 +20,8 @@ favicon: /images/favicons/java-logo.png
 }
 
 aside.laterale {
+  position: absolute;
+  right: 16px;   
   box-sizing: border-box;
   width: 30%;
   flex-shrink: 0;
@@ -35,9 +31,12 @@ aside.laterale {
   font-style: italic;
 }
 
-@media (max-width: 700px) {
-  .layout { flex-direction: column; }
-  aside.laterale { width: 100%; }
+  @media (max-width: 1100px) {
+  aside.laterale {
+    position: static;
+    width: auto;
+    margin-top: 24px;
+  }
 }
 </style>
 
