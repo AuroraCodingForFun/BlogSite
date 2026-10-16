@@ -11,6 +11,10 @@ favicon: /images/favicons/java-logo.png
 <style>
 :root { --paper: #100b08; }
 
+.layout {
+  display: block;
+}
+  
 .indice {
   flex: 1;
   min-width: 0;
