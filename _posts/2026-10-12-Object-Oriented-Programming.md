@@ -40,7 +40,7 @@ aside.laterale {
 
   @media (max-width: 1100px) {
   aside.laterale {
-    position: static;
+    position: relative;
     width: auto;
     margin-top: 24px;
   }
