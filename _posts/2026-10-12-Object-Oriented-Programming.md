@@ -24,7 +24,7 @@ favicon: /images/favicons/java-logo.png
 }
 
 aside.laterale {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 16px;
   box-sizing: border-box;
