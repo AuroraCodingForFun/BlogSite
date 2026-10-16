@@ -13,7 +13,6 @@ favicon: /images/favicons/java-logo.png
 
 .layout {
   display: block;
-  position: relative;
 }
   
 .indice {
