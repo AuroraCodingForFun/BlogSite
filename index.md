@@ -60,7 +60,7 @@ aside.laterale {
         <a href="{{ post.url | relative_url }}"><b style="color: #3a6b35">{{ post.title }}</b></a>
         <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
       </span>
-      <img src="{{ '/images/rocket.gif' | relative_url }}" width="50" height="50" alt="rocket">
+      <img src="{{ '/images/rocket.gif' | relative_url }}" width="75" height="75" alt="rocket" border-radius="50">
     </div>
   </li>
 {% endfor %}
