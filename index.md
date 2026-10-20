@@ -54,8 +54,8 @@ aside.laterale {
 <h2> Ultimi post </h2>
 <ul class="post-list">
   {% for post in site.posts %}
-  <li class="button" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}">
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block;">
+      <li class="button" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}">
       <div style="display: flex; align-items: center; justify-content: space-between;">
         <span>
           <b style="color: #3a6b35">{{ post.title }}</b>
