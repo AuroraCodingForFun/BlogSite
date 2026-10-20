@@ -12,45 +12,9 @@ color3: "#615F31"
 .layout {
   display: block;
 }
-  
-.indice {
-  flex: 1;
-  min-width: 0;
-  background-color: white;
-  padding: 16px 25px 30px 25px;
-  border-radius: 25px;
-}
-
-aside.laterale {
-  position: fixed;
-  top: 10px;
-  right: 16px;
-  box-sizing: border-box;
-  width: 260px;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  padding: 10px 10px 10px 10px;
-  background-color: white;
-  border-radius: 25px;
-  font-style: italic;
-  z-index: 10;
-}
-
-  @media (max-width: 1100px) {
-  aside.laterale {
-    position: static;
-    width: auto;
-    max-height: none;
-    margin-top: 24px;
-  }
-}
 </style>
 
 <div>
-    <aside class="laterale">
-      <h4>😺Check out my repository!</h4>
-        <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
-    </aside>
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 <ul class="post-list">
