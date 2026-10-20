@@ -19,7 +19,6 @@ favicon: /images/favicons/java-logo.png
   <div class="center">
     <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to check it out!</a>
   </div>
-
   <div class="layout">
     <div class="indice">
       <div id="contenuto">Caricamento...</div>
