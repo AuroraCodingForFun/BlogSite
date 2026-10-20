@@ -66,7 +66,7 @@ aside.laterale {
               <h2> "More content:"</h2>
              {% for post in site.posts %}
                  <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block;">
-                  <li class="button" style="background-color: {% if post.url == page.url %}var(--page){% else %}#edfcff{% endif %}">
+                  <li class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}">
                    <div style="display: flex; align-items: center; justify-content: space-between;">
                      <span>
                        <b style="color: #3a6b35">{{ post.title }}</b>
