@@ -89,7 +89,7 @@ aside.laterale {
             {% for post in site.posts %}
               <li style="margin-bottom: 8px; width: 100%; box-sizing: border-box;">
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
-                  <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box;">
+                  <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; min-height: 48px;">
                     <span>
                       <b style="color: var(--ink)">{{ post.title }}</b>
                     </span>
