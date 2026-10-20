@@ -83,7 +83,7 @@ aside.laterale {
 
       <div class="hero">
         <aside class="laterale" id="laterale">
-          <button class="laterale-toggle" onclick="toggleLaterale()">▾ More content</button>
+          <button class="laterale-toggle" onclick="toggleLaterale()"> <img src="{{ '/images/rocket.gif' | relative_url }}" width="15" height="15" alt="rocket" style="border-radius: 50%;"> <h2>More content<</h2>/button>
           <ul>
             {% for post in site.posts %}
               <li>
