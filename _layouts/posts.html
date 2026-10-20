@@ -87,7 +87,7 @@ aside.laterale {
           </button>
           <ul>
             {% for post in site.posts %}
-              <li>
+              <li style="margin-bottom: 8px;">
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block;">
                   <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-radius: 25px;">
                     <span>
@@ -96,7 +96,6 @@ aside.laterale {
                   </div>
                 </a>
               </li>
-            <br>
             {% endfor %}
           </ul>
         </aside>
