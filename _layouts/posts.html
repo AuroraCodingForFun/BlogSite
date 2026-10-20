@@ -41,7 +41,6 @@ aside.laterale {
   padding: 10px 10px 10px 10px;
   background-color: var(--sun);
   border-radius: 25px;
-  font-style: italic;
   z-index: 10;
 }
 .laterale ul {
@@ -93,11 +92,11 @@ aside.laterale {
                   <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-radius: 25px;">
                     <span>
                       <b style="color: var(--ink)">{{ post.title }}</b>
-                      <small style="color: var(--ink)">({{ post.date | date: "%d/%m/%Y" }})</small>
                     </span>
                   </div>
                 </a>
               </li>
+            <br>
             {% endfor %}
           </ul>
         </aside>
