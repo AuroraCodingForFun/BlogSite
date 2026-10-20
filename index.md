@@ -48,8 +48,8 @@ aside.laterale {
 
 <div>
     <aside class="laterale">
-      <h3>Check out my repository!</h3>
-        <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Github: Aurora Coding for Fun</a>
+      <h4>😺Check out my repository!</h4>
+        <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
     </aside>
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
