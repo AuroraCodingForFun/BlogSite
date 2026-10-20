@@ -50,7 +50,6 @@ aside.laterale {
   margin: 0;
   padding: 0;
 }
-/* Nasconde la lista di default */
 .laterale ul {
   display: none;
   list-style: none;
@@ -123,8 +122,11 @@ aside.laterale {
       &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
     </footer>
     <script>
-    function toggleLaterale() {
-      document.getElementById('laterale').classList.toggle('open');
+    function toggleLaterale(btn) {
+      var aside = document.getElementById('laterale');
+      var arrow = btn.querySelector('.arrow');
+      aside.classList.toggle('open');
+      arrow.textContent = aside.classList.contains('open') ? '▴' : '▾';
     }
     </script>
   </body>
