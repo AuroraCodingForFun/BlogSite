@@ -69,8 +69,8 @@ aside.laterale {
                   <li class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}">
                    <div style="display: flex; align-items: center; justify-content: space-between;">
                      <span>
-                       <b style="color: #3a6b35">{{ post.title }}</b>
-                       <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
+                       <b style="color: var(--ink)">{{ post.title }}</b>
+                       <small style="color: var(--ink)">({{ post.date | date: "%d/%m/%Y" }})</small>
                      </span>
                    </div>
                  </li>
