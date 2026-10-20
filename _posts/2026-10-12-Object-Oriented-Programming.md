@@ -17,8 +17,9 @@ favicon: /images/favicons/java-logo.png
     <h1>Objected Oriented Programming Exham</h1>
   </div>
   <div class="center">
-    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject">Click here to check it out!</a>
+    <a class="button" href=https://github.com/AuroraCodingForFun/OOP-Exercises">Click here to check it out!</a>
   </div>
+  <br>
   <div class="layout" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <div class="indice">
       <div id="contenuto">Caricamento...</div>
