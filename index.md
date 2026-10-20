@@ -23,7 +23,7 @@ color3: "#615F31"
     <li class="button" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: space-between;">
         <span>
-          <b style="color: #3a6b35">{{ post.title }}</b>
+          <h4 style="color: #3a6b35">{{ post.title }}</h4>
           <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
         </span>
         <img src="{{ '/images/rocket.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
