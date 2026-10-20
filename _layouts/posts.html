@@ -50,6 +50,13 @@ aside.laterale {
   margin: 0;
   padding: 0;
 }
+/* Nasconde la lista di default */
+.laterale ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .laterale.open ul {
   display: block;
 }
@@ -83,7 +90,9 @@ aside.laterale {
 
       <div class="hero">
         <aside class="laterale" id="laterale">
-          <button class="laterale-toggle" onclick="toggleLaterale()"> More content </button>
+          <button class="laterale-toggle" onclick="toggleLaterale(this)">
+            <span class="arrow">▾</span> More content
+          </button>
           <ul>
             {% for post in site.posts %}
               <li>
