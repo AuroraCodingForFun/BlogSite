@@ -4,7 +4,7 @@ title: "First Post"
 date: 2026-10-10
 color1: "#ffb3c0"
 color2: "#f94563"
-color3: "#f945bd"
+color3: "#ff82d5"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
 ---
