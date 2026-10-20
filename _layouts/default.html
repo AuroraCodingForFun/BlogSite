@@ -72,11 +72,15 @@ aside.laterale {
         <aside class="laterale" id="laterale">
           <button class="laterale-toggle" onclick="toggleLaterale(this)">
             <span class="arrow">☰</span> More content
-            <span>
+          </button>
+          <ul>
+            <li>
               <h4>😺Check out my repository!</h4>
               <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
-              </span>
+            </li>
+          </ul>
         </aside>
+
         <h1>{{ page.title }}</h1>
         {% if page.image %}
           <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
