@@ -48,7 +48,20 @@ aside.laterale {
 </style>
 
 <aside class="laterale">
-      <img src="{{ '/images/copertina.jpg' | relative_url }}" alt="Copertina del blog">
+      <h2> "More content:"</h2>
+     {% for post in site.posts %}
+       <li class="button" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}">
+         <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block;">
+           <div style="display: flex; align-items: center; justify-content: space-between;">
+             <span>
+               <b style="color: #3a6b35">{{ post.title }}</b>
+               <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
+             </span>
+             <img src="{{ '/images/rocket.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
+           </div>
+         </li>
+       </a>
+     {% endfor %}
 </aside>
 
 <h1>Ciao? Quindi è così che si fa un post!</h1>
