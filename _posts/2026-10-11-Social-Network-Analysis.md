@@ -74,6 +74,10 @@ favicon: /images/favicons/halloween.png
         <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
       </div>
     </div>
+    <!-- Space tra i due riquadri -->
+    <div style="height: 10px;"></div>
+    <!-- Ghostface-->
+    <img src="/images/kghostface.gif" alt="ghostface">
   </div>
   <!-- Pagina destra -->
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
