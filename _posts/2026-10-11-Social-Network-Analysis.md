@@ -77,7 +77,7 @@ favicon: /images/favicons/halloween.png
     <!-- Space tra i due riquadri -->
     <div style="height: 10px;"></div>
     <!-- Ghostface-->
-    <img src="{{ '/images/kghostface.gif' | relative_url }}" alt="ghostface" style="width: 100%; max-width: 500px; display: block; margin: 0 auto; border-radius: 25px;">
+    <img src="{{ '/images/kghostface.gif' | relative_url }}" alt="ghostface" style="width: 100%; max-width: 400px; display: block; margin: 0 auto; border-radius: 25px;">
   </div>
   <!-- Pagina destra -->
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
