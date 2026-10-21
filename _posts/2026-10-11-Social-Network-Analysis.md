@@ -91,7 +91,12 @@ favicon: /images/favicons/halloween.png
         if (!r.ok) throw new Error(r.status);
         return r.text();
       })
-      .then(md => { el.innerHTML = marked.parse(md); })
+      .then(md => {
+            const base = document.createElement('base');
+            base.href = "https://raw.githubusercontent.com/AuroraCodingForFun/SocialNetworkAnalysisProject/refs/heads/master/";
+            document.head.appendChild(base);
+            el.innerHTML = marked.parse(md);
+          })
       .catch(err => { el.textContent = "Errore: " + err; });
   })();
 </script>
