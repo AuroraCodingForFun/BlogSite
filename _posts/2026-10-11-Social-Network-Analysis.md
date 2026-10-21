@@ -80,6 +80,8 @@ favicon: /images/favicons/halloween.png
        <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
        </div>
    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
   (function () {
     const url = "https://raw.githubusercontent.com/AuroraCodingForFun/SocialNetworkAnalysisProject/refs/heads/master/README.md";
