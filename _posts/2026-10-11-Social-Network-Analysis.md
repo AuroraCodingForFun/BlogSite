@@ -61,29 +61,9 @@ favicon: /images/favicons/halloween.png
     </div>
     <!-- Pagina destra -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
-      <h2>Indice dei contenuti della repository</h2>
-      <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
-        <li>Rplot.png</li>
-          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>Grafo 1: Rete di co-occorrenza tra tropes</li>
-          </ul>
-        <li>Rplot01.png</li>
-          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>Grafo 2: Matrice di densità delle connessioni (Cluster)</li>
-          </ul>
-        <li>SNAProject.R</li>
-          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>Complete R code with link to the Dataset </li>
-          </ul>
-         <li>Social Network Analysis Project.pdf</li>
-          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>Presentazione pdf</li>
-          </ul>
-         <li>SocialNetworkAnalysisProject.Rproj</li>
-          <ul style="list-style-type: '> '; padding-left: 1.5rem;">
-            <li>Rproj</li>
-          </ul>
-      </ul>
+      <div class="indice">
+        <div id="contenuto">Caricamento...</div>
+      </div>
     </div>
 
   </div>
@@ -100,4 +80,17 @@ favicon: /images/favicons/halloween.png
        <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
        </div>
    </div>
+<script>
+  (function () {
+    const url = "https://raw.githubusercontent.com/AuroraCodingForFun/SocialNetworkAnalysisProject/refs/heads/master/README.md";
+    const el = document.getElementById("contenuto");
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error(r.status);
+        return r.text();
+      })
+      .then(md => { el.innerHTML = marked.parse(md); })
+      .catch(err => { el.textContent = "Errore: " + err; });
+  })();
+</script>
 
