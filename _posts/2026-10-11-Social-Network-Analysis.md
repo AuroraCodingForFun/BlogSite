@@ -24,7 +24,7 @@ favicon: /images/favicons/halloween.png
 
 <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center; align-items: start;">
     <!-- Pagina sinistra -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
