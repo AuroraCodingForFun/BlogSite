@@ -25,7 +25,9 @@ favicon: /images/favicons/halloween.png
 <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center; align-items: start;">
-    <!-- Pagina sinistra -->
+  <!-- Colonna sinistra -->
+  <div>
+    <!-- Pagina sinistra: Indice -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
       <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
@@ -59,26 +61,32 @@ favicon: /images/favicons/halloween.png
         </li>
       </ul>
     </div>
-    <!-- Pagina destra -->
+    <!-- Space tra i due riquadri -->
+    <div style="height: 20px;"></div>
+    <!-- Introduzione sotto l'Indice -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
-      <div class="indice">
-        <div id="contenuto">Caricamento...</div>
+      <h2>Introduzione</h2>
+        <p>
+        In questo elaborato rispondo alle domande: "Quali cluster tematici esistono all'interno del cinema horror? E, soprattutto, esistono elementi narrativi ad esempio  trope come "possessione demoniaca" o "casa infestata" che fungono da ponte tra sotto-generi apparentemente distinti, collegando mondi narrativi diversi tra loro? " applicando tecniche viste a lezione ad un dataset di trope narrativi estratti dai principali film horror, costruendo una rete di co-occorrenza tra elementi tematici e applicando algoritmi di community detection e misure di centralità (in particolare la betweenness centrality) per identificare sia i cluster tematici sia gli archetipi "ponte" tra sottogeneri.
+         </p>
+    <h4 style="text-align: center;">...</h4>
+      <div class="center">
+        <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
       </div>
     </div>
-
+  </div>
+  <!-- Pagina destra -->
+  <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div class="indice">
+      <div id="contenuto">Caricamento...</div>
+    </div>
   </div>
 </div>
 <br>
 
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <h2>Introduzione</h2>
-   <p>
-  In questo elaborato rispondo alle domande: "Quali cluster tematici esistono all'interno del cinema horror? E, soprattutto, esistono elementi narrativi ad esempio  trope come "possessione demoniaca" o "casa infestata" che fungono da ponte tra sotto-generi apparentemente distinti, collegando mondi narrativi diversi tra loro? " applicando tecniche viste a lezione ad un dataset di trope narrativi estratti dai principali film horror, costruendo una rete di co-occorrenza tra elementi tematici e applicando algoritmi di community detection e misure di centralità (in particolare la betweenness centrality) per identificare sia i cluster tematici sia gli archetipi "ponte" tra sottogeneri.
-   </p>
-    <h4 style="text-align: center;">...</h4>
-       <div class="center">
-       <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to continue </a>
-       </div>
+   
    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
