@@ -19,9 +19,7 @@ favicon: /images/favicons/java-logo.png
   <div class="center">
     <a class="button" href=https://github.com/AuroraCodingForFun/OOP-Exercises">Click here to check it out!</a>
   </div>
-
   <br>
-  
   <div class="layout" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <div class="indice">
       <div id="contenuto">Caricamento...</div>
