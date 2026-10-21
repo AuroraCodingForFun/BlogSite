@@ -62,7 +62,7 @@ favicon: /images/favicons/halloween.png
       </ul>
     </div>
     <!-- Space tra i due riquadri -->
-    <div style="height: 20px;"></div>
+    <div style="height: 10px;"></div>
     <!-- Introduzione sotto l'Indice -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Introduzione</h2>
@@ -83,11 +83,6 @@ favicon: /images/favicons/halloween.png
   </div>
 </div>
 <br>
-
-  <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
-    <h2>Introduzione</h2>
-   
-   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
