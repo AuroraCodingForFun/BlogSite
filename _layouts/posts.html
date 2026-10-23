@@ -9,9 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
+    {% if page.fontTitoli %}
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTitoli | url_encode }}&display=swap">
+    {% endif %}
+    {% if page.fontTesto and page.fontTesto != page.fontTitoli %}
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTesto | url_encode }}&display=swap">
+    {% endif %}
 
 <style>
 :root { --paper: {{ page.paper | default: '#630000' }}; }
+body {
+  font-family: var(--font-testo, 'Nunito', sans-serif);
+}
+
+h1, h2, h3, h4, h5, h6,
+.brand,
+.laterale-toggle {
+  font-family: var(--font-titoli, 'Fredoka', sans-serif);
+}
+
 .card {
         background-color: white;
         color: #2b0a0a;
@@ -73,7 +89,14 @@ aside.laterale {
 }
 </style>
   </head>
-   <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">    <header class="site-header">
+   <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}
+                 {% if page.color2 %}--ink: {{ page.color2 }};{% endif %}
+                 {% if page.color3 %}--sun: {{ page.color3 }};{% endif %}
+                 {% if page.button %}--button: {{ page.button }};{% endif %} 
+                 {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
+                 {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}"
+     >    
+    <header class="site-header">
   <nav>
         <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
         <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
