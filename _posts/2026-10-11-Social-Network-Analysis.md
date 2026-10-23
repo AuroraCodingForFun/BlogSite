@@ -6,6 +6,8 @@ color1: "#b7130b"
 color2: "#ff6232"
 color3: "#560000"
 bottone: "#b7130b"
+fontTitoli: "'Fredoka', sans-serif"
+fontTesto: "'Nunito', sans-serif"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
 ---
