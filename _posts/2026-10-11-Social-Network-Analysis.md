@@ -2,10 +2,10 @@
 layout: posts
 title: "My Social Network Analysis Project"
 date: 2026-10-11
-color1: "#b7130b"
-color2: "#ff6232"
-color3: "#560000"
-button: "#b7130b"
+sfondo: "#630000"
+testo: "#ff6232"
+pannello: "#560000"
+bottone: "#b7130b"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
 ---
