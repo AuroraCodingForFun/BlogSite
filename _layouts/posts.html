@@ -39,7 +39,7 @@ aside.laterale {
   max-height: calc(100vh - 120px);
   overflow-y: auto;
   padding: 10px 10px 10px 10px;
-  background-color: var(--lineColor);
+  background-color: var(--sun);
   border-radius: 25px;
   z-index: 10;
 }
@@ -74,13 +74,7 @@ aside.laterale {
 }
 </style>
   </head>
-<body style="
-  {% if page.backgroundCol %}--backgroundCol: {{ page.backgroundCol }};{% endif %}
-  {% if page.mainCol %}--mainColor: {{ page.mainCol }};{% endif %}
-  {% if page.titleCol %}--titleColor: {{ page.titleCol }};{% endif %}
-  {% if page.lineCol %}--lineColor: {{ page.lineCol }};{% endif %}
-  {% if page.button %}--button: {{ page.button }};{% endif %}
-">
+ <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">    <header class="site-header">
   <nav>
         <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
         <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
@@ -95,9 +89,9 @@ aside.laterale {
             {% for post in site.posts %}
               <li style="margin-bottom: 8px; width: 100%; box-sizing: border-box;">
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
-<div class="button" style="background-color: {% if post.url == page.url %}var(--mainColor){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
+<div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
   <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">
-    <b style="color: var(--titleColor)">{{ post.title }}</b>
+    <b style="color: var(--ink)">{{ post.title }}</b>
   </span>
 </div>
                 </a>
