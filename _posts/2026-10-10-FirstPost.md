@@ -6,7 +6,7 @@ color1: "#ffb3c0"
 color2: "#f94563"
 color3: "#ae0068"
 fontTitoli: "Ballet"   
-fontTitoliFile: "/images/Barbie-font.ttf"
+fontTitoliFile: "/images/Bartex.ttf"
 fontTesto: "Pinyon Script"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
