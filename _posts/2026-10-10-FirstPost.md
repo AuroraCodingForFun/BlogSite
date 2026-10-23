@@ -7,7 +7,7 @@ color2: "#f94563"
 color3: "#ae0068"
 fontTitoli: "Ballet"   
 fontTitoliFile: "/images/Bartex.ttf"
-fontTesto: "Pinyon Script"
+fontTesto: "Italianno"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
 ---
