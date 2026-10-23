@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "My Social Network Analysis Project"
+title: "Social Network Analysis Project"
 date: 2026-10-11
 color1: "#b7130b"
 color2: "#ff6232"
@@ -16,7 +16,7 @@ favicon: /images/favicons/halloween.png
 </style>
 
 <div style="font-size:16px;">
-   <h3 style="color: black">👻Co-occorrenza dei trope nei film Horror👻</h3>
+   <h2>👻Co-occorrenza dei trope nei film Horror👻</h2>
    </div>
 
    <div class="center" style="margin-bottom:20px">
