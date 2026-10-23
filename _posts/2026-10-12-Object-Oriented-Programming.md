@@ -5,6 +5,8 @@ date: 2026-10-11
 color1: "#100b08"
 color2: "#dd985f"
 color3: "#855d3a"
+fontTitoli: "VT323"
+fontTesto: "Genos"
 image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
 ---
