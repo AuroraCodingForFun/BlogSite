@@ -5,6 +5,8 @@ date: 2026-10-10
 color1: "#ffb3c0"
 color2: "#f94563"
 color3: "#ff82d5"
+fontTitoli: "Updock"
+fontTesto: "Moirai One"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
 ---
