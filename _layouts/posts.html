@@ -11,13 +11,7 @@
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
 
 <style>
-:root {
-  --backgroundCol: #630000;
-  --mainColor: #eaf6ff;
-  --titleColor: #1a1a1a;
-  --lineColor: #ccc;
-  --button: #edfcff;
-}
+:root { --paper: {{ page.paper | default: '#630000' }}; }
 
 .card {
         background-color: white;
