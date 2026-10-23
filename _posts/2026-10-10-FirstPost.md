@@ -5,12 +5,18 @@ date: 2026-10-10
 color1: "#ffb3c0"
 color2: "#f94563"
 color3: "#ae0068"
-fontTitoli: "Ballet"
+fontTitoli: "Ballet"   
+fontTitoliFile: "/images/Ballet.ttf"
 fontTesto: "Pinyon Script"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
 ---
-<style>    
+<style>   
+  :root {
+  --paper: {{ page.paper | default: '#630000' }};
+  --font-titoli: 'Ballet', cursive;      /* o quello che usi di default */
+  --font-testo: 'Nunito', sans-serif;
+}
 .layout {
   display: block;
 }
