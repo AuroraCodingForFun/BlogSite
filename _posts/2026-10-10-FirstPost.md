@@ -26,7 +26,7 @@ paper: "#ffcbb2"
    <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
 <p style="font-size: 2rem;">Oggi ho finalmente deciso di iniziare a fare questo piccolo blog, forse sono 10 anni in ritardo rispetto a quando i blog andavano di moda ma non importa. Sicuramente mi stancherò di questa cosa o mi dimenticherò a breve.</p>
 <br>
-<p style="font-size: 2.5rem;"> Mi piace molto comunque provare a vedere e registrare da qualche parte i miei progressi nel mondo dell'informatica quindi userò di sicuro questa piattaforma.</p>
+<p style="font-size: 1.5rem;"> Mi piace molto comunque provare a vedere e registrare da qualche parte i miei progressi nel mondo dell'informatica quindi userò di sicuro questa piattaforma.</p>
 <br>
 <h6>Non aspettarti molto da questo progetto</h6>
    </div>
