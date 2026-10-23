@@ -11,7 +11,13 @@
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
 
 <style>
-:root { --backgroundCol: {{ page.backgroundCol | default: '#630000' }}; }
+:root {
+  --backgroundCol: #630000;
+  --mainColor: #eaf6ff;
+  --titleColor: #1a1a1a;
+  --lineColor: #ccc;
+  --button: #edfcff;
+}
 
 .card {
         background-color: white;
@@ -74,8 +80,14 @@ aside.laterale {
 }
 </style>
   </head>
- <body style="{% if page.mainCol %}--mainColor: {{ page.mainCol }};{% endif %}{% if page.titleCol %}--titleColor: {{ page.titleCol }};{% endif %}{% if page.lineCol %}--lineColor: {{ page.lineCol }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">    <header class="site-header">
-      <nav>
+<body style="
+  {% if page.backgroundCol %}--backgroundCol: {{ page.backgroundCol }};{% endif %}
+  {% if page.mainCol %}--mainColor: {{ page.mainCol }};{% endif %}
+  {% if page.titleCol %}--titleColor: {{ page.titleCol }};{% endif %}
+  {% if page.lineCol %}--lineColor: {{ page.lineCol }};{% endif %}
+  {% if page.button %}--button: {{ page.button }};{% endif %}
+">
+  <nav>
         <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
         <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
       </nav>
