@@ -16,7 +16,7 @@ favicon: /images/favicons/halloween.png
 </style>
 
 <div style="font-size:16px;">
-   <h2>👻Co-occorrenza dei trope nei film Horror👻</h2>
+   <h3>👻Co-occorrenza dei trope nei film Horror👻</h3>
    </div>
 
    <div class="center" style="margin-bottom:20px">
