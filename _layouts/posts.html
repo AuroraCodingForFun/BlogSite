@@ -157,13 +157,11 @@
     <!-- ============================================================
          HEADER del sito
          ============================================================ -->
-    <header class="site-header">
-      <nav>
-        <!-- profilo GitHub. -->
-        <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
-        <!-- Link alla Home del sito. -->
-        <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
-      </nav>
+   <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+  <nav>
+    <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
+    <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
+  </nav>
 
       <div class="hero">
         <!-- PANNEL LATERALE "More content" -->
