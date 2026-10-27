@@ -9,64 +9,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
+
+    <style>
+      :root { --paper: {{ page.paper | default: '#630000' }}; }
+      .layout {
+        display: block;
+      }
+      .indice {
+        flex: 1;
+        min-width: 0;
+        background-color: white;
+        padding: 16px 25px 30px 25px;
+        border-radius: 25px;
+      }
+      aside.laterale {
+        position: fixed;
+        top: 10px;
+        right: 16px;
+        box-sizing: border-box;
+        width: 260px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        padding: 10px;
+        background-color: var(--sun);
+        border-radius: 25px;
+        z-index: 10;
+      }
+      .laterale ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .laterale.open ul {
+        display: block;
+      }
+      .laterale-toggle {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: inherit;
+        padding: 8px 0;
+        width: 100%;
+        text-align: left;
+      }
+      @media (max-width: 1100px) {
+        aside.laterale {
+          position: static;
+          width: auto;
+          max-height: none;
+          margin-top: 24px;
+        }
+      }
+    </style>
   </head>
 
-  <style>
-  :root { --paper: {{ page.paper | default: '#630000' }}; }
-  .layout {
-  display: block;
-} 
-.indice {
-  flex: 1;
-  min-width: 0;
-  background-color: white;
-  padding: 16px 25px 30px 25px;
-  border-radius: 25px;
-}
-aside.laterale {
-  position: fixed;
-  top: 10px;
-  right: 16px;
-  box-sizing: border-box;
-  width: 260px;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  padding: 10px 10px 10px 10px;
-  background-color: var(--sun);
-  border-radius: 25px;
-  z-index: 10;
-}
-.laterale ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.laterale.open ul {
-  display: block;
-}
-.laterale-toggle {
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: inherit;
-  padding: 8px 0;
-  width: 100%;
-  text-align: left;
-}
-  @media (max-width: 1100px) {
-  aside.laterale {
-    position: static;
-    width: auto;
-    max-height: none;
-    margin-top: 24px;
-  }
-  </style>
-  
-<body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">    <header class="site-header">
+  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}{% if page.color2 %}--ink: {{ page.color2 }};{% endif %}{% if page.color3 %}--sun: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
+    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
       <div class="hero">
         <aside class="laterale" id="laterale">
           <button class="laterale-toggle" onclick="toggleLaterale(this)">
@@ -80,9 +82,6 @@ aside.laterale {
           </ul>
         </aside>
         <h1>{{ page.title }}</h1>
-        {% if page.image %}
-          <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
-        {% endif %}
       </div>
     </header>
 
@@ -93,13 +92,33 @@ aside.laterale {
     <footer>
       &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
     </footer>
-   <script>
-    function toggleLaterale(btn) {
-      var aside = document.getElementById('laterale');
-      var arrow = btn.querySelector('.arrow');
-      aside.classList.toggle('open');
-      arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
-    }
+
+    <script>
+      function toggleLaterale(btn) {
+        var aside = document.getElementById('laterale');
+        var arrow = btn.querySelector('.arrow');
+        aside.classList.toggle('open');
+        arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
+      }
+
+      /* Header che si riduce scorrendo, poi esce dallo schermo */
+      (function () {
+        var header = document.querySelector('.site-header');
+        var main = document.querySelector('main');
+        var MIN = 240;
+
+        function update() {
+          var full = window.innerHeight;
+          var shrinkEnd = full - MIN;
+          main.style.marginTop = full + 'px';
+          header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+          header.style.top = -Math.max(0, window.scrollY - shrinkEnd) + 'px';
+        }
+
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+      })();
     </script>
   </body>
 </html>
