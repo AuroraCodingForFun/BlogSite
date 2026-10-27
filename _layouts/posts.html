@@ -215,6 +215,22 @@
         aside.classList.toggle('open');
         arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
       }
-    </script>
+
+  (function () {
+    var header = document.querySelector('.site-header');
+    var main = document.querySelector('main');
+    var MIN = 240; // altezza minima del banner, in px
+
+    function update() {
+      var full = window.innerHeight;
+      main.style.marginTop = full + 'px';
+      header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+    }
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  })();
+</script>
   </body>
 </html>
