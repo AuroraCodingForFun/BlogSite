@@ -145,10 +145,10 @@
 
   <!-- ============================================================
       COLORI
-       color1/color2/color3/button.
+       mainColor/color2/color3/button.
        --sky/ --ink/--sun /--button
        ============================================================ -->
-  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}
+  <body style="{% if page.mainColor %}--sky: {{ page.mainColor }};{% endif %}
                {% if page.color2 %}--ink: {{ page.color2 }};{% endif %}
                {% if page.color3 %}--sun: {{ page.color3 }};{% endif %}
                {% if page.button %}--button: {{ page.button }};{% endif %}
