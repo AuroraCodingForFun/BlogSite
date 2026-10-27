@@ -146,6 +146,8 @@ a:hover { color: var(--ink); }
 
 /* ---------- Footer ---------- */
 footer {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding: 2rem 1rem;
   background: var(--ink);
