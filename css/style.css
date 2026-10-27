@@ -55,7 +55,7 @@ nav {
   z-index: 20;
   display: flex;
   justify-content: center; 
-  gap: 4.5rem;
+  gap: 5rem;
   left: 50%;
   transform: translateX(-50%);
   max-width: 44rem;
