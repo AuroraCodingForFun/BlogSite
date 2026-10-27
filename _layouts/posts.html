@@ -63,7 +63,7 @@
 
       /* Il titolo grande dell'intestazione prende il colore--accent-color*/
       .hero h1 {
-        background-color: color-mix(in srgb, var(--ink) 60%, transparent);
+        background-color: color-mix(in srgb, var(--text-color) 60%, transparent);
         color: var(--accent-color);
         border-radius: 25px;
       }
@@ -146,10 +146,10 @@
   <!-- ============================================================
       COLORI
        mainColor/textColor/accentColor/button.
-       --main-color/ --ink/--accent-color /--button
+       --main-color/ --text-color/--accent-color /--button
        ============================================================ -->
   <body style="{% if page.mainColor %}--main-color: {{ page.mainColor }};{% endif %}
-               {% if page.textColor %}--ink: {{ page.textColor }};{% endif %}
+               {% if page.textColor %}--text-color: {{ page.textColor }};{% endif %}
                {% if page.accentColor %}--accent-color: {{ page.accentColor }};{% endif %}
                {% if page.button %}--button: {{ page.button }};{% endif %}
                {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
@@ -179,7 +179,7 @@
                   <!-- Bottone del post: se è il post CORRENTE lo colora con --main-color, altrimenti bianco. -->
                   <div class="button" style="background-color: {% if post.url == page.url %}var(--main-color){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
                     <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">
-                      <b style="color: var(--ink)">{{ post.title }}</b>
+                      <b style="color: var(--text-color)">{{ post.title }}</b>
                     </span>
                   </div>
                 </a>
