@@ -1,9 +1,9 @@
 :root {
-  --sky: #b0e0e6;
-  --sky-deep: #5fb4c4;
-  --ink: #1f2a44;
+  --main-color: #b0e0e6;
+  --main-color-deep: #5fb4c4;
+  --text-color: #1f2a44;
   --paper: #f5fafc;
-  --sun: #f6c445;
+  --accent-color: #f6c445;
   --button: #f6c445;
 }
 
@@ -12,7 +12,7 @@
 body {
   margin: 0;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--text-color);
   font-family: "Nunito", system-ui, sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -37,14 +37,14 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--ink);
+  background-color: var(--text-color);
   background-image:
     linear-gradient(to right, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.1)),
     var(--header-img, url("../images/copertina.jpg"));
   background-size: 100% 100%, 100% auto;
   background-position: center, center;
   background-repeat: no-repeat;
-  border-bottom: 6px solid var(--sun);
+  border-bottom: 6px solid var(--accent-color);
 }
 
 nav {
@@ -63,7 +63,7 @@ nav {
 }
 
 nav a {
-  color: var(--ink);
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
   text-shadow: 0 1px 4px rgb(0 0 0 / 0.6);
@@ -113,8 +113,8 @@ main img {
   border-radius: 0.75rem;
 }
 
-a { color: var(--sky-deep); }
-a:hover { color: var(--ink); }
+a { color: var(--main-color-deep); }
+a:hover { color: var(--text-color); }
 
 /* Lista dei post in home */
 .post-list {
@@ -126,7 +126,7 @@ a:hover { color: var(--ink); }
   padding: 0.9rem 1rem;
   margin-bottom: 0.75rem;
   background: #fff;
-  border-left: 5px solid var(--sky);
+  border-left: 5px solid var(--main-color);
   border-radius: 0.5rem;
 }
 
@@ -134,7 +134,7 @@ a:hover { color: var(--ink); }
   font-family: "Fredoka", system-ui, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--ink);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -151,13 +151,13 @@ footer {
   z-index: 2;
   text-align: center;
   padding: 2rem 1rem;
-  background: var(--ink);
-  color: var(--sky);
+  background: var(--text-color);
+  color: var(--main-color);
   font-size: 0.95rem;
 }
 
 :focus-visible {
-  outline: 3px solid var(--sun);
+  outline: 3px solid var(--accent-color);
   outline-offset: 3px;
 }
 
@@ -165,15 +165,15 @@ footer {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   background: var(--button);
-  color: var(--ink);
+  color: var(--text-color);
   font-weight: 600;
   text-decoration: none;
   border-radius: 2rem;
 }
 
 .button:hover {
-  background: var(--ink);
-  color: var(--sun);
+  background: var(--text-color);
+  color: var(--accent-color);
 }
 
 .center {
