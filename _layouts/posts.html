@@ -61,10 +61,10 @@
         font-family: var(--font-titoli, 'Fredoka', sans-serif);
       }
 
-      /* Il titolo grande dell'intestazione prende il colore--sun*/
+      /* Il titolo grande dell'intestazione prende il colore--accent-color*/
       .hero h1 {
         background-color: color-mix(in srgb, var(--ink) 60%, transparent);
-        color: var(--sun);
+        color: var(--accent-color);
         border-radius: 25px;
       }
 
@@ -101,7 +101,7 @@
         max-height: calc(100vh - 6rem);
         overflow-y: auto;
         padding: 10px;
-        background-color: var(--sun);
+        background-color: var(--accent-color);
         border-radius: 25px;
         z-index: 10;
       }
@@ -146,11 +146,11 @@
   <!-- ============================================================
       COLORI
        mainColor/textColor/accentColor/button.
-       --sky/ --ink/--sun /--button
+       --main-color/ --ink/--accent-color /--button
        ============================================================ -->
-  <body style="{% if page.mainColor %}--sky: {{ page.mainColor }};{% endif %}
+  <body style="{% if page.mainColor %}--main-color: {{ page.mainColor }};{% endif %}
                {% if page.textColor %}--ink: {{ page.textColor }};{% endif %}
-               {% if page.accentColor %}--sun: {{ page.accentColor }};{% endif %}
+               {% if page.accentColor %}--accent-color: {{ page.accentColor }};{% endif %}
                {% if page.button %}--button: {{ page.button }};{% endif %}
                {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
                {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}
@@ -176,8 +176,8 @@
             {% for post in site.posts %}
               <li style="margin-bottom: 8px; width: 100%; box-sizing: border-box;">
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
-                  <!-- Bottone del post: se è il post CORRENTE lo colora con --sky, altrimenti bianco. -->
-                  <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
+                  <!-- Bottone del post: se è il post CORRENTE lo colora con --main-color, altrimenti bianco. -->
+                  <div class="button" style="background-color: {% if post.url == page.url %}var(--main-color){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
                     <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">
                       <b style="color: var(--ink)">{{ post.title }}</b>
                     </span>
