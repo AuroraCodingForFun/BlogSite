@@ -51,10 +51,11 @@ nav {
   position: fixed;
   z-index: 20;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; 
+  gap: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 44rem;
-  margin: 0 auto;
   padding: 1rem 1.25rem;
 }
 
