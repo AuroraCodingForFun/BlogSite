@@ -51,7 +51,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: 250 px;
   display: flex;
   justify-content: space-between;
   align-items: center;
