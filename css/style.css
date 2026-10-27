@@ -23,9 +23,9 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* ---------- Header ---------- */
+/* ---------- Header ---------- var(--sky)*/
 .site-header {
-  background: var(--sky);
+  background: linear-gradient( to right, rgb (0 0 0 / .8), rgb (0 0 0 / 0)) , url ("images/ copertina.jpg");
   border-bottom: 6px solid var(--sun);
 }
 
