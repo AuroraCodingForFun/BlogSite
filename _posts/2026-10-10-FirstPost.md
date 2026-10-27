@@ -2,9 +2,9 @@
 layout: posts
 title: "First Post"
 date: 2026-10-10
-color1: "#ffb3c0"
-color2: "#f94563"
-color3: "#ae0068"
+mainColor: "#ffb3c0"
+textColor: "#f94563"
+accentColor: "#ae0068"
 fontTitoli: "Ballet"   
 fontTitoliFile: "/images/Bartex.ttf"
 fontTesto: "Italianno"
