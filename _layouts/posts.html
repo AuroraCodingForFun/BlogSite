@@ -151,7 +151,8 @@
                {% if page.color3 %}--sun: {{ page.color3 }};{% endif %}
                {% if page.button %}--button: {{ page.button }};{% endif %}
                {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
-               {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}">
+               {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}
+               {% if page.headerImage %}--header-img: url('{{ page.headerImage | relative_url }}');{% endif %}">
 
     <!-- ============================================================
          HEADER del sito
