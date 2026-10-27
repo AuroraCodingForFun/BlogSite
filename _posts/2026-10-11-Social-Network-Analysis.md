@@ -3,8 +3,8 @@ layout: posts
 title: "Social Network Analysis Project"
 date: 2026-10-11
 mainColor: "#b7130b"
-color2: "#ff6232"
-color3: "#560000"
+textColor: "#ff6232"
+accentColor: "#560000"
 bottone: "#b7130b"
 fontTitoli: "Nosifer"
 fontTesto: "Creepster"
