@@ -215,7 +215,7 @@
         aside.classList.toggle('open');
         arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
       }
-
+      
   (function () {
     var header = document.querySelector('.site-header');
     var main = document.querySelector('main');
@@ -223,8 +223,13 @@
 
     function update() {
       var full = window.innerHeight;
+      var shrinkEnd = full - MIN; // scroll a cui il banner arriva al minimo
+
       main.style.marginTop = full + 'px';
       header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+
+      // Dopo aver raggiunto il minimo, il banner sale insieme al contenuto
+      header.style.top = -Math.max(0, window.scrollY - shrinkEnd) + 'px';
     }
 
     update();
