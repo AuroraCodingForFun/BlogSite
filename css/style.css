@@ -25,13 +25,19 @@ h1, h2, h3 {
 
 /* ---------- Header ---------- */
 .site-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background:
-    linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0)),
+    linear-gradient(to right, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.1)),
     var(--header-img, url("../images/copertina.jpg"));
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   border-bottom: 6px solid var(--sun);
 }
+
 
 
 nav {
