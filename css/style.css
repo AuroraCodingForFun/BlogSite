@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 nav {
-  position: relative;
+  position: fixed;
   z-index: 20;
   display: flex;
   justify-content: space-between;
@@ -63,11 +63,6 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   text-shadow: 0 1px 4px rgb(0 0 0 / 0.6);
-}
-
-
-nav a:last-child {
-  margin-right: 280px;   /* larghezza pannello (260px) + margine */
 }
 
 .brand {
