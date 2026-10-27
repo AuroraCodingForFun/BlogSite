@@ -4,7 +4,7 @@ title: "Studying Java (Object Oriented Exham)"
 date: 2026-10-11
 color1: "#100b08"
 color2: "#dd985f"
-color3: "#855d3a"
+color3: "#fc7907"
 fontTitoli: "VT323"
 fontTesto: "Genos"
 image: /images/Java.jpg
