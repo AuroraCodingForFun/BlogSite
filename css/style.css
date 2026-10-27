@@ -49,13 +49,11 @@ h1, h2, h3 {
 
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 20;
   display: flex;
   justify-content: center; 
-  gap: 1.5rem;
+  gap: 4.5rem;
   left: 50%;
   transform: translateX(-50%);
   max-width: 44rem;
