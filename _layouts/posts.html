@@ -3,154 +3,256 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ============================================================
+         FONTS SETTABILI (parte 1: caricamento da Google Fonts)
+         Ogni post può scegliere i propri font scrivendo nel front
+         matter: fontTitoli: "Nome Font"  e/o  fontTesto: "Nome Font".
+         Se il post NON li imposta, si usano i default (Nunito/Fredoka).
+         ============================================================ -->
+
     <title>{{ page.title }}</title>
+
+    <!-- Preconnect: dice al browser di collegarsi SUBITO a Google Fonts,
+         così il caricamento dei font è più veloce. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Carica SEMPRE i due font di default (Nunito per il testo,
+         Fredoka per i titoli), così anche se un post non ne sceglie
+         altri, la pagina ha comunque un font carino. -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Collega il foglio di stile principale (tutto il CSS del sito).
+         relative_url aggiunge la cartella giusta se il sito sta in
+         un sottodominio (es. username.github.io/progetto/). -->
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+
+    <!-- Icona del tab del browser. Se il post non ne specifica una,
+         usa quella di default in /images/favicons/. -->
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
+
+    <!-- Se il post ha scelto un font per i TITOLI (fontTitoli) E NON ha
+         un file font locale (fontTitoliFile == nil), lo carica da
+         Google Fonts. url_encode trasforma gli spazi in %20. -->
     {% if page.fontTitoli and page.fontTitoliFile == nil %}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTitoli | url_encode }}&display=swap">
     {% endif %}
+
+    <!-- Se il post ha scelto un font per il TESTO diverso da quello dei
+         titoli, lo carica pure. Il check != evita di caricarlo 2 volte. -->
     {% if page.fontTesto and page.fontTesto != page.fontTitoli %}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTesto | url_encode }}&display=swap">
     {% endif %}
 
-<style>
-:root { --paper: {{ page.paper | default: '#630000' }}; }
-{% if page.fontTitoliFile %}
-@font-face {
-  font-family: '{{ page.fontTitoli }}';
-  src: url('{{ page.fontTitoliFile | relative_url }}') format('truetype');
-}
-{% endif %}
+    <!-- ============================================================
+         STILI (CSS) della pagina
+         Da qui in poi tutto è CSS "locale" a questo layout.
+         ============================================================ -->
+    <style>
+      /* Variabile globale colore "carta" (sfondo). Il valore arriva dal
+         front matter del post (page.paper); se manca, default rosso. */
+      :root { --paper: {{ page.paper | default: '#630000' }}; }
 
-body {
-  font-family: var(--font-testo, 'Nunito', sans-serif);
-}
+      /* Se il post ha un file font locale (fontTitoliFile), lo registra
+         qui con @font-face così il browser sa come usarlo. Serve per
+         font scaricati a mano, non presi da Google Fonts. */
+      {% if page.fontTitoliFile %}
+      @font-face {
+        font-family: '{{ page.fontTitoli }}';
+        src: url('{{ page.fontTitoliFile | relative_url }}') format('truetype');
+      }
+      {% endif %}
 
-h1, h2, h3, h4, h5, h6,
-.brand,
-.laterale-toggle {
-  font-family: var(--font-titoli, 'Fredoka', sans-serif);
-}
-.hero h1 {
-  color: var(--sun);
-}
+      /* Il TESTO normale usa il font scelto dal post (--font-testo),
+         altrimenti Nunito. var(--x, default) = "usa x, se manca default". */
+      body {
+        font-family: var(--font-testo, 'Nunito', sans-serif);
+      }
 
-.card {
+      /* Titoli, brand e pulsante laterale usano il font TITOLI
+         (--font-titoli), altrimenti Fredoka. */
+      h1, h2, h3, h4, h5, h6,
+      .brand,
+      .laterale-toggle {
+        font-family: var(--font-titoli, 'Fredoka', sans-serif);
+      }
+
+      /* Il titolo grande dell'intestazione prende il colore "sole"
+         (--sun), che è uno dei colori settabili dal post. */
+      .hero h1 {
+        color: var(--sun);
+      }
+
+      /* Carta bianca con angoli arrotondati (il tuo stile!).
+         Usata per i contenuti principali dei post. */
+      .card {
         background-color: white;
         color: #2b0a0a;
         padding: 16px 25px 30px 50px;
         border-radius: 25px;
         margin-bottom: 1.5rem;
       }
-.layout {
-  display: block;
-} 
-.indice {
-  flex: 1;
-  min-width: 0;
-  background-color: white;
-  padding: 16px 25px 30px 25px;
-  border-radius: 25px;
-}
-aside.laterale {
-  position: fixed;
-  top: 10px;
-  right: 16px;
-  box-sizing: border-box;
-  width: 260px;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  padding: 10px 10px 10px 10px;
-  background-color: var(--sun);
-  border-radius: 25px;
-  z-index: 10;
-}
-.laterale ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.laterale.open ul {
-  display: block;
-}
-.laterale-toggle {
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: inherit;
-  padding: 8px 0;
-  width: 100%;
-  text-align: left;
-}
-  @media (max-width: 1100px) {
-  aside.laterale {
-    position: static;
-    width: auto;
-    max-height: none;
-    margin-top: 24px;
-  }
-}
-</style>
+
+      /* Layout semplice: i contenuti scorrono in verticale. */
+      .layout {
+        display: block;
+      }
+
+      /* Box dell'indice: occupa lo spazio disponibile (flex:1),
+         bianco e arrotondato. */
+      .indice {
+        flex: 1;
+        min-width: 0;
+        background-color: white;
+        padding: 16px 25px 30px 25px;
+        border-radius: 25px;
+      }
+
+      /* Pannello laterale "More content":
+         - position: fixed = resta fermo in alto a destra anche quando
+           scorri la pagina;
+         - width 260px, max-height = non supera mai l'altezza dello
+           schermo e scrolla dentro di sé se i link sono troppi. */
+      aside.laterale {
+        position: fixed;
+        top: 10px;
+        right: 16px;
+        box-sizing: border-box;
+        width: 260px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        padding: 10px 10px 10px 10px;
+        background-color: var(--sun);
+        border-radius: 25px;
+        z-index: 10;
+      }
+
+      /* Di default la lista dei link è NASCOSTA (display:none).
+         Si mostra solo quando il pannello ha la classe .open. */
+      .laterale ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .laterale.open ul {
+        display: block;
+      }
+
+      /* Il pulsante che apre/chiude il pannello (☰ / 🗗). */
+      .laterale-toggle {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: inherit;
+        padding: 8px 0;
+        width: 100%;
+        text-align: left;
+      }
+
+      /* Su schermi stretti (max 1100px) il pannello smette di essere
+         fisso e diventa un normale blocco sopra il contenuto. */
+      @media (max-width: 1100px) {
+        aside.laterale {
+          position: static;
+          width: auto;
+          max-height: none;
+          margin-top: 24px;
+        }
+      }
+    </style>
   </head>
-   <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}
-                 {% if page.color2 %}--ink: {{ page.color2 }};{% endif %}
-                 {% if page.color3 %}--sun: {{ page.color3 }};{% endif %}
-                 {% if page.button %}--button: {{ page.button }};{% endif %} 
-                 {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
-                 {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}"
-     >    
+
+  <!-- ============================================================
+       IL "CUORE" DEL SISTEMA COLORI
+       Sul <body> imposto le variabili CSS direttamente dal front
+       matter del post. Così ogni post può cambiare i colori del sito
+       senza toccare il CSS: basta scrivere color1/color2/color3/button.
+       Le variabili poi vengono usate ovunque (--sky, --ink, --sun...).
+       ============================================================ -->
+  <body style="{% if page.color1 %}--sky: {{ page.color1 }};{% endif %}
+               {% if page.color2 %}--ink: {{ page.color2 }};{% endif %}
+               {% if page.color3 %}--sun: {{ page.color3 }};{% endif %}
+               {% if page.button %}--button: {{ page.button }};{% endif %}
+               {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}', sans-serif;{% endif %}
+               {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}">
+
+    <!-- ============================================================
+         INTESTAZIONE (header) del sito
+         ============================================================ -->
     <header class="site-header">
-  <nav>
+      <nav>
+        <!-- Logo/brand che punta al tuo profilo GitHub. -->
         <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
+        <!-- Link alla Home del sito. -->
         <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
       </nav>
 
       <div class="hero">
+        <!-- PANNEL LATERALE "More content": elenco di tutti i post.
+             Il pulsante ☰ lo apre/chiude (vedi script in fondo). -->
         <aside class="laterale" id="laterale">
           <button class="laterale-toggle" onclick="toggleLaterale(this)">
             <span class="arrow">☰</span> More content
           </button>
           <ul>
+            <!-- Ciclo Liquid: ripete questo blocco per OGNI post del sito. -->
             {% for post in site.posts %}
               <li style="margin-bottom: 8px; width: 100%; box-sizing: border-box;">
+                <!-- Ogni link porta al singolo post. -->
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
-<div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
-  <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">
-    <b style="color: var(--ink)">{{ post.title }}</b>
-  </span>
+                  <!-- Bottone del post: se è il post CORRENTE (post.url ==
+                       page.url) lo colora con --sky, altrimenti celestino. -->
+                  <div class="button" style="background-color: {% if post.url == page.url %}var(--sky){% else %}#edfcff{% endif %}; display: flex; align-items: center; justify-content: flex-start; padding: 8px 12px; border-radius: 25px; width: 100%; box-sizing: border-box; height: 48px; overflow: hidden;">
+                    <!-- Il titolo: se è troppo lungo, viene tagliato con "..."
+                         (text-overflow: ellipsis) invece di rompere il layout. -->
+                    <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">
+                      <b style="color: var(--ink)">{{ post.title }}</b>
+                    </span>
+                  </div>
                 </a>
               </li>
             {% endfor %}
           </ul>
         </aside>
+
+        <!-- Titolo grande del post corrente. -->
         <h1>{{ page.title }}</h1>
+
+        <!-- Se il post ha un'immagine, la mostra sotto il titolo.
+             L'attributo alt serve per accessibilità/SEO. -->
         {% if page.image %}
           <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
         {% endif %}
       </div>
     </header>
 
+    <!-- Contenuto principale: qui Jekyll inserisce il corpo del post. -->
     <main>
       {{ content }}
     </main>
 
+    <!-- Footer: mostra l'anno corrente (site.time) e il tuo nome. -->
     <footer>
-      &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun 
+      &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
     </footer>
+
+    <!-- ============================================================
+         SCRIPT: logica del pannello laterale
+         ============================================================ -->
     <script>
-    function toggleLaterale(btn) {
-      var aside = document.getElementById('laterale');
-      var arrow = btn.querySelector('.arrow');
-      aside.classList.toggle('open');
-      arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
-    }
+      // toggleLaterale: apre/chiude il pannello e cambia l'icona.
+      function toggleLaterale(btn) {
+        var aside = document.getElementById('laterale'); // trova il pannello
+        var arrow = btn.querySelector('.arrow');          // trova l'icona ☰
+        aside.classList.toggle('open');                   // aggiunge/toglie .open
+        // Se è aperto mostra 🗗, altrimenti ☰.
+        arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
+      }
     </script>
   </body>
 </html>
