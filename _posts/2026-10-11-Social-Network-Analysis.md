@@ -2,7 +2,7 @@
 layout: posts
 title: "Social Network Analysis Project"
 date: 2026-10-11
-color1: "#b7130b"
+mainColor: "#b7130b"
 color2: "#ff6232"
 color3: "#560000"
 bottone: "#b7130b"
