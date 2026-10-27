@@ -95,6 +95,9 @@ nav a:focus-visible {
 
 /* ---------- Contenuto ---------- */
 main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
   position: relative;
   z-index: 2;           /* sopra l'header */
   background: var(--paper);  /* sfondo opaco: copre l'immagine */
