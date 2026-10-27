@@ -23,11 +23,16 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* ---------- Header ---------- var(--sky)*/
+/* ---------- Header ---------- HELP ME WITH THIS*/
 .site-header {
-  background: linear-gradient( to right, rgb (0 0 0 / .8), rgb (0 0 0 / 0)) , url ("images/ copertina.jpg");
+  background:
+    linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0)),
+    url("../images/copertina.jpg");
+  background-size: cover;
+  background-position: center;
   border-bottom: 6px solid var(--sun);
 }
+
 
 nav {
   display: flex;
