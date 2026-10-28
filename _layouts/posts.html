@@ -156,17 +156,7 @@
                {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}', sans-serif;{% endif %}
                {% if page.image %}--header-img: url('{{ page.image | relative_url }}');{% endif %}">
 
-    <!-- ============================================================
-         HEADER del sito
-         ============================================================ -->
-   <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
-  <nav>
-    <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
-    <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
-  </nav>
-
-      <div class="hero">
-        <!-- PANNEL LATERALE "More content" -->
+      <!-- PANNEL LATERALE "More content" -->
         <aside class="laterale" id="laterale">
           <button class="laterale-toggle" onclick="toggleLaterale(this)">
             <span class="arrow">☰</span> More content
@@ -187,7 +177,17 @@
             {% endfor %}
           </ul>
         </aside>
+    
+    <!-- ============================================================
+         HEADER del sito
+         ============================================================ -->
+   <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+  <nav>
+    <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
+    <a href="{{ '/' | relative_url }}"> 🏠︎  Home</a>
+  </nav>
 
+      <div class="hero">
         <!-- Titolo post corrente. -->
         <h1>{{ page.title }}</h1>
 
