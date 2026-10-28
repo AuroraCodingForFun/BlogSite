@@ -20,7 +20,7 @@ color3: "#615F31"
 <ul class="post-list">
   {% for post in site.posts %}
   <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
-    <li class="button" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
+    <li class="mbutton" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: space-between;">
         <span>
            {% if forloop.first %} <p>New post!! </p>{% endif %}
