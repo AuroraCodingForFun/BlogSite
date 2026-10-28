@@ -19,7 +19,7 @@ favicon: /images/favicons/halloween.png
    <h3>👻Co-occorrenza dei trope nei film Horror👻</h3>
    </div>
 
-   <div class="center" style="margin-bottom:20px">
+   <div class="center" style="margin-bottom:20px; margin-top:20px">
    <a class="button" href="https://github.com/AuroraCodingForFun/SocialNetworkAnalysisProject"> Click here to check it out! </a>
    </div>
 
