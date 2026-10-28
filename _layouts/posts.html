@@ -187,7 +187,7 @@
   </a>
   <h6>Github</h6>
   <a href="{{ '/' | relative_url }}">
-    <img src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
+    <img {% if page.title= "Social Network Analysis Project"%} src="{{ '/images/Casa_infestata.gif' | relative_url }}"  {% endif %} src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
   </a>
   <h6>Home</h6>
 </nav>
