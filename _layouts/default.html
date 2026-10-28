@@ -67,10 +67,7 @@
     </style>
   </head>
 
-  <body style="{% if page.color1 %}--main-color: {{ page.color1 }};{% endif %}{% if page.color2 %}--text-color: {{ page.color2 }};{% endif %}{% if page.color3 %}--accent-color: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
-    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
-      <div class="hero">
-        <aside class="laterale" id="laterale">
+      <aside class="laterale" id="laterale">
           <button class="laterale-toggle" onclick="toggleLaterale(this)">
             <span class="arrow">☰</span> More content
           </button>
@@ -81,6 +78,10 @@
             </li>
           </ul>
         </aside>
+  
+  <body style="{% if page.color1 %}--main-color: {{ page.color1 }};{% endif %}{% if page.color2 %}--text-color: {{ page.color2 }};{% endif %}{% if page.color3 %}--accent-color: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
+    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+      <div class="hero">
         <h1>{{ page.title }}</h1>
       </div>
     </header>
