@@ -185,9 +185,14 @@ footer {
 }
 
 .button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: var(--button);
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2rem;
   position: relative;
-  border-radius: 14px;
-  background: linear-gradient(90deg, oklch(0.65 0.26 328), oklch(0.75 0.15 195));
   transition: opacity .3s ease, transform .3s ease;
 }
 
