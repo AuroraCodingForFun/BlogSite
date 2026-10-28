@@ -75,7 +75,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 1.25rem;
+  padding: 0rem 0.25rem;
   background-color: var(--accent-color);
   border-radius: 0px 0px 25px 0px;
 }
