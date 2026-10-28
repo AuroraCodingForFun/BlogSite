@@ -186,9 +186,11 @@
     <img src="{{ '/images/Github.gif' | relative_url }}" width="55" height="55" alt="Github">
   </a>
   <h6>Github</h6>
-  <a href="{{ '/' | relative_url }}">
-    <img {% if page.title= "Social Network Analysis Project"%} src="{{ '/images/Casa_infestata.gif' | relative_url }}"  {% endif %} src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
-  </a>
+      {% if page.title == "Social Network Analysis Project" %}
+      <img src="{{ '/images/Casa_infestata.gif' | relative_url }}" width="55" height="55" alt="Home">
+      {% else %}
+      <img src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
+      {% endif %}
   <h6>Home</h6>
 </nav>
     
