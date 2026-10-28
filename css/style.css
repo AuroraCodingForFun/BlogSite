@@ -66,15 +66,15 @@ h1, h2, h3 {
 }
 
 nav {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
   display: flex;
-  justify-content: center; 
+  justify-content: left; 
   gap: 5rem;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
   max-width: 44rem;
   padding: 1rem 1.25rem;
