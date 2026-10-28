@@ -47,6 +47,20 @@ h1, h2, h3 {
   border-bottom: 6px solid var(--accent-color);
 }
 
+@supports (animation-timeline: scroll()) {
+  .site-header {
+    animation: grow-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 50vh;
+  }
+
+  @keyframes grow-header {
+    from { height: 50vh; }
+    to   { height: 100vh; }
+  }
+}
+
+
 nav {
   position: relative;
   top: 0;
