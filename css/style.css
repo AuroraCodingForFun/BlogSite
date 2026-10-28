@@ -238,7 +238,7 @@ footer {
   position: absolute;
   inset: -2px;
   border-radius: 14px;
-  background: linear-gradient(180deg, white, black);
+  background: linear-gradient(180deg,  black, white);
   filter: blur(14px);
   opacity: .6;
   pointer-events: none;
@@ -251,7 +251,7 @@ footer {
   color: var(--accent-color);
 }
 
-.button:hover::before {
+.mbutton:hover::before {
   opacity: 1;
 }
 .center {
