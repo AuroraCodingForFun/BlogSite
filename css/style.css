@@ -79,6 +79,8 @@ nav {
   transform: translateX(-50%);
   max-width: 44rem;
   padding: 1rem 1.25rem;
+  background-color: var(--accent-color);
+  border-radius: 25px;
 }
 
 nav a {
