@@ -182,10 +182,11 @@
          HEADER del sito
          ============================================================ -->
    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+     
   <nav>
-    <a class="brand" href="https://github.com/AuroraCodingForFun"> </> Aurora Coding for Fun</a>
-    <a href="{{ '/' | relative_url }}"> 🏠︎ </a>
-
+    <a class="brand" href="https://github.com/AuroraCodingForFun">
+    <img src="{{ '/images/Github.gif' | relative_url }}" width="55" height="55" alt="Github" href="https://github.com/AuroraCodingForFun";">
+    </a>
     <a href="{{ '/' | relative_url }}">
      <img src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home" href="{{ '/' | relative_url }}";">
     </a>
