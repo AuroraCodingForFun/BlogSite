@@ -5,6 +5,7 @@
   --paper: #f5fafc;
   --accent-color: #f6c445;
   --button: #f6c445;
+  --banner: 240px;
 }
 
 * { box-sizing: border-box; }
