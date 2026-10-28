@@ -74,7 +74,7 @@ nav {
   display: flex;
   justify-content: left; 
   gap: 5rem;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
   max-width: 44rem;
   padding: 1rem 1.25rem;
