@@ -68,7 +68,7 @@ h1, h2, h3 {
 nav {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  left: 0rem;
   width: 60px;
   z-index: 999;
   display: flex;
