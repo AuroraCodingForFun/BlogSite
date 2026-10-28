@@ -177,13 +177,8 @@
             {% endfor %}
           </ul>
         </aside>
-    
-    <!-- ============================================================
-         HEADER del sito
-         ============================================================ -->
-   <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
-     
-<nav>
+
+    <nav>
   <a class="brand" href="https://github.com/AuroraCodingForFun">
     <img src="{{ '/images/Github.gif' | relative_url }}" width="55" height="55" alt="Github">
   </a>
@@ -191,6 +186,11 @@
     <img src="{{ '/images/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
   </a>
 </nav>
+    
+    <!-- ============================================================
+         HEADER del sito
+         ============================================================ -->
+   <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
 
       <div class="hero">
         <!-- Titolo post corrente. -->
