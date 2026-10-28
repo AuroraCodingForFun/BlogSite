@@ -219,7 +219,41 @@ footer {
   opacity: 1;
 }
 
+/*BUTTONS PER IL MAIN E NON I POST*/
+.mbutton {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: var(--button);
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2rem;
+  position: relative;
+  transition: opacity .3s ease, transform .3s ease;
+}
 
+/* Glow dietro al bottone */
+.mbutton::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, white, black);
+  filter: blur(14px);
+  opacity: .6;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity .3s ease;
+}
+
+.mbutton:hover {
+  background: var(--text-color);
+  color: var(--accent-color);
+}
+
+.button:hover::before {
+  opacity: 1;
+}
 .center {
   text-align: center;
 }
