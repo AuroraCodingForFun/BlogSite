@@ -121,6 +121,7 @@ main {
   z-index: 10;  
   background: var(--paper);
   border-radius: 2rem 2rem 0 0;
+  min-height: 50vh;
 }
 
 main img {
