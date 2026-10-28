@@ -100,6 +100,9 @@
         aside.classList.toggle('open');
         arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
       }
+      // All'apertura: immagine a metà schermo, contenuto nell'altra metà
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      window.scrollTo(0, Math.round(window.innerHeight * 0.5));
 
       /* Header che si riduce scorrendo, poi esce dallo schermo */
       (function () {
