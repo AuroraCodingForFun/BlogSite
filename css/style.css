@@ -5,7 +5,6 @@
   --paper: #f5fafc;
   --accent-color: #f6c445;
   --button: #f6c445;
-  --banner: 240px;
 }
 
 * { box-sizing: border-box; }
@@ -74,8 +73,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0rem 0.25rem;
+  gap: 0rem;
+  padding: 0rem 0.15rem;
   background-color: var(--accent-color);
   border-radius: 0px 0px 25px 0px;
 }
