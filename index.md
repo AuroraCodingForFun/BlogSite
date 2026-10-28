@@ -29,7 +29,6 @@ color3: "#615F31"
         </span>
         {% if forloop.first %}
         <img src="{{ '/images/Casa.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
-        {% endif %}
         {% else %}
         <img src="{{ '/images/rocket.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
         {% endif %}
