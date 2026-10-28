@@ -215,27 +215,29 @@
         aside.classList.toggle('open');
         arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
       }
-      
-  (function () {
-    var header = document.querySelector('.site-header');
-    var main = document.querySelector('main');
-    var MIN = 240; // altezza minima del banner, in px
 
-    function update() {
-      var full = window.innerHeight;
-      var shrinkEnd = full - MIN; // scroll a cui il banner arriva al minimo
+            // All'apertura: immagine a metà schermo, contenuto nell'altra metà
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      window.scrollTo(0, Math.round(window.innerHeight * 0.5));
 
-      main.style.marginTop = full + 'px';
-      header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+      /* Header che si riduce scorrendo, poi esce dallo schermo */
+      (function () {
+        var header = document.querySelector('.site-header');
+        var main = document.querySelector('main');
+        var MIN = 240;
 
-      // Dopo aver raggiunto il minimo, il banner sale insieme al contenuto
-      header.style.top = -Math.max(0, window.scrollY - shrinkEnd) + 'px';
-    }
+        function update() {
+          var full = window.innerHeight;
+          var shrinkEnd = full - MIN;
+          main.style.marginTop = full + 'px';
+          header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+          header.style.top = -Math.max(0, window.scrollY - shrinkEnd) + 'px';
+        }
 
-    update();
-    window.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
-  })();
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+      })();
 </script>
   </body>
 </html>
