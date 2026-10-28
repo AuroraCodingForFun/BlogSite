@@ -68,15 +68,13 @@ h1, h2, h3 {
 nav {
   position: fixed;
   top: 1rem;
-  left: 1px;
+  left: 1rem;
   width: 60px;
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: left; 
-  gap: 0rem;
-  left: 25%;
-  transform: translateX(-50%);
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem 1.25rem;
   background-color: var(--accent-color);
   border-radius: 25px;
