@@ -6,7 +6,7 @@ mainColor: "#ffb3c0"
 textColor: "#f94563"
 accentColor: "#ae0068"
 fontTitoli: "Ballet"   
-fontTitoliFile: "/images/Bartex.ttf"
+fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
