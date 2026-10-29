@@ -17,6 +17,10 @@ titImage: /images/kghostface.gif
     /* Ghostface titolo */
   .hero h1 {
     background-position: center 90% !important;
+        min-height: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 </style>
 
