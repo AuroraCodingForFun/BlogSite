@@ -10,7 +10,7 @@ fontTitoli: "Nosifer"
 fontTesto: "Creepster"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
-titImage: /images/header/scary.jpg
+titImage: /images/kghostface.gif
 ---
 <style>
   :root { --paper: #630000; }
