@@ -26,7 +26,7 @@ color3: "#615F31"
         {% if forloop.first %} <p>New post!! </p>{% endif %}
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
-          {% endif %}
+          {% endfor %}
         </span>
         {% if forloop.first %}
         <img src="{{ '/images/Casa.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
