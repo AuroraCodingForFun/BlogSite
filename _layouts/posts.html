@@ -63,7 +63,8 @@
 
       /* Il titolo grande dell'intestazione prende il colore--accent-color*/
       .hero h1 {
-        background-color: color-mix(in srgb, var(--text-color) 60%, transparent);
+        {% if page.titImage %}background-image: url('{{ page.titImage | relative_url }}'); background-size: cover; background-position: center;
+        {% else %} background-color: color-mix(in srgb, var(--text-color) 60%, transparent);{% endif %}">
         color: var(--accent-color);
         border-radius: 25px;
       }
@@ -203,7 +204,7 @@
 
       <div class="hero">
         <!-- Titolo post corrente. -->
-      <h1 style="{% if page.titImage %}background-image: url('{{ page.titImage | relative_url }}'); background-size: cover; background-position: center;{% else %}background-color: var(--text-color) ;{% endif %}">
+      <h1>
         {{ page.title }}
       </h1>
 
