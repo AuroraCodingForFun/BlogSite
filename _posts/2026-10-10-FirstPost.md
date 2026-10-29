@@ -22,7 +22,7 @@ paper: "#ffcbb2"
 }
 </style>
 <div>
-<h3>Ciao? Ho scoperto come fare un post!</h3>
+<h1 style="text-align: center;  padding: 10px 10px 10px 10px">Ciao? Ho scoperto come fare un post!</h1>
    <div class="indice" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
 <p style="font-size: 2rem;">Oggi ho finalmente deciso di iniziare a fare questo piccolo blog, forse sono 10 anni in ritardo rispetto a quando i blog andavano di moda ma non importa. Sicuramente mi stancherò di questa cosa o mi dimenticherò a breve.</p>
 <br>
