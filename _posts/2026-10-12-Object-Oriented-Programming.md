@@ -15,7 +15,7 @@ favicon: /images/favicons/java-logo.png
 </style>
 
   <div style="font-size:16px;">
-    <h3>Objected Oriented Programming Exham</h3>
+    <h1 style="text-align: center;  padding: 20px 20px 20px 20px">Objected Oriented Programming Exham</h1>
   </div>
   <div class="center" style="margin-bottom:20px">
     <a class="button" href="https://github.com/AuroraCodingForFun/OOP-Exercises">Click here to check it out!</a>
