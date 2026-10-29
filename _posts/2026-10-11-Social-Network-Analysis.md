@@ -37,7 +37,7 @@ titImage: /images/kghostface.gif
     <!-- Pagina sinistra: Indice -->
     <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
-      <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
+     <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Introduzione</li>
         <li>Rete degli archetipi Horror
           <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
@@ -46,26 +46,26 @@ titImage: /images/kghostface.gif
                 <li>Cricche isolate</li>
                 <li>Cluster centrale e Betweenness</li>
               </ul>
-           <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
-             <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
-            <li>Interpretazione dei risultati della matrice modulare
-              <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
-                <li>Cricche perfette</li>
-                <li>Cluster estesi e permeabili</li>
+            </li>
+            <li>Matrice di Modularità e Densità dei Cluster (Heatmap)
+              <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+                <li>Interpretazione dei risultati della matrice modulare
+                  <ul style="list-style-type: '😱 '; padding-left: 1.5rem;">
+                    <li>Cricche perfette</li>
+                    <li>Cluster estesi e permeabili</li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
         </li>
-              <li>Riconoscere limiti e bias del lavoro
-                <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
-                  <li>Bias di selezione del dataset</li>
-                  <li>Resolution limit dell'algoritmo di Louvain</li>
-                </ul>
-              </li>
-              <li>Conclusione</li>
-            </li>
+        <li>Riconoscere limiti e bias del lavoro
+          <ul style="list-style-type: '🔪 '; padding-left: 1.5rem;">
+            <li>Bias di selezione del dataset</li>
+            <li>Resolution limit dell'algoritmo di Louvain</li>
           </ul>
         </li>
+        <li>Conclusione</li>
       </ul>
     </div>
     <!-- Space tra i due riquadri -->
