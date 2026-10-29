@@ -9,6 +9,7 @@ fontTitoli: "VT323"
 fontTesto: "Genos"
 image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
+titImage: /images/header/white cat.jpg
 ---
 <style>
 :root { --paper: #100b08; }
