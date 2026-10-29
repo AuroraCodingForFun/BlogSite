@@ -16,7 +16,7 @@ titImage: /images/kghostface.gif
   :root { --paper: #630000; }
     /* Ghostface titolo */
   .hero h1 {
-    background-position: center 50% !important;
+    background-position: center 20% !important;
   }
 </style>
 
