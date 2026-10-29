@@ -203,7 +203,10 @@
 
       <div class="hero">
         <!-- Titolo post corrente. -->
-        <h1>{{ page.title }}</h1>
+      <h1 style="{% if page.titImage %}background-image: url('{{ page.titImage | relative_url }}'); background-size: cover; background-position: center;{% else %}background-color: var(--text-color) ;{% endif %}">
+        {{ page.title }}
+      </h1>
+
 
       </div>
     </header>
