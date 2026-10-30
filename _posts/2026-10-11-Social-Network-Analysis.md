@@ -32,7 +32,7 @@ titImage: /images/kghostface.gif
 <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
   <!-- Griglia con colonne di ugual larghezza -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr)); gap: 20px; justify-content: center; align-items: start;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr)); gap: 5px; justify-content: center; align-items: start;">
     <!-- COLONNA SINISTRA-->
     <div style="display: flex; flex-direction: column; gap: 20px;">  
       <!-- Indice -->
