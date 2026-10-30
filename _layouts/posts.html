@@ -149,16 +149,47 @@
         }
       }
 
-      .boring-mode {
-        background: black;
-        color: white;
-        accent-color: black;
-      }
-      
-      .boring-mode .card{
-        background-color: grey;
-        color: black;
-      }
+body.boring-mode {
+  background: black;
+  color: white;
+}
+body.boring-mode main {
+  background: #111;
+  color: #e8e8e8;
+}
+
+body.boring-mode .card,
+body.boring-mode .indice {
+  background-color: #2a2a2a;
+  color: #e8e8e8;
+}
+
+body.boring-mode main a,
+body.boring-mode .card a,
+body.boring-mode .indice a {
+  color: #b0e0e6;
+}
+body.boring-mode main a:hover {
+  color: #fff;
+}
+
+body.boring-mode .post-list li {
+  background: #2a2a2a;
+  border-left-color: #666;
+}
+body.boring-mode .post-list li a {
+  color: #e8e8e8;
+}
+
+body.boring-mode aside.laterale {
+  background-color: #333;
+  color: #e8e8e8;
+}
+
+body.boring-mode footer {
+  background: #000;
+  color: #999;
+}
     </style>
   </head>
 
