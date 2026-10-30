@@ -237,7 +237,8 @@ footer {
 }
 
 .boring-mode {
-  main-color: black;
+  
+  var(--main-color) : black;
   text-color: white;
   accent-color: black;
 }
