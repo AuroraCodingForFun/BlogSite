@@ -266,12 +266,12 @@ body.boring-mode main a:hover {
 }
 
 body.boring-mode .post-list li {
-  background: red !important;
+  background: #2a2a2a !important;
   border-left-color: #666 !important;
 }
 
 body.boring-mode .post-list li a {
-  color: #8e8e8e !important;
+  color: red !important;
 }
 
 body.boring-mode aside.laterale {
