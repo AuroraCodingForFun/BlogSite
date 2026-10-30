@@ -236,13 +236,3 @@ footer {
   text-align: center;
 }
 
-.boring-mode {
-  
-  background: black;
-  color: white;
-  accent-color: black;
-}
-
-.boring-mode .post-list li {
-  background: yellow;
-}
