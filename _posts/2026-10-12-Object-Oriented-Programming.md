@@ -22,7 +22,7 @@ titImage: /images/header/white cat.jpg
     <a class="button" href="https://github.com/AuroraCodingForFun/OOP-Exercises">Click here to check it out!</a>
   </div>
 <div>
-  <div class="layout" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+  <div class="card" style="padding: 16px 25px 30px 50px; border-radius: 25px;">
     <div class="indice">
       <div id="contenuto">Caricamento...</div>
     </div>
