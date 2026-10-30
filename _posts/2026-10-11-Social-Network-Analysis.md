@@ -88,8 +88,7 @@ titImage: /images/kghostface.gif
   </div>
   <!-- Pagina destra -->
   <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
-    <div class="indice">
-      <div id="contenuto">Caricamento...</div>
+    <div class="indice" id="contenuto">Caricamento...
     </div>
   </div>
 </div>
