@@ -21,7 +21,7 @@ titImage: /images/kghostface.gif
 </style>
 
 <div style="font-size:16px;">
-   <h3>👻Co-occorrenza dei trope nei film Horror👻</h3>
+   <h3>👻Co-occorrenza dei trope nei film Ho rror👻</h3>
    </div>
 
    <div class="center" style="margin-bottom:20px; margin-top:20px">
