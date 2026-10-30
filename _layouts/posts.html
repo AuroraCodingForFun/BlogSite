@@ -165,9 +165,10 @@ body.boring-mode .indice {
 }
 
 body.boring-mode main a,
-body.boring-mode .card a,
-body.boring-mode .indice a {
-  color: #2b383a;
+body.boring-mode .card,
+body.boring-mode .indice {
+  background-color: #2a2a2a !important;
+  color: #8e8e8e !important;
 }
 body.boring-mode main a:hover {
   color: #8e8e8e;
@@ -190,6 +191,20 @@ body.boring-mode footer {
   background: #000;
   color: #999;
 }
+body.boring-mode .button {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.boring-mode .button b {
+  color: #fff !important;
+}
+
+/* e via il glow, che in boring mode stona */
+body.boring-mode .button::before {
+  display: none;
+}
+
     </style>
   </head>
 
