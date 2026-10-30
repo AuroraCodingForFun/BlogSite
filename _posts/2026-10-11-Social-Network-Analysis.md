@@ -21,7 +21,7 @@ titImage: /images/kghostface.gif
 </style>
 
 <div style="font-size:16px;">
-   <h3>👻Co-occorrenza dei trope nei film Ho rror👻</h3>
+   <h3>👻Co-occorrenza dei trope nei film Horror👻</h3>
    </div>
 
    <div class="center" style="margin-bottom:20px; margin-top:20px">
@@ -29,7 +29,7 @@ titImage: /images/kghostface.gif
    </div>
 
 
- <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
+<div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center; align-items: start;">
