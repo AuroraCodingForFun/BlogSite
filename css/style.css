@@ -235,3 +235,8 @@ footer {
 .center {
   text-align: center;
 }
+
+.boring-mode {
+  background-color: black;
+  color: white;
+}
