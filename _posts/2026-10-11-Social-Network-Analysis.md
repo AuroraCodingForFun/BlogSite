@@ -35,7 +35,7 @@ titImage: /images/kghostface.gif
   <!-- Colonna sinistra -->
   <div class="card">
     <!-- Pagina sinistra: Indice -->
-    <div class="card" style="padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div class="layout" style="padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
      <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Introduzione</li>
