@@ -238,7 +238,8 @@ footer {
 
 .boring-mode {
   
-  var(--main-color) : black;
-  text-color: white;
+  background: black;
+  color: white;
   accent-color: black;
+  .post-list li { background: grey;}
 }
