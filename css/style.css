@@ -246,7 +246,7 @@ body.boring-mode {
 
 body.boring-mode main {
   background: #111 !important;
-  color: #f40909 !important;
+  color: #8e8e8e !important;
 }
 
 body.boring-mode .card,
@@ -258,7 +258,7 @@ body.boring-mode .indice {
 body.boring-mode main a,
 body.boring-mode .card a,
 body.boring-mode .indice a {
-  color: #8e8e8e !important;
+  color: #ea2a2a !important;
 }
 
 body.boring-mode main a:hover {
