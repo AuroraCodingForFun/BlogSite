@@ -271,7 +271,7 @@ body.boring-mode .post-list li {
 }
 
 body.boring-mode .post-list li a {
-  color: red !important;
+  color: #8e8e8e !important;
 }
 
 body.boring-mode aside.laterale {
