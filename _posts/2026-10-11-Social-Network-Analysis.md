@@ -35,7 +35,7 @@ titImage: /images/kghostface.gif
   <!-- Colonna sinistra -->
   <div>
     <!-- Pagina sinistra: Indice -->
-    <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div class="card" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Indice dei contenuti dell' elaborato</h2>
      <ul style="list-style-type: '💀 '; padding-left: 1.5rem;">
         <li>Introduzione</li>
@@ -71,7 +71,7 @@ titImage: /images/kghostface.gif
     <!-- Space tra i due riquadri -->
     <div style="height: 10px;"></div>
     <!-- Introduzione sotto l'Indice -->
-    <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+    <div class="card" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
       <h2>Introduzione</h2>
         <p>
         In questo elaborato rispondo alle domande: "Quali cluster tematici esistono all'interno del cinema horror? E, soprattutto, esistono elementi narrativi ad esempio  trope come "possessione demoniaca" o "casa infestata" che fungono da ponte tra sotto-generi apparentemente distinti, collegando mondi narrativi diversi tra loro? " applicando tecniche viste a lezione ad un dataset di trope narrativi estratti dai principali film horror, costruendo una rete di co-occorrenza tra elementi tematici e applicando algoritmi di community detection e misure di centralità (in particolare la betweenness centrality) per identificare sia i cluster tematici sia gli archetipi "ponte" tra sottogeneri.
@@ -87,7 +87,7 @@ titImage: /images/kghostface.gif
     <img src="{{ '/images/kghostface.gif' | relative_url }}" alt="ghostface" style="width: 100%; max-width: 400px; display: block; margin: 0 auto; border-radius: 25px;">
   </div>
   <!-- Pagina destra -->
-  <div style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
+  <div class="card" style="background-color: white; padding: 16px 25px 30px 50px; border-radius: 25px;">
     <div class="indice" id="contenuto">Caricamento...
     </div>
   </div>
