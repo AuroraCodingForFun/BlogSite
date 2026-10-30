@@ -241,5 +241,8 @@ footer {
   background: black;
   color: white;
   accent-color: black;
-  .post-list li { background: grey;}
+}
+
+.boringmode .post-list li {
+  background: yellow;
 }
