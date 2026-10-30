@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Social Network Analysis Project"
+title: "Social Network Analysis Projectt"
 date: 2026-10-11
 mainColor: "#b7130b"
 textColor: "#ff6232"
