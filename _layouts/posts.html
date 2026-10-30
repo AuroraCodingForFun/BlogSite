@@ -202,6 +202,7 @@
       {% endif %}
   </a>
   <h6>Home</h6>
+  <button onclick="boringMode()">Toggle boring mode</button>
 </nav>
     
     <!-- ============================================================
@@ -263,6 +264,11 @@
         window.addEventListener('scroll', update, { passive: true });
         window.addEventListener('resize', update);
       })();
+
+      function boringMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
   </body>
 </html>
