@@ -257,6 +257,11 @@ body.boring-mode .site-header {
   border-bottom: 6px solid #a8a8a8 !important;
 }
 
+body.boring-mode .hero{
+  background-image: none !important;
+  background: transparent !important;
+}
+
 body.boring-mode .hero img {
   display: none !important;
 }
