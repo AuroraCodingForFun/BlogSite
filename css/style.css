@@ -270,6 +270,14 @@ body.boring-mode .hero h1 {
   color: #8e8e8e !important;
 }
 
+body.boring-mode nav {
+  background-color: #333333 !important;
+}
+
+body.boring-mode .brand {
+  font-family: "Redaction", system-ui, sans-serif;
+}
+
 body.boring-mode main {
   background: black !important;
   color: #8e8e8e !important;
