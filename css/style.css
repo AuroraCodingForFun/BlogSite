@@ -244,9 +244,12 @@ body.boring-mode {
   color: white !important;
   font-family: "Nunito", system-ui, sans-serif;
 }
-body.boring-mode .h1, h2, h3 {
-  font-family: "Fredoka", system-ui, sans-serif !important;
+body.boring-mode h1,
+body.boring-mode h2,
+body.boring-mode h3 {
+  font-family: "Fredoka", system-ui, sans-serif;
 }
+
 
 body.boring-mode .site-header {
   background-image: none !important;
