@@ -242,12 +242,12 @@ footer {
 body.boring-mode {
   background: black !important;
   color: white !important;
-  font-family: "Nunito", system-ui, sans-serif;
+  font-family: "Roboto", system-ui, sans-serif;
 }
 body.boring-mode h1,
 body.boring-mode h2,
 body.boring-mode h3 {
-  font-family: "Fredoka", system-ui, sans-serif;
+  font-family: "Redaction", system-ui, sans-serif;
 }
 
 
