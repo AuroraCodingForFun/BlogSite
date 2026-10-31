@@ -242,6 +242,13 @@ footer {
 body.boring-mode {
   background: black !important;
   color: white !important;
+  font-family: "Nunito", system-ui, sans-serif;
+}
+
+body.boring-mode .site-header {
+  
+  background-color: #262626 !important; 
+  border-bottom: 6px solid #a8a8a8 !important;
 }
 
 body.boring-mode main {
