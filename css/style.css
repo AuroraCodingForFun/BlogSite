@@ -252,8 +252,8 @@ body.boring-mode h3 {
 
 
 body.boring-mode .site-header {
+  background: #262626 !important;
   background-image: none !important;
-  background-color: #262626 !important; 
   border-bottom: 6px solid #a8a8a8 !important;
 }
 
