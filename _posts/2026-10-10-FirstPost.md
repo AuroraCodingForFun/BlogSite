@@ -10,7 +10,7 @@ fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
 image: /images/Barbie.jpg
 paper: "#ffcbb2"
-pet: /images/Barbie.jpg
+pet: /images/nav/pets/serperior.gif
 ---
 <style>   
   :root {
