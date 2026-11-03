@@ -256,10 +256,6 @@
          SCRIPT: logica del pannello laterale
          ============================================================ -->
     <script>
-      //BORING MODE
-      if (localStorage.getItem("boringMode") === "1") {
-          document.body.classList.add("boring-mode");
-        }
       // toggleLaterale: apre/chiude il pannello e cambia l'icona.
       function toggleLaterale(btn) {
         var aside = document.getElementById('laterale');
@@ -292,10 +288,11 @@
       })();
 
       function boringMode() {
-   var element = document.body;
-   element.classList.toggle("boring-mode");
-  localStorage.setItem("boringMode", element.classList.contains("boring-mode") ? "1" : "0");
-}
+        var root = document.documentElement;
+        root.classList.toggle("boring-mode");
+        localStorage.setItem("boringMode", root.classList.contains("boring-mode") ? "1" : "0");
+      }
+
 </script>
   </body>
 </html>
