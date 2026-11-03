@@ -239,103 +239,103 @@ footer {
 /* ============================================================
    BORING MODE 
    ============================================================ */
-body.boring-mode {
+html.boring-mode body {
   background: black !important;
   color: white !important;
   font-family: "Roboto", system-ui, sans-serif;
 }
-body.boring-mode h1,
-body.boring-mode h2,
-body.boring-mode h3 {
+
+html.boring-mode h1,
+html.boring-mode h2,
+html.boring-mode h3 {
   font-family: "Redaction", system-ui, sans-serif;
 }
 
-
-body.boring-mode .site-header {
+html.boring-mode .site-header {
   background: #262626 !important;
   background-image: none !important;
   border-bottom: 6px solid #a8a8a8 !important;
 }
 
-body.boring-mode .hero{
+html.boring-mode .hero {
   background-image: none !important;
   background: transparent !important;
 }
 
-body.boring-mode .hero img {
+html.boring-mode .hero img {
   display: none !important;
 }
 
-body.boring-mode .hero h1 {
+html.boring-mode .hero h1 {
   color: #8e8e8e !important;
 }
 
-body.boring-mode nav {
+html.boring-mode nav {
   background-color: #333333 !important;
 }
 
-body.boring-mode .brand {
+html.boring-mode .brand {
   font-family: "Redaction", system-ui, sans-serif;
 }
 
-body.boring-mode main {
+html.boring-mode main {
   background: black !important;
   color: #8e8e8e !important;
 }
 
-body.boring-mode .card,
-body.boring-mode .indice {
+html.boring-mode .card,
+html.boring-mode .indice {
   background-color: #262626 !important;
   color: #8e8e8e !important;
 }
 
-body.boring-mode main a,
-body.boring-mode .card a,
-body.boring-mode .indice a {
+html.boring-mode main a,
+html.boring-mode .card a,
+html.boring-mode .indice a {
   color: #8e8e8e !important;
 }
 
-body.boring-mode main a:hover {
+html.boring-mode main a:hover {
   color: #fff !important;
 }
 
-body.boring-mode .post-list li {
+html.boring-mode .post-list li {
   background: #2a2a2a !important;
   border-left-color: #666 !important;
 }
 
-body.boring-mode .post-list li a {
+html.boring-mode .post-list li a {
   color: #8e8e8e !important;
 }
 
-body.boring-mode aside.laterale {
+html.boring-mode aside.laterale {
   background-color: #333 !important;
   color: #8e8e8e !important;
 }
 
-body.boring-mode footer {
+html.boring-mode footer {
   background: #000 !important;
   color: #999 !important;
 }
 
-body.boring-mode .button,
-body.boring-mode .mbutton {
+html.boring-mode .button,
+html.boring-mode .mbutton {
   background-color: #000 !important;
   color: #fff !important;
 }
 
-body.boring-mode .button b,
-body.boring-mode .mbutton b {
+html.boring-mode .button b,
+html.boring-mode .mbutton b {
   color: #fff !important;
 }
 
-body.boring-mode .button::before,
-body.boring-mode .mbutton::before {
+html.boring-mode .button::before,
+html.boring-mode .mbutton::before {
   display: none !important;
 }
 
-body.boring-mode .button:hover,
-body.boring-mode .mbutton:hover {
+html.boring-mode .button:hover,
+html.boring-mode .mbutton:hover {
   background-color: #333 !important;
   color: #fff !important;
 }
