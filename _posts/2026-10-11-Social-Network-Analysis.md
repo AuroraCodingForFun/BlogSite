@@ -11,6 +11,7 @@ fontTesto: "Creepster"
 image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
 titImage: /images/kghostface.gif
+pet: /images/nav/pets/gengar.gif
 ---
 <style>
   :root { --paper: #630000; }
