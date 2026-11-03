@@ -31,7 +31,9 @@
         max-height: calc(100vh - 120px);
         overflow-y: auto;
         padding: 10px;
-        background-color:  var(--accent-color, 0);
+        background: hsl(0 0% 0% / var(--accent-color, 0));
+    -webkit-backdrop-filter: var(url(#glass-filter-_r_b_),url(#glass-filter))saturate(var(1.2,1));
+    backdrop-filter: var(url(#glass-filter-_r_b_), url(#glass-filter)) saturate(var(1.2, 1));
         border-radius: 25px;
         z-index: 10;
       }
