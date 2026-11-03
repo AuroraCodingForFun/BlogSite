@@ -76,6 +76,7 @@ nav {
   align-items: center;
   gap: 0rem;
   padding: 0rem 0.15rem;
+  padding-bottom: 0.5rem;
    background: color-mix(in srgb, var(--accent-color) 35%, transparent);
          -webkit-backdrop-filter: blur(18px) saturate(90%);
         backdrop-filter: blur(18px) saturate(180%);
