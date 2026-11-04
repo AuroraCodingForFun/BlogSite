@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/personal.css' | relative_url }}">
+    <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
+
+  </head>
+
+      <aside class="laterale" id="laterale">
+          <button class="laterale-toggle" onclick="toggleLaterale(this)">
+            <span class="arrow">☰</span> More content
+          </button>
+          <ul>
+            <li>
+              <h4>😺Github!</h4>
+              <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
+            </li>
+          </ul>
+        </aside>
+  
+  <aside class="pet" id="pet">
+    <a href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
+    <img src="{{ '/images/nav/pets/snivy.gif' | relative_url }}" width="55" height="55" alt="Github">
+    </a>
+  </aside>
+  
+  <body style="{% if page.color1 %}--main-color: {{ page.color1 }};{% endif %}{% if page.color2 %}--text-color: {{ page.color2 }};{% endif %}{% if page.color3 %}--accent-color: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
+    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+      <div class="hero">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
+    </footer>
+
+    <script>
+      function toggleLaterale(btn) {
+        var aside = document.getElementById('laterale');
+        var arrow = btn.querySelector('.arrow');
+        aside.classList.toggle('open');
+        arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
+      }
+      // All'apertura: immagine a metà schermo, contenuto nell'altra metà
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      window.scrollTo(0, Math.round(window.innerHeight * 0.5));
+
+      /* Header che si riduce scorrendo, poi esce dallo schermo */
+      (function () {
+        var header = document.querySelector('.site-header');
+        var main = document.querySelector('main');
+        var MIN = 240;
+
+        function update() {
+          var full = window.innerHeight;
+          var shrinkEnd = full - MIN;
+          main.style.marginTop = full + 'px';
+          header.style.height = Math.max(MIN, full - window.scrollY) + 'px';
+          header.style.top = -Math.max(0, window.scrollY - shrinkEnd) + 'px';
+        }
+
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+      })();
+    </script>
+  </body>
+</html>
