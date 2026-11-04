@@ -1,5 +1,16 @@
 ---
-title: Fatti i cavoli tuoi
+layout: posts
+title: "First Post"
+date: 2026-10-10
+mainColor: "#ffb3c0"
+textColor: "#f94563"
+accentColor: "#ae0068"
+fontTitoli: "Ballet"   
+fontTitoliFile: "/images/fonts/Bartex.ttf"
+fontTesto: "Italianno"
+image: /images/Barbie.jpg
+paper: "#ffcbb2"
+pet: /images/nav/pets/ponyta.gif
 ---
 <style>
   :root { --paper: #14281d; }
