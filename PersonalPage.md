@@ -8,7 +8,7 @@ accentColor: "#ae0068"
 fontTitoli: "Ballet"   
 fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
-image: /images/Barbie.jpg
+image: /images/header/scary.jpg
 paper: "#ffcbb2"
 pet: /images/nav/pets/ponyta.gif
 ---
