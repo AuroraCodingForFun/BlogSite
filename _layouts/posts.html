@@ -124,16 +124,21 @@
 
     <!-- Footer-->
 <footer style="display: flex; align-items: center; justify-content: center;">
+    {% if page.next %}
     <a href="{{ page.next.url | relative_url }}">
         <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="25" height="25" alt="Pokémon">
     </a>
+    {% endif %}
 
     <span>&copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun</span>
 
+    {% if page.previous %}
     <a href="{{ page.previous.url | relative_url }}">
         <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="25" height="25" alt="Pokémon">
     </a>
+    {% endif %}
 </footer>
+
 
     <!-- ============================================================
          SCRIPT: logica del pannello laterale
