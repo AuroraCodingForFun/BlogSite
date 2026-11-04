@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: personal
 title: "First Post"
 date: 2026-10-10
 mainColor: "#ffb3c0"
