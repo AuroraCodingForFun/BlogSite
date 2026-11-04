@@ -123,17 +123,17 @@
     </main>
 
     <!-- Footer-->
-    <footer>
-       <a style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px;" href=page.next post>
-            <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif'  | relative_url  }}" width="25" height="25" alt="Pokémon">
-      </a>
-      
-      &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
+<footer style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px;">
+    <a href="{{ page.next.url | relative_url }}">
+        <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="25" height="25" alt="Pokémon">
+    </a>
 
-       <a style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px;" href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
-            <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif'  | relative_url  }}" width="25" height="25" alt="Pokémon">
-        </a>
-    </footer>
+    <span>&copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun</span>
+
+    <a href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
+        <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="25" height="25" alt="Pokémon">
+    </a>
+</footer>
 
     <!-- ============================================================
          SCRIPT: logica del pannello laterale
