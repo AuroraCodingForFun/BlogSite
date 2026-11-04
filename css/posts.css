@@ -324,6 +324,9 @@ footer {
   opacity: 1;
 }
 
+.center {
+  text-align: center;
+}
 
 /* ============================================================
    BORING MODE 
@@ -357,6 +360,7 @@ html.boring-mode .hero img {
 
 html.boring-mode .hero h1 {
   color: #8e8e8e !important;
+  background: transparent !important;
 }
 
 html.boring-mode nav {
