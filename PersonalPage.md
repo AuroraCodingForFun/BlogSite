@@ -1,5 +1,5 @@
 ---
-title: Pagina personale
+title: Fatti i cavoli tuoi
 layout: default
 image: /images/copertina.jpg
 color1: "#001044"
