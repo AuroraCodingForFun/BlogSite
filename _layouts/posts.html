@@ -124,13 +124,13 @@
 
     <!-- Footer-->
     <footer>
-       <a style="align:left; position: absolute; top: 50%;" href=page.next post>
+       <a style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px;" href=page.next post>
             <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif'  | relative_url  }}" width="25" height="25" alt="Pokémon">
       </a>
       
       &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
 
-       <a style="align:right" href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
+       <a style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px;" href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
             <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif'  | relative_url  }}" width="25" height="25" alt="Pokémon">
         </a>
     </footer>
