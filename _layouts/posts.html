@@ -125,8 +125,8 @@
     <!-- Footer-->
 <footer style="display: flex; align-items: center; justify-content: center;">
     {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}">
-        <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="25" height="25" alt="Pokémon">
+    <a href="{{ page.previous.url | relative_url }}" class="prevbutton">
+        <span>Prev</span>
     </a>
     {% endif %}
   
