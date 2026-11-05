@@ -329,13 +329,14 @@ footer {
 }
 
 .nextbutton {
-  background-color: #f4511e;
+  background-color: var(--button);
   border: none;
-  color: #FFFFFF;
+  border-radius: 2rem;
+  color: var(--text-color);
   text-align: center;
   font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  padding: 10px;
+  width: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -485,30 +486,7 @@ html.boring-mode .mbutton:hover {
     }
 
 html.boring-mode .nextbutton {
-  background-color: #f4511e;
   border: none;
-  color: black;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+  color: white;
 }
 
-html.boring-mode .nextbutton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-html.boring-mode .nextbutton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
