@@ -368,42 +368,48 @@ footer {
 }
 
 .prevbutton {
+  display: inline-block;
   background-color: var(--button);
   border: none;
   border-radius: 2rem;
   color: var(--text-color);
   text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  width: auto;
+  text-decoration: none;
+  transition: background-color .3s ease, color .3s ease, transform .3s ease;
   cursor: pointer;
   margin: 5px;
 }
 
 .prevbutton span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: padding .3s ease;
 }
 
-.prevbutton span:before {
-  content: '\00bb';
+.prevbutton span::before {
+  content: '\00ab';
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
-  transition: 0.5s;
+  left: -20px;
+  transition: opacity .3s ease, left .3s ease;
 }
 
 .prevbutton:hover span {
-  padding-right: 25px;
+  padding-left: 25px;
 }
 
-.prevbutton:hover span:before {
+.prevbutton:hover span::before {
   opacity: 1;
-  right: 0;
+  left: 0;
+}
+
+.prevbutton:hover {
+  background-color: var(--text-color);
+  color: var(--accent-color);
 }
 
 
