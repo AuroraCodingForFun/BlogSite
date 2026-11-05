@@ -328,6 +328,45 @@ footer {
   text-align: center;
 }
 
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.nextbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nextbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nextbutton:hover span {
+  padding-right: 25px;
+}
+
+.nextbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 /* ============================================================
    BORING MODE 
    ============================================================ */
@@ -444,3 +483,32 @@ html.boring-mode .mbutton:hover {
     html.boring-mode nav button {
       font-family: 'Courier New', monospace !important;
     }
+
+html.boring-mode .button {
+  background-color: #f4511e;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+html.boring-mode .nextbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+html.boring-mode .nextbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
