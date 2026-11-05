@@ -189,11 +189,12 @@
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
+        var soglia = window.innerHeight;
+       if (document.body.scrollTop > soglia || document.documentElement.scrollTop > soglia) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
       }
 
     function topFunction() {
