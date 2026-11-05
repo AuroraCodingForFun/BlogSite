@@ -388,7 +388,7 @@ footer {
   transition: 0.5s;
 }
 
-.prevbutton span:after {
+.prevbutton span:before {
   content: '\00bb';
   position: absolute;
   opacity: 0;
