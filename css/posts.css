@@ -420,11 +420,14 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;     
   background-color: var(--button);
   color: var(--text-color);
   cursor: pointer;
-  padding: 15px;
-  border-radius: 100px;
 }
 
 #topbutton:hover {
