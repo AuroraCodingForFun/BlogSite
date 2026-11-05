@@ -484,7 +484,7 @@ html.boring-mode .mbutton:hover {
       font-family: 'Courier New', monospace !important;
     }
 
-html.boring-mode .button {
+html.boring-mode .nextbutton {
   background-color: #f4511e;
   border: none;
   color: black;
