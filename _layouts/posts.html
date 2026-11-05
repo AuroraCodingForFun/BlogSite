@@ -112,8 +112,6 @@
       <h1>
         {{ page.title }}
       </h1>
-
-
       </div>
     </header>
 
@@ -122,7 +120,10 @@
       {{ content }}
     </main>
 
-    <!-- Footer-->
+    <!--BUTTON TOP PAG-->
+    <button onclick="topFunction()" id="topbutton" title="Go to top">Top</button>
+
+    <!-- Footer CON PAG NEXT E PREV-->
 <footer style="display: flex; align-items: center; justify-content: center;">
     {% if page.previous %}
     <a href="{{ page.previous.url | relative_url }}" class="prevbutton">
@@ -181,6 +182,25 @@
         root.classList.toggle("boring-mode");
         localStorage.setItem("boringMode", root.classList.contains("boring-mode") ? "1" : "0");
       }
+
+      //TOP BUTTON
+      let mybutton = document.getElementById("topbutton");
+
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 </script>
   </body>
