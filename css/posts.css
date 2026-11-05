@@ -403,18 +403,13 @@ footer {
    transition: 0.5s;
 }
 
-.prevbutton:hover span {
-  padding-left: 25px;
+.nextbutton:hover span {
+  padding-right: 25px;
 }
 
-.prevbutton:hover span::before {
+.nextbutton:hover span:before {
   opacity: 1;
-  left: 0;
-}
-
-.prevbutton:hover {
-  background-color: var(--text-color);
-  color: var(--accent-color);
+  right: 0;
 }
 
 
