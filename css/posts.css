@@ -424,7 +424,7 @@ footer {
   color: var(--text-color);
   cursor: pointer;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 #topbutton:hover {
