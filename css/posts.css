@@ -412,7 +412,24 @@ footer {
   left: 0;
 }
 
+#topbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--button);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
 
+#topbutton:hover {
+  background-color: #555;
+}
 
 
 
