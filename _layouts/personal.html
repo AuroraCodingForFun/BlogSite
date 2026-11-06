@@ -37,25 +37,21 @@
       {{ content }}
     </main>
 
-    <h2>Contact me</h2>
+      <section class="contatti">
+      <h2>Contact me</h2>
+      <form action="https://formspree.io/f/mgaaqgzz" method="POST">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
 
-<div style="background-color: white">
-<form
-  action="https://formspree.io/f/mgaaqgzz"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-</div>
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- trappola anti-spam: gli utenti veri non la vedono -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     
     <footer>
