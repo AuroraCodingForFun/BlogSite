@@ -37,22 +37,19 @@ pet: /images/nav/pets/ponyta.gif
 <h2>Contact me</h2>
 
 <div style="background-color: white">
-<form action="https://formspree.io/f/mgaaqgzz" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  <br>
-
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required>
-  <br>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-  <br>
-
-  <!-- spam trap: real users never see or fill this -->
-  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
+<form
+  action="https://formspree.io/f/mgaaqgzz"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
 </div>
