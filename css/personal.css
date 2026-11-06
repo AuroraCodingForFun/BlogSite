@@ -255,3 +255,41 @@ footer {
         padding: 1px;
         z-index: 100;
       }
+
+.contatti {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  background: var(--paper);
+  position: relative;
+  z-index: 10;
+}
+
+.contatti form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+.contatti input,
+.contatti textarea {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--main-color);
+  border-radius: 0.75rem;
+}
+
+.contatti button {
+  align-self: flex-start;
+  font: inherit;
+  font-weight: 700;
+  background: var(--button);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
