@@ -34,19 +34,25 @@ pet: /images/nav/pets/ponyta.gif
   <h6>Dark mode</h6>
 </nav>
 
-<h2>Contact us</h2>
+<h2>Contact me</h2>
 
+<div style="background-color: white">
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required>
   <br>
- 
+
   <label for="email">Email Address:</label>
   <input type="email" id="email" name="email" required>
   <br>
- 
+
   <label for="message">Message:</label>
   <textarea id="message" name="message" required></textarea>
   <br>
- 
+
+  <!-- spam trap: real users never see or fill this -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
   <button type="submit">Send</button>
 </form>
+</div>
