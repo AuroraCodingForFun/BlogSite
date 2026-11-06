@@ -37,7 +37,7 @@ pet: /images/nav/pets/ponyta.gif
 <h2>Contact me</h2>
 
 <div style="background-color: white">
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/mgaaqgzz" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required>
   <br>
