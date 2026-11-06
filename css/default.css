@@ -258,12 +258,12 @@ footer {
       }
 
 .ribbon {
-  width: 60px;
-  font-size: 14px;
+  width: 100px;
+  font-size: 20px;
   padding: 4px;
   position: absolute;
   right: -25px;
-  top: -12px;
+  top: -15px;
   text-align: center;
   border-radius: 25px;
   transform: rotate(20deg);
