@@ -25,11 +25,7 @@ pet: /images/nav/pets/ponyta.gif
   </a>
   <h6>Github</h6>
   <a href="{{ '/' | relative_url }}">
-      {% if page.title == "Social Network Analysis Project" %}
-      <img src="{{ '/images/nav/Casa_infestata.gif' | relative_url }}" width="55" height="55" alt="Home">
-      {% else %}
       <img src="{{ '/images/nav/Casa.gif' | relative_url }}" width="55" height="55" alt="Home">
-      {% endif %}
   </a>
   <h6>Home</h6>
   <button onclick="boringMode()" style="background: none; border: none; padding: 0; margin: 0;">
@@ -38,3 +34,19 @@ pet: /images/nav/pets/ponyta.gif
   <h6>Dark mode</h6>
 </nav>
 
+<h2>Contact us</h2>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+ 
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+ 
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+ 
+  <button type="submit">Send</button>
+</form>
