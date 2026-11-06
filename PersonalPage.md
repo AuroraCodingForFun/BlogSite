@@ -33,23 +33,3 @@ pet: /images/nav/pets/ponyta.gif
   </button>
   <h6>Dark mode</h6>
 </nav>
-
-<h2>Contact me</h2>
-
-<div style="background-color: white">
-<form
-  action="https://formspree.io/f/mgaaqgzz"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-</div>
