@@ -2,9 +2,9 @@
 layout: personal
 title: "First Post"
 date: 2026-10-10
-mainColor: "#ffb3c0"
-textColor: "#f94563"
-accentColor: "#ae0068"
+mainColor: "#ffffff"
+textColor: "#111111"
+accentColor: "#f9ed04"
 fontTitoli: "Ballet"   
 fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
@@ -13,7 +13,7 @@ paper: "#ffcbb2"
 pet: /images/nav/pets/ponyta.gif
 ---
 <style>
-  :root { --paper: #14281d; }
+  :root { --paper: #63635b; }
   
 .layout {
   display: block;
