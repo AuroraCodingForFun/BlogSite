@@ -257,15 +257,14 @@ footer {
       }
 
 .ribbon {
-  width: 60px;
-  font-size: 14px;
-  padding: 4px;
-  position: absolute;
-  right: -25px;
-  top: -12px;
-  text-align: center;
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 10px;
   border-radius: 25px;
-  transform: rotate(20deg);
-  background-color: #ff9800;
-  color: white;
+  margin-right: 8px;
+  vertical-align: middle;
 }
+
