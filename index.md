@@ -15,7 +15,7 @@ color3: "#615F31"
 </style>
 
 <div>
-<h1>Benvenuti nel mio blog </h1>
+<h1>Benvenuti nel mio bblog </h1>
 <h2> Ultimi post </h2>
 <ul class="post-list">
   {% for post in site.posts %}
