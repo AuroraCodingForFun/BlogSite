@@ -110,9 +110,13 @@ nav h6 {
 }
 
 .hero h1 {
-  text-align: center;
-  margin: 0;
-  font-size: clamp(2.2rem, 7vw, 3.6rem);
+  background-color: color-mix(in srgb, var(--text-color) 60%, transparent);
+  color: var(--accent-color);
+  border-radius: 25px;
+  min-height: 180px;
+  align-items: center;
+  display: flex;
+  padding: 1rem 1.5rem;
 }
 
 .hero img {
