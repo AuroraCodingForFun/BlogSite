@@ -24,10 +24,13 @@
           </ul>
         </aside>
   
-  <aside class="pet" id="pet">
+  <aside class="pet" id="pet" style="display: flex; align-items: center; justify-content: left;">
+    <span> <h3>Click me!</h3></span>
+    <span>
     <a href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
     <img src="{{ '/images/nav/pets/snivy.gif' | relative_url }}" width="55" height="55" alt="Github">
     </a>
+    </span>
   </aside>
   
   <body style="{% if page.color1 %}--main-color: {{ page.color1 }};{% endif %}{% if page.color2 %}--text-color: {{ page.color2 }};{% endif %}{% if page.color3 %}--accent-color: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
@@ -41,9 +44,8 @@
       {{ content }}
     </main>
 
-   <footer style="display: flex; align-items: center; justify-content: center;">
-     <span><h3> ⬅ Click me! </h3> </span>
-     <span> &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun </span>
+   <footer>
+     &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
     </footer>
 
     <script>
