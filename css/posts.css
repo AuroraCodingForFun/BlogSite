@@ -110,6 +110,7 @@ nav h6 {
 }
 
 .hero h1 {
+  font-size: clamp(2.5rem, 9vw, 5rem);
   background-color: color-mix(in srgb, var(--text-color) 60%, transparent);
   color: var(--accent-color);
   border-radius: 25px;
