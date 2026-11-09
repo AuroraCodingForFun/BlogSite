@@ -191,21 +191,6 @@ footer {
         font-family: var(--font-titoli, 'Fredoka', sans-serif);
       }
 
-      /* Il titolo grande dell'intestazione prende il colore--accent-color*/
-      .hero h1 {
-        {% if page.titImage %}
-          background-image: url('{{ page.titImage | relative_url }}'); background-size: cover; background-position: center;
-        {% else %} 
-          background-color: color-mix(in srgb, var(--text-color) 60%, transparent);
-        {% endif %}
-        color: var(--accent-color);
-        border-radius: 25px;
-        min-height: 180px;
-        align-items: center;
-        display: flex; 
-      padding: 1rem 1.5rem;
-      }
-
       /* Card bianca con angoli arrotondati */
       .card {
         background-color: white;
