@@ -36,6 +36,24 @@
         document.documentElement.classList.add("boring-mode");
       }
     </script>
+    <style>
+  :root { --paper: {{ page.paper | default: '#630000' }}; }
+
+  {% if page.fontTitoliFile %}
+  @font-face {
+    font-family: '{{ page.fontTitoli }}';
+    src: url('{{ page.fontTitoliFile | relative_url }}') format('truetype');
+  }
+  {% endif %}
+
+  {% if page.titImage %}
+  .hero h1 {
+    background-image: url('{{ page.titImage | relative_url }}');
+    background-size: cover;
+    background-position: center;
+  }
+  {% endif %}
+</style>
   </head>
 
   <!-- ============================================================
