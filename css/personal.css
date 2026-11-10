@@ -260,6 +260,7 @@ footer {
   margin: 0 auto;
   padding: 2rem 1.25rem;
   position: relative;
+  align: center;
   z-index: 10;
 }
 
