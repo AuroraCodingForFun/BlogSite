@@ -259,7 +259,6 @@ footer {
   max-width: 44rem;
   margin: 0 auto;
   padding: 2rem 1.25rem;
-  background: var(--paper);
   position: relative;
   z-index: 10;
 }
