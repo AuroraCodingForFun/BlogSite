@@ -7,7 +7,7 @@ color2: "#C8C367"
 color3: "#615F31"
 ---
 <style>
-  :root { --paper: url('{{ page.image | relative_url }}'); }
+  :root { --paper: url('{{ page.image | relative_url }}')center / cover no-repeat fixed; }
   
 .layout {
   display: block;
