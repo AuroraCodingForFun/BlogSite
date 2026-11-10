@@ -5,6 +5,7 @@ date: 2026-10-11
 mainColor: "#100b08"
 textColor: "#823d01"
 accentColor: "#fc7907"
+button: "#fc7907"
 fontTitoli: "VT323"
 fontTesto: "Genos"
 image: /images/Java.jpg
