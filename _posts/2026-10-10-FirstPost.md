@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "First Post"
-desc: First post of this blog!
+desc: First post of this blog! Inclueds Blog Roadmap
 mainColor: "#ffb3c0"
 textColor: "#f94563"
 accentColor: "#ae0068"
@@ -37,16 +37,31 @@ pet: /images/nav/pets/ponyta.gif
 </div>
 
 <div class="timeline">
-  <div class="container left">
+   <div class="container right">
     <div class="content">
-      <h2>2017</h2>
-      <p>Lorem ipsum..</p>
+      <h2>Pacman</h2>
+      <p>Pending...</p>
     </div>
   </div>
-  <div class="container right">
+  
+  <div class="container left">
     <div class="content">
-      <h2>2016</h2>
-      <p>Lorem ipsum..</p>
+      <h2>Object Oriented Programming</h2>
+      <p>12/10/2026</p>
+    </div>
+  </div>
+  
+   <div class="container right">
+    <div class="content">
+      <h2>Social Network Analysis</h2>
+      <p>11/10/2026</p>
+    </div>
+  </div>
+  
+  <div class="container left">
+    <div class="content">
+      <h2>First Post</h2>
+      <p>10/10/2026</p>
     </div>
   </div>
 </div>
