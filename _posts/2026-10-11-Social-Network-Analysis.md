@@ -32,7 +32,7 @@ pet: /images/nav/pets/gengar.gif
 
 <div style="width: min(1210px, 96vw); position: relative; left: 50%; transform: translateX(-50%);">
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 0px; justify-content: center; align-items: start;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 600px)); gap: 5px; justify-content: center; align-items: start;">
   <!-- Colonna sinistra -->
   <div>
     <!-- Pagina sinistra: Indice -->
