@@ -527,8 +527,9 @@ html.boring-mode .mbutton::before {
 
 html.boring-mode .button:hover,
 html.boring-mode .mbutton:hover {
-  background-color: #333 !important;
-  color: #fff !important;
+    background-color: #333 !important;
+  border: none;
+  color: white;
 }
 
       html.boring-mode .hero h1 {
@@ -548,5 +549,15 @@ html.boring-mode .nextbutton {
   background-color: #333 !important;
   border: none;
   color: white;
+}
+
+html.boringmode.#topbutton {
+  background-color: grey;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+html.boringmode.#topbutton:hover {
+  background-color: #555;
 }
 
