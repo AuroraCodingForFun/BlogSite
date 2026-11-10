@@ -14,7 +14,6 @@ color3: "#615F31"
 }
 </style>
 
-<div>
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 <ul class="post-list">
@@ -35,4 +34,4 @@ color3: "#615F31"
   </li>
   {% endfor %}
 </ul>
-</div>
+
