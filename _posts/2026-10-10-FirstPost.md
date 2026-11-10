@@ -5,7 +5,7 @@ date: 2026-10-10
 mainColor: "#ffb3c0"
 textColor: "#f94563"
 accentColor: "#ae0068"
-button: "#ae0068"
+button: "#fbd3bf"
 fontTitoli: "Ballet"   
 fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
