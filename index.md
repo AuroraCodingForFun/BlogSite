@@ -19,7 +19,7 @@ color3: "#615F31"
 <h2> Ultimi post </h2>
 <ul class="post-list">
   {% for post in site.posts %}
-  <li class="mbutton" style="background-color: {% if forloop.first %}#5deff4{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
+  <li class="mbutton" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
     {% if forloop.first %}
       <span class="ribbon">NEW</span>
     {% endif %}
@@ -28,6 +28,7 @@ color3: "#615F31"
         <span>
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
+          <img src="{{post.image | relative_url}}" width="75" height="75" alt="home" style="border-radius: 50%;">
         </span>
         {% if forloop.first %}
           <img src="{{ '/images/Casa.gif' | relative_url }}" width="75" height="75" alt="home" style="border-radius: 50%;">
