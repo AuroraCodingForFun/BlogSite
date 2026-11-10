@@ -551,13 +551,11 @@ html.boring-mode .nextbutton {
   color: white;
 }
 
-html.boringmode.#topbutton {
-  background-color: grey;
-  color: var(--text-color);
-  cursor: pointer;
+html.boring-mode #topbutton {
+  background-color: grey !important;
+  color: white !important;
 }
 
-html.boringmode.#topbutton:hover {
-  background-color: #555;
+html.boring-mode #topbutton:hover {
+  background-color: #555 !important;
 }
-
