@@ -138,6 +138,7 @@ main img {
   max-width: 20%;
   height: auto;
   border-radius: 0.75rem;
+  padding: 10px;
 }
 
 a { color: var(--main-color-deep); }
