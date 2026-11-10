@@ -136,7 +136,7 @@ main {
 }
 
 main img {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
   border-radius: 0.75rem;
 }
