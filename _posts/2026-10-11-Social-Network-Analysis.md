@@ -5,7 +5,7 @@ date: 2026-10-11
 mainColor: "#b7130b"
 textColor: "#ff6232"
 accentColor: "#560000"
-bottone: "#b7130b"
+button: "#b7130b"
 fontTitoli: "Nosifer"
 fontTesto: "Creepster"
 image: /images/SocialNetwork.jpg
