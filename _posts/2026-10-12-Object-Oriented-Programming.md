@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Studying Java (Object Oriented Exham)"
-date: 2026-10-11
+desc: Esercizi in preparazione dell'esame di Programmazione ad Oggetti
 mainColor: "#100b08"
 textColor: "#823d01"
 accentColor: "#fc7907"
