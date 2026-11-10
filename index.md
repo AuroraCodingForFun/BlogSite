@@ -28,13 +28,8 @@ color3: "#615F31"
         <span>
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
-          <img src="{{post.image | relative_url}}" width="75" height="75" alt="home" style="border-radius: 50%;">
         </span>
-        {% if forloop.first %}
-          <img src="{{ '/images/Casa.gif' | relative_url }}" width="75" height="75" alt="home" style="border-radius: 50%;">
-        {% else %}
-          <img src="{{ '/images/rocket.gif' | relative_url }}" width="75" height="75" alt="rocket" style="border-radius: 50%;">
-        {% endif %}
+        <img src="{{post.image | relative_url}}" width=auto height="75" alt="thumbnail">
       </div>
     </a>
   </li>
