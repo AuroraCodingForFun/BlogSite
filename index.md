@@ -7,7 +7,7 @@ color2: "#C8C367"
 color3: "#615F31"
 ---
 <style>
-  :root { --paper: url('{{ page.image | relative_url }}')center / cover no-repeat fixed; }
+  :root { --paper: url('{{ images/kghostface.gif | relative_url }}')center / cover no-repeat; }
   
 .layout {
   display: block;
