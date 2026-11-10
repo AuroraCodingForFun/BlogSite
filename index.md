@@ -24,11 +24,11 @@ color3: "#615F31"
     {% endif %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="{{post.image | relative_url}}" alt="thumbnail">
         <span>
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">{{ post.desc}}</small>
         </span>
-        <img src="{{post.image | relative_url}}" alt="thumbnail">
       </div>
     </a>
   </li>
