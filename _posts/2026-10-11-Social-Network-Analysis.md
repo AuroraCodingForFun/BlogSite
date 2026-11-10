@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Social Network Analysis Project"
-desc: Progetto di Social Network Analysis sulla co-occorrenza dei trope nei film Horror
+desc: Esame di Social Network Analysis sulla co-occorrenza dei trope nei film Horror
 mainColor: "#b7130b"
 textColor: "#ff6232"
 accentColor: "#560000"
