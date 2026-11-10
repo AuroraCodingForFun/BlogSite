@@ -1,8 +1,7 @@
 ---
 layout: posts
 title: "First Post"
-date: 2026-10-10
-desc: ciaoo
+desc: First post of this blog!
 mainColor: "#ffb3c0"
 textColor: "#f94563"
 accentColor: "#ae0068"
