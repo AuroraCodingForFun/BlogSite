@@ -2,6 +2,7 @@
 layout: posts
 title: "First Post"
 date: 2026-10-10
+desc: ciaoo
 mainColor: "#ffb3c0"
 textColor: "#f94563"
 accentColor: "#ae0068"
