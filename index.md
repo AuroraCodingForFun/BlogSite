@@ -7,7 +7,7 @@ color2: "#C8C367"
 color3: "#615F31"
 ---
 <style>
-  :root { --paper: /images/copertina.jpg; }
+  :root { --paper: url('{{ page.image | relative_url }}'); }
   
 .layout {
   display: block;
