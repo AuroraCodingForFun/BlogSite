@@ -29,7 +29,7 @@ color3: "#615F31"
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">({{ post.date | date: "%d/%m/%Y" }})</small>
         </span>
-        <img src="{{post.image | relative_url}}" width=20% alt="thumbnail">
+        <img src="{{post.image | relative_url}}" alt="thumbnail">
       </div>
     </a>
   </li>
