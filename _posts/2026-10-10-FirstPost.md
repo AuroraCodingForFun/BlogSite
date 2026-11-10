@@ -35,3 +35,18 @@ pet: /images/nav/pets/ponyta.gif
 <h6>Non aspettarti molto da questo progetto</h6>
    </div>
 </div>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
