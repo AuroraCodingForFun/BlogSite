@@ -239,9 +239,6 @@ footer {
   z-index: 10;
   margin: 20px;
   border: 2px solid #4CAF50;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  align-content: space-between;
 }
 
 .contatti form {
