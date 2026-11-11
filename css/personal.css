@@ -118,7 +118,7 @@ nav h6 {
 
 h2 {
   text-align: left;
-  background:blue;
+  background:#42a5f5;
   font-size: clamp(1.5rem, 5vw, 3.6rem);
 }
 
