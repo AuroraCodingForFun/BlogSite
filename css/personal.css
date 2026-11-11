@@ -118,7 +118,7 @@ nav h6 {
 
 h2 {
   text-align: left;
-  background:#42a5f5;
+  background: "#42a5f5";
   font-size: clamp(1.5rem, 5vw, 3.6rem);
 }
 
@@ -261,7 +261,7 @@ footer {
   align-self: flex-center;
   font: inherit;
   font-weight: 700;
-  background: var(--button);
+  background: #00e909;
   color: var(--text-color);
   border: none;
   padding: 0.6rem 1.4rem;
