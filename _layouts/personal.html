@@ -47,7 +47,9 @@
       <section class="contatti">
         <div class="titlebar">
           <h2>Let's keep in touch!</h2>
-          <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
+          <button class="laterale-toggle" onclick="toggleLaterale(this)">
+            <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
+          </button>
         </div>
         
       <form action="https://formspree.io/f/mgaaqgzz" method="POST">
@@ -104,4 +106,15 @@
       })();
     </script>
   </body>
+  <script>
+
+     // toggleLaterale: apre/chiude il pannello e cambia l'icona.
+      function toggleLaterale(btn) {
+        var aside = document.getElementById('laterale');
+        var arrow = btn.querySelector('.arrow');
+        aside.classList.toggle('open');
+        //arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
+      }
+    
+  </script>
 </html>
