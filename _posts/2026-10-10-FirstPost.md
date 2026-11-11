@@ -35,15 +35,16 @@ pet: /images/nav/pets/ponyta.gif
 <h6>Non aspettarti molto da questo progetto</h6>
    </div>
 </div>
+  
+<div class="timeline">
 
-<div class="container left">
+  <div class="container left">
     <div class="content">
       <h2>Personal page</h2>
       <p>~20/10/2026</p>
     </div>
   </div>
   
-<div class="timeline">
    <div class="container right">
     <div class="content">
       <h2>Pacman</h2>
