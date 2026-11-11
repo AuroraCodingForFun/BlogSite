@@ -1,6 +1,6 @@
 ---
 layout: personal
-title: "First Post"
+title: "Personal page"
 date: 2026-10-10
 mainColor: "#ffffff"
 textColor: "#111111"
