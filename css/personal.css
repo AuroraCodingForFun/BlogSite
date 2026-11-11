@@ -144,35 +144,6 @@ main img {
 a { color: var(--main-color-deep); }
 a:hover { color: var(--text-color); }
 
-/* Lista dei post in home */
-.post-list {
-  list-style: none;
-  padding: 0;
-}
-
-.post-list li {
-  padding: 0.9rem 1rem;
-  margin-bottom: 0.75rem;
-  background: #fff;
-  border-left: 5px solid var(--main-color);
-  border-radius: 0.5rem;
-}
-
-.post-list li a {
-  font-family: "Fredoka", system-ui, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.post-list li a:hover { text-decoration: underline; }
-
-.post-list li small {
-  display: block;
-  opacity: 0.7;
-}
-
 /* ---------- Footer ---------- */
 footer {
   position: relative;
