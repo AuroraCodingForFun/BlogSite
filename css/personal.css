@@ -235,10 +235,10 @@ footer {
 
 .contatti {
   max-width: 44rem;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
   position: relative;
   z-index: 10;
+    margin: 20px;
+  border: 2px solid #4CAF50;
 }
 
 .contatti form {
