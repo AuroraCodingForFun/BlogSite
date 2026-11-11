@@ -116,12 +116,6 @@ nav h6 {
   font-size: clamp(2.2rem, 7vw, 3.6rem);
 }
 
-h2 {
-  text-align: left;
-  background: #42a5f5;
-  font-size: clamp(1.5rem, 5vw, 3.6rem);
-}
-
 .hero img {
   display: block;
   max-width: 100%;
@@ -232,6 +226,29 @@ footer {
         padding: 1px;
         z-index: 100;
       }
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #42a5f5;
+  font-size: clamp(1.2rem, 5vw, 2.4rem);
+}
+
+.titlebar h2 {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: inherit;
+  line-height: 1.2;
+  background: none;
+}
+
+.titlebar img {
+  height: 1.2em;
+  width: auto;
+  max-width: none;
+  border-radius: 0;
+}
 
 .contatti {
   max-width: 44rem;
