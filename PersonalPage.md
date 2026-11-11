@@ -13,7 +13,7 @@ paper: "#ffcbb2"
 pet: /images/nav/pets/ponyta.gif
 ---
 <style>
-  :root { --paper: #fff59d; }
+  :root { --paper: #d6f2f5; }
   
 .layout {
   display: block;
