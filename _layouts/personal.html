@@ -47,7 +47,7 @@
       <section class="contatti">
         <div class="titlebar">
           <h2>Let's keep in touch!</h2>
-          <button class="laterale-toggle" onclick="toggleLateraleMail(this)">
+          <button class="laterale-toggle" onclick="toggleMail()">
             <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
           </button>
         </div>
@@ -76,12 +76,10 @@
     </footer>
 
     <script>
-      function toggleLateraleMail(btn) {
-        var aside = document.getElementById('laterale');
-        var arrow = btn.querySelector('.arrow');
-        aside.classList.toggle('open');
-        //arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
-      }
+      function toggleMail() {
+          var form = document.getElementById('mail');
+          form.style.display = form.style.display === 'none' ? '' : 'none';
+        }
       
       function toggleLaterale(btn) {
         var aside = document.getElementById('laterale');
