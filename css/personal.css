@@ -286,4 +286,10 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.toggle-mail
+{
+  font: inherit;
+  font-weight: 700;
+  background: none;
 }
