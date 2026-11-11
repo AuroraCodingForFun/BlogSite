@@ -116,6 +116,12 @@ nav h6 {
   font-size: clamp(2.2rem, 7vw, 3.6rem);
 }
 
+h2 {
+  text-align: left;
+  background:blue;
+  font-size: clamp(1.5rem, 5vw, 3.6rem);
+}
+
 .hero img {
   display: block;
   max-width: 100%;
@@ -241,7 +247,6 @@ footer {
   gap: 0.5rem;
   background: #fff;
   padding: 1.25rem;
-  border-radius: 1rem;
 }
 
 .contatti input,
@@ -249,17 +254,18 @@ footer {
   font: inherit;
   padding: 0.6rem 0.8rem;
   border: 2px solid var(--main-color);
-  border-radius: 0.75rem;
+  border-radius: 0.3rem;
 }
 
 .contatti button {
-  align-self: flex-start;
+  align-self: flex-center;
   font: inherit;
   font-weight: 700;
   background: var(--button);
   color: var(--text-color);
   border: none;
   padding: 0.6rem 1.4rem;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
+}
 }
