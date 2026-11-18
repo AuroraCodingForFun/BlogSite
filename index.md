@@ -20,10 +20,11 @@ color3: "#615F31"
 <div id="BtnContainer">
   <button class="btn active" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
-  {% assign info = site.data.tags[tag[0]] %}
-  <button class="btn" data-filter="{{ tag[0] | slugify }}">
-    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="" class="tag-logo">{% endif %}
-    {{ tag[0] }}
+  {% assign name = tag[0] %}
+  {% assign info = site.data.tags[name] %}
+  <button class="btn" data-filter="{{ name | slugify }}">
+    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo">{% endif %}
+    {{ name }}
   </button>
 {% endfor %}
 </div>
