@@ -12,6 +12,7 @@ image: /images/Java.jpg
 favicon: /images/favicons/java-logo.png
 titImage: /images/header/white cat.jpg
 pet: /images/nav/pets/dragonite.gif
+tag: Java
 ---
 <style>
 :root { --paper: #100b08; }
