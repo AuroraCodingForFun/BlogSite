@@ -22,7 +22,7 @@ color3: "#615F31"
   {% for tag in site.tags %}
   {% assign name = tag[0] %}
   {% assign info = site.data.tags[name] %}
-  <button class="btn" data-filter="{{ name | slugify }}">
+  <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
     {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo">{% endif %}
   </button>
 {% endfor %}
@@ -50,8 +50,10 @@ color3: "#615F31"
 <script>
 document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
   btn.addEventListener('click', function () {
-    document.querySelector('#BtnContainer .active').classList.remove('active');
+    var current = document.querySelector('#BtnContainer .active');
+    if (current) current.classList.remove('active');
     btn.classList.add('active');
+
     var f = btn.dataset.filter;
     document.querySelectorAll('.post-list li').forEach(function (li) {
       var tags = li.dataset.tags.trim().split(' ');
@@ -59,6 +61,5 @@ document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
     });
   });
 });
- 
 </script>
 </body>
