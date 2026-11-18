@@ -17,7 +17,7 @@ color3: "#615F31"
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 
-<div id="BtnContainer">
+<div class="btnContainer" id="BtnContainer">
   <button class="btn" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
   {% assign name = tag[0] %}
