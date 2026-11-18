@@ -44,9 +44,9 @@ color3: "#615F31"
 </ul>
 
 <script>
-document.querySelectorAll('#myBtnContainer .btn').forEach(function (btn) {
+document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
   btn.addEventListener('click', function () {
-    document.querySelector('#myBtnContainer .active').classList.remove('active');
+    document.querySelector('#BtnContainer .active').classList.remove('active');
     btn.classList.add('active');
     var f = btn.dataset.filter;
     document.querySelectorAll('.post-list li').forEach(function (li) {
