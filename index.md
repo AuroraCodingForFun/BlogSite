@@ -20,8 +20,12 @@ color3: "#615F31"
 <div id="BtnContainer">
   <button class="btn active" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
-    <button class="btn" data-filter="{{ tag[0] | slugify }}">{{ tag[0] }}</button>
-  {% endfor %}
+  {% assign info = site.data.tags[tag[0]] %}
+  <button class="btn" data-filter="{{ tag[0] | slugify }}">
+    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="" class="tag-logo">{% endif %}
+    {{ tag[0] }}
+  </button>
+{% endfor %}
 </div>
 
 <ul class="post-list">
