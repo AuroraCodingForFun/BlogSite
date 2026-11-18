@@ -143,6 +143,11 @@ main img {
 a { color: var(--main-color-deep); }
 a:hover { color: var(--text-color); }
 
+.btnContainer{
+  display: inline-flex; 
+  align-items: center;
+  gap: 6px;
+}
 .btn {
   display: inline-flex; 
   align-items: center;
