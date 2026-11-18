@@ -143,6 +143,19 @@ main img {
 a { color: var(--main-color-deep); }
 a:hover { color: var(--text-color); }
 
+#myBtnContainer .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag-logo {
+  height: 1.2em;
+  width: auto;
+  max-width: none;
+  border-radius: 0;
+}
+
 /* Lista dei post in home */
 .post-list {
   list-style: none;
