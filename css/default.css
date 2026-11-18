@@ -144,14 +144,22 @@ a { color: var(--main-color-deep); }
 a:hover { color: var(--text-color); }
 
 .btn {
-  display: inline-block;
+  display: inline-flex; 
+  align-items: center;
+  gap: 6px;
   padding: 0.8rem 1.8rem;
   background: var(--button);
   color: var(--text-color);
+  font: inherit;
   font-weight: 600;
   text-decoration: none;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
   border-radius: 2rem;
   position: relative;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -159,8 +167,18 @@ a:hover { color: var(--text-color); }
   color: var(--accent-color);
 }
 
+.btn.active {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
 .tag-logo {
-  height: 1.2em;
+  height: 3.5em;
   width: auto;
   max-width: none;
   border-radius: 0;
