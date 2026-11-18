@@ -16,7 +16,7 @@ color3: "#615F31"
 <body>
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
-
+<pre>DATI: {{ site.data.tags | jsonify }}</pre>
 <div id="BtnContainer">
   <button class="btn active" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
