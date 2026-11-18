@@ -143,11 +143,38 @@ main img {
 a { color: var(--main-color-deep); }
 a:hover { color: var(--text-color); }
 
-#myBtnContainer .btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--text-color); 
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: var(--button);
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2rem;
+  position: relative;
+  transition: opacity .3s ease, transform .3s ease;
+}
+/* Glow dietro al bottone */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--text-color), var(--button));
+  filter: blur(14px);
+  opacity: .6;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity .3s ease;
+}
+
+.btn:hover {
+  background: var(--text-color);
+  color: var(--accent-color);
+}
+
+.btn:hover::before {
+  opacity: 1;
 }
 
 .tag-logo {
