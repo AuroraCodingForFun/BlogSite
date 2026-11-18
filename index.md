@@ -18,11 +18,11 @@ color3: "#615F31"
 <h2> Ultimi post </h2>
 
 <div id="BtnContainer">
-  <button class="btn active" data-filter="all">Tutti</button>
+  <button class="mbutton" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
   {% assign name = tag[0] %}
   {% assign info = site.data.tags[name] %}
-  <button class="btn" data-filter="{{ name | slugify }}">
+  <button class="mbutton" data-filter="{{ name | slugify }}">
     {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo">{% endif %}
   </button>
 {% endfor %}
