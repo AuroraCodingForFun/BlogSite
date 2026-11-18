@@ -17,17 +17,16 @@ color3: "#615F31"
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Mostra Tutti</button>
-  <button class="btn" onclick="filterSelection('cars')"> C++ </button>
-  <button class="btn" onclick="filterSelection('animals')"> R </button>
-  <button class="btn" onclick="filterSelection('fruits')"> Java </button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+<div id="BtnContainer">
+  <button class="btn active" data-filter="all">Tutti</button>
+  {% for tag in site.tags %}
+    <button class="btn" data-filter="{{ tag[0] | slugify }}">{{ tag[0] }}</button>
+  {% endfor %}
 </div>
 
 <ul class="post-list">
   {% for post in site.posts %}
-  <li class="mbutton" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
+  <li class="mbutton" data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
     {% if forloop.first %}
       <span class="ribbon">NEW</span>
     {% endif %}
@@ -43,48 +42,19 @@ color3: "#615F31"
   </li>
   {% endfor %}
 </ul>
+
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+document.querySelectorAll('#myBtnContainer .btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelector('#myBtnContainer .active').classList.remove('active');
+    btn.classList.add('active');
+    var f = btn.dataset.filter;
+    document.querySelectorAll('.post-list li').forEach(function (li) {
+      var tags = li.dataset.tags.trim().split(' ');
+      li.style.display = (f === 'all' || tags.includes(f)) ? '' : 'none';
+    });
   });
-}
+});
+ 
 </script>
 </body>
