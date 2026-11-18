@@ -18,10 +18,10 @@ color3: "#615F31"
 <h2> Ultimi post </h2>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn active" onclick="filterSelection('all')"> Mostra Tutti</button>
+  <button class="btn" onclick="filterSelection('cars')"> C++ </button>
+  <button class="btn" onclick="filterSelection('animals')"> R </button>
+  <button class="btn" onclick="filterSelection('fruits')"> Java </button>
   <button class="btn" onclick="filterSelection('colors')"> Colors</button>
 </div>
 
