@@ -147,6 +147,7 @@ a:hover { color: var(--text-color); }
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  color: var(--text-color); 
 }
 
 .tag-logo {
