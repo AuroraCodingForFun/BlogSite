@@ -152,8 +152,7 @@ a:hover { color: var(--text-color); }
   display: inline-flex; 
   align-items: center;
   gap: 6px;
-  padding: 0.8rem 1.8rem;
-  background: var(--button);
+  background: #f6c44500;
   color: var(--text-color);
   font: inherit;
   font-weight: 600;
