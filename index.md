@@ -37,7 +37,7 @@ color3: "#615F31"
     {% endif %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: start; gap: 10px">
-        <img src="{{post.image | relative_url}}" alt="thumbnail">
+        <img src="{{post.image | relative_url}}" alt="thumbnail" style="height: 500px">
         <span>
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">{{ post.desc}}</small>
