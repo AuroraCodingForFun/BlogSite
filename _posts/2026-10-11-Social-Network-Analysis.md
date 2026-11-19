@@ -12,7 +12,7 @@ image: /images/SocialNetwork.jpg
 favicon: /images/favicons/halloween.png
 titImage: /images/kghostface.gif
 pet: /images/nav/pets/gengar.gif
-tag: "R"
+tags: [HTML, Markdown,R]
 ---
 <style>
   :root { --paper: #630000; }
