@@ -14,6 +14,7 @@ titImage: /images/kghostface.gif
 favicon: /images/favicons/halloween.png
 paper: "#ffcbb2"
 pet: /images/nav/pets/ponyta.gif
+tag: "HTML" "Markdown"
 ---
 <style>   
   :root {
