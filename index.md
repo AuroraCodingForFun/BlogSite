@@ -17,14 +17,14 @@ color3: "#615F31"
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 
-<div class="btnContainer" id="BtnContainer">
+<div class="btnContainer" id="BtnContainer" style="background-color: blue;">
  <p> Filtra per linguaggio di programmazione:</p>
   <button class="btn" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
   {% assign name = tag[0] %}
   {% assign info = site.data.tags[name] %}
   <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo">{% endif %}
+    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 500px">{% endif %}
   </button>
 {% endfor %}
 </div>
@@ -37,7 +37,7 @@ color3: "#615F31"
     {% endif %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: start; gap: 10px">
-        <img src="{{post.image | relative_url}}" alt="thumbnail" style="height: 500px">
+        <img src="{{post.image | relative_url}}" alt="thumbnail">
         <span>
           <b style="color: #3a6b35; font-size: 1.7rem;">{{ post.title }}</b>
           <small style="color: #3a6b35">{{ post.desc}}</small>
