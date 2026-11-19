@@ -17,7 +17,7 @@ color3: "#615F31"
 <h1>Benvenuti nel mio blog </h1>
 <h2> Ultimi post </h2>
 
-<div class="btnContainer" id="BtnContainer" style="background-color: blue;">
+<div class="btnContainer" id="BtnContainer">
  <p> Filtra per linguaggio di programmazione:</p>
   <button class="btn" data-filter="all">Tutti</button>
   {% for tag in site.tags %}
