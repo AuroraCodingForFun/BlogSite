@@ -15,24 +15,30 @@ color3: "#615F31"
 </style>
 <body>
 <h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
-<h2> Ultimi post: </h2>
 
-<div class="dropdown">
-  <button onclick="FunzioneDropdown()" class="dropbtn">Filtra per linguaggio di programmazione:</button>
-  <div id="myDropdown" class="dropdown-content">
-     <div class="btnContainer" id="BtnContainer">
-       <button class="btnall" data-filter="all">Tutti</button>
-       {% for tag in site.tags %}
-       {% assign name = tag[0] %}
-       {% assign info = site.data.tags[name] %}
-       <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: auto; width: 50px"> <p> {{ name }} </p>{% endif %}
-       </button>
-     {% endfor %}
-     </div>
+ <div style="display: inline-flex">
+  <h2> Ultimi post: </h2>
+  
+  <div class="dropdown">
+    <button onclick="FunzioneDropdown()" class="dropbtn">Filtra per linguaggio di programmazione:</button>
+    <div id="myDropdown" class="dropdown-content">
+       <div class="btnContainer" id="BtnContainer">
+         <button class="btnall" data-filter="all">Tutti</button>
+         {% for tag in site.tags %}
+         {% assign name = tag[0] %}
+         {% assign info = site.data.tags[name] %}
+         <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
+           {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: auto; width: 50px"> 
+          <p> {{ name }} </p>
+          {% endif %}
+         </button>
+       {% endfor %}
+       </div>
+    </div>
   </div>
-</div>
-    
+
+ </div>
+ 
 <ul class="post-list">
   {% for post in site.posts %}
   <li class="mbutton" data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
