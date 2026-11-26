@@ -153,7 +153,7 @@ a:hover { color: var(--text-color); }
   display: inline-flex; 
   align-items: center;
   gap: 6px;
-  background: #f6c44500;
+  background: #007637;
   color: var(--text-color);
   font: inherit;
   font-weight: 600;
