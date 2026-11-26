@@ -59,7 +59,7 @@ color3: "#615F31"
 </ul>
 
 <script>
-document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
+document.querySelectorAll('#BtnContainer .btn, #BtnContainer .btnall').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var current = document.querySelector('#BtnContainer .active');
     if (current) current.classList.remove('active');
@@ -72,7 +72,7 @@ document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
     });
   });
 });
-
+ 
  /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function FunzioneDropdown() {
