@@ -145,6 +145,7 @@ a:hover { color: var(--text-color); }
 
 .btnContainer{
   display: inline-flex; 
+  align-items: flex-start;
   flex-direction: column;
   align-items: center;
   gap: 6px;
@@ -157,11 +158,6 @@ a:hover { color: var(--text-color); }
   color: var(--text-color);
   font: inherit;
   font-weight: 600;
-  text-decoration: none;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none;
-  box-shadow: none;
   border-radius: 2rem;
   position: relative;
   cursor: pointer;
@@ -302,16 +298,17 @@ footer {
 }
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: #007637;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius:15px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #004520;
 }
 
 .dropdown {
