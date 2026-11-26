@@ -21,7 +21,12 @@ color3: "#615F31"
 <div class="dropdown">
   <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-   <div class="btnContainer" id="BtnContainer">
+   <a href="#home">Home</a>
+   <a href="#home">Home</a>
+  </div>
+</div>
+
+<div class="btnContainer" id="BtnContainer">
       <button class="btn" data-filter="all">Tutti</button>
       {% for tag in site.tags %}
       {% assign name = tag[0] %}
@@ -31,10 +36,7 @@ color3: "#615F31"
       </button>
     {% endfor %}
     </div>
-  </div>
-</div>
-
-
+    
 <ul class="post-list">
   {% for post in site.posts %}
   <li class="mbutton" data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
