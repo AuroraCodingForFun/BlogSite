@@ -10,8 +10,6 @@ fontTitoli: "Ballet"
 fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Italianno"
 image: /images/Barbie.jpg
-titImage: /images/kghostface.gif
-favicon: /images/favicons/halloween.png
 paper: "#ffcbb2"
 pet: /images/nav/pets/ponyta.gif
 tags: [HTML, Markdown]
@@ -39,6 +37,13 @@ tags: [HTML, Markdown]
   
 <div class="timeline">
 
+<div class="container right">
+    <div class="content">
+      <h2>Randomly hit 1000 commits</h2>
+      <p>The website is pretty cute but the huge number of commits is due to how many things I change and re-think!</p>
+    </div>
+  </div>
+  
   <div class="container left">
     <div class="content">
       <h2>Personal page</h2>
