@@ -16,7 +16,7 @@ color3: "#615F31"
 <body>
 <h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
 
- <div style="display: inline-flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap; gap: 50px">
+ <div style="display: flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap; ">
   <h2> Ultimi post: </h2>
   
   <div class="dropdown">
