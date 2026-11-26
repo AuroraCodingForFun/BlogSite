@@ -167,6 +167,18 @@ a:hover { color: var(--text-color); }
   cursor: pointer;
 }
 
+.btnall{
+  align-items: center;
+  gap: 25px;
+  background: #00461f;
+  color: var(--text-color);
+  font: inherit;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  padding:10px;
+}
+
 .tag-logo {
   height: 3.5em;
   width: auto;
