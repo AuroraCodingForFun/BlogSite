@@ -21,8 +21,9 @@ color3: "#615F31"
 <div class="dropdown">
   <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-   <a href="#home">Home</a>
-   <a href="#home">Home</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </div>
 
