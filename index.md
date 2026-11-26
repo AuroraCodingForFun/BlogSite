@@ -17,9 +17,8 @@ color3: "#615F31"
 <h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
 <h2> Ultimi post: </h2>
 
-<p> Filtra per linguaggio di programmazione:</p>
 <div class="dropdown">
-  <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
+  <button onclick="FunzioneDropdown()" class="dropbtn">Filtra per linguaggio di programmazione:</button>
   <div id="myDropdown" class="dropdown-content">
      <div class="btnContainer" id="BtnContainer">
        <button class="btn" data-filter="all">Tutti</button>
