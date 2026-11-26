@@ -21,22 +21,18 @@ color3: "#615F31"
 <div class="dropdown">
   <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+     <div class="btnContainer" id="BtnContainer">
+       <button class="btn" data-filter="all">Tutti</button>
+       {% for tag in site.tags %}
+       {% assign name = tag[0] %}
+       {% assign info = site.data.tags[name] %}
+       <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
+         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 50px">{% endif %}
+       </button>
+     {% endfor %}
+     </div>
   </div>
 </div>
-
-<div class="btnContainer" id="BtnContainer">
-      <button class="btn" data-filter="all">Tutti</button>
-      {% for tag in site.tags %}
-      {% assign name = tag[0] %}
-      {% assign info = site.data.tags[name] %}
-      <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-        {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 50px">{% endif %}
-      </button>
-    {% endfor %}
-    </div>
     
 <ul class="post-list">
   {% for post in site.posts %}
