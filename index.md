@@ -15,7 +15,7 @@ color3: "#615F31"
 </style>
 <body>
 <h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
-<h2> Ultimi post </h2>
+<h2> Ultimi post: </h2>
 
 <div class="btnContainer" id="BtnContainer">
  <p> Filtra per linguaggio di programmazione:</p>
@@ -33,7 +33,7 @@ color3: "#615F31"
   {% for post in site.posts %}
   <li class="mbutton" data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
     {% if forloop.first %}
-      <span class="ribbon">NEW</span>
+      <span class="ribbon">NEW POST</span>
     {% endif %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: start; gap: 10px">
