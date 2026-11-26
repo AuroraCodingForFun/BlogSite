@@ -145,6 +145,7 @@ a:hover { color: var(--text-color); }
 
 .btnContainer{
   display: inline-flex; 
+  flex-direction: column;
   align-items: center;
   gap: 6px;
 }
