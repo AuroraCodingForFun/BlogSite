@@ -323,7 +323,7 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #d7fdf6;
+  background-color: #ffffff;
   border-radius: 10px;
   min-width: 160px;
   overflow: auto;
