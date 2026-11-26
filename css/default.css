@@ -152,7 +152,7 @@ a:hover { color: var(--text-color); }
 .btn {
   display: inline-flex; 
   align-items: center;
-  gap: 6px;
+  gap: 25px;
   background: #f6c44500;
   color: var(--text-color);
   font: inherit;
