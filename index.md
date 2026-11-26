@@ -17,17 +17,25 @@ color3: "#615F31"
 <h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
 <h2> Ultimi post: </h2>
 
-<div class="btnContainer" id="BtnContainer">
- <p> Filtra per linguaggio di programmazione:</p>
-  <button class="btn" data-filter="all">Tutti</button>
-  {% for tag in site.tags %}
-  {% assign name = tag[0] %}
-  {% assign info = site.data.tags[name] %}
-  <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-    {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 50px">{% endif %}
-  </button>
-{% endfor %}
+<p> Filtra per linguaggio di programmazione:</p>
+<div class="dropdown">
+  <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+
+   <div class="btnContainer" id="BtnContainer">
+      <button class="btn" data-filter="all">Tutti</button>
+      {% for tag in site.tags %}
+      {% assign name = tag[0] %}
+      {% assign info = site.data.tags[name] %}
+      <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
+        {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 50px">{% endif %}
+      </button>
+    {% endfor %}
+    </div>
+    
+  </div>
 </div>
+
 
 <ul class="post-list">
   {% for post in site.posts %}
@@ -62,5 +70,25 @@ document.querySelectorAll('#BtnContainer .btn').forEach(function (btn) {
     });
   });
 });
+
+ /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function FunzioneDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 </body>
