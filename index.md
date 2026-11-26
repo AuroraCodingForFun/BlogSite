@@ -27,7 +27,7 @@ color3: "#615F31"
        {% assign name = tag[0] %}
        {% assign info = site.data.tags[name] %}
        <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: auto; width: 50px"> <p> "{{ name }}" </p>{% endif %}
+         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: auto; width: 50px"> <p> {{ name }} </p>{% endif %}
        </button>
      {% endfor %}
      </div>
@@ -38,7 +38,7 @@ color3: "#615F31"
   {% for post in site.posts %}
   <li class="mbutton" data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}" style="background-color: {% if forloop.first %}#ffed3d{% else %}#edfcff{% endif %}; width: 100%; box-sizing: border-box;">
     {% if forloop.first %}
-      <span class="ribbon">NEW POST</span>
+      <span class="ribbon">NEW</span>
     {% endif %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; display: block; width: 100%; box-sizing: border-box;">
       <div style="display: flex; align-items: center; justify-content: start; gap: 10px">
