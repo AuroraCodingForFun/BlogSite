@@ -21,8 +21,8 @@ body {
 
 h1, h2, h3 {
   font-family: "Fredoka", system-ui, sans-serif;
-  line-height: 1.2;
-  margin: 0; 
+  line-height: 1.2; 
+  text-align: centre;
 }
 
 /* ---------- Header ---------- */
