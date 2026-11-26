@@ -177,6 +177,10 @@ a:hover { color: var(--text-color); }
   position: relative;
   cursor: pointer;
   padding:10px;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
 }
 
 .tag-logo {
