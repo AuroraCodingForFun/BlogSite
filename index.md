@@ -14,7 +14,7 @@ color3: "#615F31"
 }
 </style>
 <body>
-<h1>Benvenuti nel mio blog </h1>
+<h1> 🌟 Benvenuti nel mio blog 🌟 </h1>
 <h2> Ultimi post </h2>
 
 <div class="btnContainer" id="BtnContainer">
