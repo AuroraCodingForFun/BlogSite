@@ -27,7 +27,7 @@ color3: "#615F31"
        {% assign name = tag[0] %}
        {% assign info = site.data.tags[name] %}
        <button class="btn" data-filter="{{ name | slugify }}" aria-label="{{ name }}" title="{{ name }}">
-         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: 50px"> <p> "{{ name }}" </p>{% endif %}
+         {% if info.logo %}<img src="{{ info.logo | relative_url }}" alt="{{ name }}" class="tag-logo" style="height: auto; width: 50px"> <p> "{{ name }}" </p>{% endif %}
        </button>
      {% endfor %}
      </div>
