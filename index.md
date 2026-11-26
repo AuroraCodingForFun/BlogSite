@@ -21,7 +21,6 @@ color3: "#615F31"
 <div class="dropdown">
   <button onclick="FunzioneDropdown()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-
    <div class="btnContainer" id="BtnContainer">
       <button class="btn" data-filter="all">Tutti</button>
       {% for tag in site.tags %}
@@ -32,7 +31,6 @@ color3: "#615F31"
       </button>
     {% endfor %}
     </div>
-    
   </div>
 </div>
 
