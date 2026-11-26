@@ -154,10 +154,15 @@ a:hover { color: var(--text-color); }
   display: inline-flex; 
   align-items: center;
   gap: 6px;
-  background: #007637;
+  background: #f6c44500;
   color: var(--text-color);
   font: inherit;
   font-weight: 600;
+  text-decoration: none;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
   border-radius: 2rem;
   position: relative;
   cursor: pointer;
