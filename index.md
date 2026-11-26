@@ -21,7 +21,7 @@ color3: "#615F31"
   <button onclick="FunzioneDropdown()" class="dropbtn">Filtra per linguaggio di programmazione:</button>
   <div id="myDropdown" class="dropdown-content">
      <div class="btnContainer" id="BtnContainer">
-       <button class="btn" data-filter="all">Tutti</button>
+       <button class="btnall" data-filter="all">Tutti</button>
        {% for tag in site.tags %}
        {% assign name = tag[0] %}
        {% assign info = site.data.tags[name] %}
