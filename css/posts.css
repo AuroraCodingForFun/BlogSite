@@ -547,6 +547,55 @@ footer {
   }
 }
 
+
+  .intro .lead { font-size: 2rem; margin: 0 0 1.5rem; }
+  .intro .sub  { font-size: 1.5rem; margin: 0 0 1.5rem; }
+  .intro .note { font-size: 1rem; font-style: italic; margin: 0; }
+  /* Timeline: stessa larghezza del box di testo, celle più piccole */
+  .timeline {
+    max-width: none;
+    margin: 1.5rem 0 0;
+  }
+  .timeline .container {
+    padding: 6px 36px;
+  }
+  /* le celle partono dal bordo sinistro / finiscono sul bordo destro del box */
+  .timeline .container.left  { padding-left: 0; }
+  .timeline .container.right { padding-right: 0; }
+  .timeline .content {
+    padding: 10px 16px;
+  }
+  .timeline .content h2 {
+    font-size: 1.15rem;
+  }
+  .timeline .content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0.25rem 0 0;
+  }
+  /* pallini e frecce ridotti e centrati sulla linea */
+  .timeline .container::after {
+    width: 18px;
+    height: 18px;
+    border-width: 3px;
+    top: 10px;
+  }
+  .timeline .container.left::after  { right: -9px; }
+  .timeline .container.right::after { left: -9px; }
+  .timeline .container::before      { top: 12px; }
+  .timeline .container.left::before  { right: 26px; }
+  .timeline .container.right::before { left: 26px; }
+  @media screen and (max-width: 600px) {
+    .timeline .container.left,
+    .timeline .container.right {
+      padding-left: 50px;
+      padding-right: 0;
+    }
+    .timeline .container::before { left: 40px; right: auto; }
+    .timeline .container.left::after,
+    .timeline .container.right::after { left: 22px; right: auto; }
+  }
+
 /* ============================================================
    BORING MODE 
    ============================================================ */
