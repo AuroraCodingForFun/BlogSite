@@ -5,7 +5,7 @@ date: 2026-10-10
 mainColor: "#ffffff"
 textColor: "#111111"
 accentColor: "#f9ed04"
-fontTitoli: "Geist Pixel"   
+fontTitoli: "Jacquard 24"   
 fontTesto: "Pixelify Sans"
 image: /images/sfondo.jpg
 paper: "#ffcbb2"
