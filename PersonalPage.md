@@ -18,6 +18,18 @@ pet: /images/nav/pets/ponyta.gif
 .layout {
   display: block;
 }
+  
+  .git {
+    border: 2px solid #42a5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 1.25rem;
+    max-width: 44rem;
+    margin: 20px auto;
+  }
 </style>
 
 <nav>
