@@ -19,6 +19,7 @@ pet: /images/nav/pets/ponyta.gif
   display: block;
 }
 </style>
+<body>
 <nav>
   <a class="brand" href="https://github.com/AuroraCodingForFun">
     <img src="{{ '/images/nav/Github.gif' | relative_url }}" width="55" height="55" alt="Github">
@@ -33,3 +34,10 @@ pet: /images/nav/pets/ponyta.gif
   </button>
   <h6>Dark mode</h6>
 </nav>
+
+  <p align="center">
+  <a href="https://github.com/AuroraCodingForFun">
+    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00ff2f&fontSize=54&height=90&width=634&text=Hello!%20I'm%20Aurora" alt="Hello! I&#39;m Aurora" />
+  </a>
+</p>
+</body>
