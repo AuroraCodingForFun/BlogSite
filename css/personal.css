@@ -14,13 +14,13 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--text-color);
-  font-family: "Nunito", system-ui, sans-serif;
+  font-family: var(--font-testo, "Nunito"), system-ui, sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
 h1, h2, h3 {
-  font-family: "Fredoka", system-ui, sans-serif;
+ font-family: var(--font-titoli, "Fredoka"), system-ui, sans-serif;
   line-height: 1.2;
   margin: 0; 
   text-align: center;
@@ -97,7 +97,7 @@ nav h6 {
 }
 
 .brand {
-  font-family: "Fredoka", system-ui, sans-serif;
+ font-family: var(--font-titoli, "Fredoka"), system-ui, sans-serif;
   font-size: 1.25rem;
 }
 
