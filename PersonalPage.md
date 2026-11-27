@@ -19,7 +19,7 @@ pet: /images/nav/pets/ponyta.gif
   display: block;
 }
 </style>
-<body>
+
 <nav>
   <a class="brand" href="https://github.com/AuroraCodingForFun">
     <img src="{{ '/images/nav/Github.gif' | relative_url }}" width="55" height="55" alt="Github">
@@ -49,4 +49,3 @@ pet: /images/nav/pets/ponyta.gif
   <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api?username=AuroraCodingForFun&show_icons=true&theme=tokyonight&title_color=00ff2f&icon_color=00ff2f&hide_border=true&bg_color=00000000&count_private=true" alt="stats" />
   <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api/top-langs/?username=AuroraCodingForFun&layout=compact&theme=tokyonight&title_color=00ff2f&icon_color=00ff2f&hide_border=true&bg_color=00000000&langs_count=8" alt="top langs" />
 </p>
-</body>
