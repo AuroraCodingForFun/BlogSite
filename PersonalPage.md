@@ -41,7 +41,7 @@ pet: /images/nav/pets/ponyta.gif
   </a>
 </p>
 
-<div class="contatti">
+<div class="git">
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=f778ba&center=true&vCenter=true&width=715&height=44&lines=I'm%20a%20university%20student%20learning%20how%20to%20code" alt="Typing headlines" />
 </p>
