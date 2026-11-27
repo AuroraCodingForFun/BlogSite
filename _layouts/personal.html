@@ -3,47 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/personal.css' | relative_url }}">
     <link rel="icon" href="{{ page.favicon | default: '/images/favicons/favicon.png' | relative_url }}">
 
+    {% if page.fontTitoli and page.fontTitoliFile == nil %}
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTitoli | url_encode }}&display=swap">
+    {% endif %}
+    {% if page.fontTesto and page.fontTesto != page.fontTitoli %}
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ page.fontTesto | url_encode }}&display=swap">
+    {% endif %}
 
-      <aside class="laterale" id="laterale">
-          <button class="laterale-toggle" onclick="toggleLaterale(this)">
-            <span class="arrow">☰</span> More content
-          </button>
-          <ul>
-            <li>
-              <h4>😺Github!</h4>
-              <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
-            </li>
-          </ul>
-        </aside>
-  
-  <aside class="pet" id="pet">
-    <a href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
-    <img src="{{ '/images/nav/pets/snivy.gif' | relative_url }}" width="55" height="55" alt="Github">
-    </a>
-  </aside>
-  
-  <body style="{% if page.color1 %}--main-color: {{ page.color1 }};{% endif %}{% if page.color2 %}--text-color: {{ page.color2 }};{% endif %}{% if page.color3 %}--accent-color: {{ page.color3 }};{% endif %}{% if page.button %}--button: {{ page.button }};{% endif %}">
-      </head>
+    <style>
+      :root { --paper: {{ page.paper | default: '#f5fafc' }}; }
 
-  <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
+      {% if page.fontTitoliFile %}
+      @font-face {
+        font-family: '{{ page.fontTitoli }}';
+        src: url('{{ page.fontTitoliFile | relative_url }}') format('truetype');
+      }
+      {% endif %}
+    </style>
+  </head>
 
+  <body style="{% if page.mainColor %}--main-color: {{ page.mainColor }};{% endif %}
+               {% if page.textColor %}--text-color: {{ page.textColor }};{% endif %}
+               {% if page.accentColor %}--accent-color: {{ page.accentColor }};{% endif %}
+               {% if page.button %}--button: {{ page.button }};{% endif %}
+               {% if page.fontTitoli %}--font-titoli: '{{ page.fontTitoli }}';{% endif %}
+               {% if page.fontTesto %}--font-testo: '{{ page.fontTesto }}';{% endif %}">
+
+    <aside class="laterale" id="laterale">
+      <button class="laterale-toggle" onclick="toggleLaterale(this)">
+        <span class="arrow">☰</span> More content
+      </button>
+      <ul>
+        <li>
+          <h4>😺Github!</h4>
+          <a class="brand" href="https://github.com/AuroraCodingForFun">💻Aurora Coding for Fun</a>
+        </li>
+      </ul>
+    </aside>
+
+    <aside class="pet" id="pet">
+      <a href="https://auroracodingforfun.github.io/BlogSite/PersonalPage">
+        <img src="{{ page.pet | default: '/images/nav/pets/snivy.gif' | relative_url }}" width="55" height="55" alt="Pet">
+      </a>
+    </aside>
+
+    <header class="site-header" {% if page.image %}style="--header-img: url('{{ page.image | relative_url }}');"{% endif %}>
       <div class="hero">
-        <!-- Titolo post corrente. -->
-      <h1>
-        {{ page.title }}
-      </h1>
+        <h1>{{ page.title }}</h1>
       </div>
     </header>
 
     <main>
       {{ content }}
-
+      
       <section class="contatti">
         <div class="titlebar">
           <h2>Let's keep in touch!</h2>
@@ -67,15 +86,13 @@
         <button class="button" type="submit">Send</button>
       </form>
     </section>
-      
     </main>
 
-    
     <footer>
       &copy; 📆 {{ site.time | date: "%Y" }} AuroraCodingForFun
     </footer>
 
-    <script>
+     <script>
       function toggleMail() {
           var form = document.getElementById('mail');
           form.style.display = form.style.display === 'none' ? '' : 'none';
@@ -87,11 +104,9 @@
         aside.classList.toggle('open');
         arrow.textContent = aside.classList.contains('open') ? '🗗' : '☰';
       }
-      // All'apertura: immagine a metà schermo, contenuto nell'altra metà
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
       window.scrollTo(0, Math.round(window.innerHeight * 0.5));
 
-      /* Header che si riduce scorrendo, poi esce dallo schermo */
       (function () {
         var header = document.querySelector('.site-header');
         var main = document.querySelector('main');
@@ -112,3 +127,4 @@
     </script>
   </body>
 </html>
+
