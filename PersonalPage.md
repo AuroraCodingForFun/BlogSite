@@ -50,4 +50,4 @@ pet: /images/nav/pets/ponyta.gif
   <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api/top-langs/?username=AuroraCodingForFun&layout=compact&theme=tokyonight&title_color=00ff2f&icon_color=00ff2f&hide_border=true&bg_color=00000000&langs_count=8" alt="top langs" />
 </p>
 
-<img src="/metrics.plugin.isocalendar.fullyear.svg" alt="Full-year calendar" width="48%">
+<img src="{{ '/metrics.plugin.isocalendar.fullyear.svg' | relative_url }}" alt="Full-year calendar" width="48%">
