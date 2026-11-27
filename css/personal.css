@@ -279,7 +279,7 @@ footer {
 .contatti textarea {
   font: inherit;
   padding: 0.6rem 0.8rem;
-  border: 2px solid var(--main-color);
+  border: 2px solid #2494f5bd;
   border-radius: 0.3rem;
 }
 
