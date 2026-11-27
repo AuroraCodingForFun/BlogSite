@@ -38,7 +38,7 @@ pet: /images/nav/pets/ponyta.gif
         
 <div class="git">
   <div class="titlebar">
-          <h2>Let's keep in touch!</h2>
+          <h2>My Github stats~</h2>
           <button class="toggle-mail" onclick="toggleGit()">
             <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
           </button>
