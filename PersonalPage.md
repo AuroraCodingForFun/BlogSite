@@ -44,6 +44,8 @@ pet: /images/nav/pets/ponyta.gif
   <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=f778ba&center=true&vCenter=true&width=715&height=44&lines=I'm%20a%20university%20student%20learning%20how%20to%20code" alt="Typing headlines" />
 </p>
 
+<img src="/metrics.plugin.isocalendar.fullyear.svg" alt="Full-year calendar" width="48%">
+
 <div class="githubstats">
 <p align="center">
   <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api?username=AuroraCodingForFun&show_icons=true&theme=tokyonight&title_color=00ff2f&icon_color=00ff2f&hide_border=true&bg_color=00000000&count_private=true" alt="stats" />
