@@ -6,7 +6,6 @@ mainColor: "#ffffff"
 textColor: "#111111"
 accentColor: "#f9ed04"
 fontTitoli: "Geist Pixel"   
-fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Pixelify Sans"
 image: /images/sfondo.jpg
 paper: "#ffcbb2"
