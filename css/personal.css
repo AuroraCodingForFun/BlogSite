@@ -306,7 +306,7 @@ footer {
 }
 
 .git{
-    max-width: 44rem;
+    max-width: 51rem;
     width: calc(100% - 40px);
     position: relative;
     z-index: 10;
