@@ -5,7 +5,7 @@ date: 2026-10-10
 mainColor: "#ffffff"
 textColor: "#111111"
 accentColor: "#f9ed04"
-fontTitoli: "Jacquarda 24"   
+fontTitoli: "Jacquarda Bastarda 9"   
 fontTitoliFile: "/images/fonts/Bartex.ttf"
 fontTesto: "Pixelify Sans"
 image: /images/sfondo.jpg
