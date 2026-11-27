@@ -35,8 +35,15 @@ pet: /images/nav/pets/ponyta.gif
   </button>
   <h6>Dark mode</h6>
 </nav>
-k
+
 <div class="git">
+  <div class="titlebar">
+          <h2>Let's keep in touch!</h2>
+          <button class="toggle-mail" onclick="toggleMail()">
+            <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
+          </button>
+        </div>
+  
   <p align="center">
   <a href="https://github.com/AuroraCodingForFun">
     <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00ff2f&fontSize=54&height=90&width=634&text=Hello!%20I'm%20Aurora" alt="Hello! I&#39;m Aurora" />
