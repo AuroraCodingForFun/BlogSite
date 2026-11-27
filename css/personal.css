@@ -124,7 +124,7 @@ nav h6 {
 
 /* ---------- Contenuto ---------- */
 main {
-  max-width: 44rem;
+  /*max-width: 44rem;*/
   margin: 100vh auto 0;
   padding: 1rem 1.25rem 2rem;
   position: relative;
