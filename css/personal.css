@@ -261,9 +261,10 @@ footer {
 
 .contatti {
   max-width: 44rem;
+  width: calc(100% - 40px);
   position: relative;
   z-index: 10;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .contatti form {
@@ -296,10 +297,6 @@ footer {
 }
 
 .githubstats{
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-    gap: 25px;
     font: inherit;
     border-radius: 2rem;
     position: relative;
