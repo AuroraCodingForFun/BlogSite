@@ -39,11 +39,11 @@ pet: /images/nav/pets/ponyta.gif
 <div class="git">
   <div class="titlebar">
           <h2>Let's keep in touch!</h2>
-          <button class="toggle-mail" onclick="toggleMail()">
+          <button class="toggle-git" onclick="toggleGit()">
             <img src="{{ '/images/pulsanti_trasparenti.png' | relative_url }}" alt="">
           </button>
         </div>
-  <div class="githubstats">
+  <div class="githubstats" id="git">
   <p align="center">
   <a href="https://github.com/AuroraCodingForFun">
     <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00ff2f&fontSize=54&height=90&width=634&text=Hello!%20I'm%20Aurora" alt="Hello! I&#39;m Aurora" />
@@ -58,3 +58,10 @@ pet: /images/nav/pets/ponyta.gif
   </p>
   </div>
 </div>
+
+<script>
+   function toggleGit() {
+          var form = document.getElementById('git');
+          form.style.display = form.style.display === 'none' ? '' : 'none';
+        }
+</script>
